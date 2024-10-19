@@ -1,6 +1,10 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { AppComponent } from './app/app.component'; // Import your standalone AppComponent
+import { AppRoutingModule } from './app/app-routing.module'; // Import the routing module
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(AppComponent, {
+  providers: [
+    AppRoutingModule // Add your routing module here
+  ]
+})
+.catch(err => console.error(err));

@@ -1,13 +1,386 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>AppFrontend</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Gobi Scholars Academy</title>
 </head>
+
 <body>
-  <app-root></app-root>
-</body>
-</html>
+
+   
+
+  <!--PART 1: Contains main menu and vision statement.-->
+    <div class="header-section">
+      <!-- Gradient Shadow -->
+      <div class="gradient-shadow"></div>
+
+      <!--HEADER-->
+      <div class="header-container">
+        <a href="index.html">
+          <img src="app/assets/Logo.png" alt="GOBISCHOLARS" class="logo">
+        </a>
+
+        <div class="menu">
+          <!-- About Us Dropdown -->
+          <div class="menu-item dropdown">
+              <button onclick="location.href='app/about/about.component.html'">About Us</button>
+              <div class="dropdown-content">
+                  <a href="app/about/about.component.html">Our Story</a>
+                  <a href="app/about/about.component.html">Our Team</a>
+                  <a href="app/about/about.component.html">Students</a>
+                  <a href="app/about/about.component.html">Impact & Achievements</a>
+              </div>
+          </div>
+
+          <!-- Programs Dropdown -->
+          <div class="menu-item">
+            <a href="app/programs/programs.component.html">Programs</a>
+        </div>
+
+          <!-- Resources Dropdown -->
+          <div class="menu-item dropdown">
+              <button onclick="location.href='app/resources/resources.component.html'">Resources</button>
+              <div class="dropdown-content">
+                  <a href="app/resources/resources.component.html">Student Guides</a>
+                  <a href="app/resources/resources.component.html">Research & Publications</a>
+                  <a href="app/resources/resources.component.html">Tools</a>
+              </div>
+          </div>
+
+          <!-- Get Involved Dropdown -->
+          <div class="menu-item dropdown">
+              <button onclick="location.href='app/get-involved/get-involved.component.html'">Get Involved</button>
+              <div class="dropdown-content">
+                  <a href="app/get-involved/get-involved.component.html">Join Our Team</a>
+                  <a href="app/get-involved/get-involved.component.html">Donate & Support</a>
+                  <a href="app/get-involved/get-involved.component.html">Partnership Opportunities</a>
+              </div>
+          </div>
+
+          <!-- Search Button -->
+              <div class="menu-item">
+                <a href="#search">Search</a>
+            </div>
+
+        </div>
+      </div>
+
+
+    <!--CENTER CONTENT-->
+    <div class="center-content">
+      <img src="app/assets/Logo.png" alt="GOBISCHOLARS" class="center-logo">
+          <p>Gobi Scholars is a dynamic educational platform dedicated to empowering students
+             by providing world-class learning opportunities, fostering meaningful connections, 
+             and turning ideas into impactful initiatives.</p>
+    </div>
+  </div>
+
+
+
+    <!-- SECTION 2: NEWS PART -->
+
+  <div class="news-section">
+      <h2 class="news-header">NEWS</h2>
+      <div class="recent-news">
+          <div class="news-box" onclick="location.href='app/news/news.component.html'">
+              <img src="app/assets/article1.jpg" alt="News 1">
+              <h3>Bootcamp 2024</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercise ullamco</p>
+          </div>
+
+          <div class="news-box" onclick="location.href='app/news/news.component.html'">
+              <img src="app/assets/article1.jpg" alt="News 2">
+              <h3>Bootcamp 2024</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercise ullamco</p>
+          </div>
+
+          <div class="news-box" onclick="location.href='app/news/news.component.html'">
+              <img src="app/assets/article1.jpg" alt="News 3">
+              <h3>Bootcamp 2024</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercise ullamco</p>
+          </div>
+      </div>
+      <button class="read-more-btn" onclick="location.href='app/news/news.component.html'">Read More</button>
+  </div>
+
+  <hr class="section-break">
+
+    <!-- SECTION 3: About Us Part -->
+    <div class="about-us-section">
+      <!-- left side -->
+      <div class="about-us-a">
+          <h2>ABOUT US</h2>
+          <p><strong>Vision</strong><br>
+
+          Establish the world's most innovative and influential educational ecosystematic community.</p>
+          <p><strong>Mission</strong><br>
+
+          Providing world-class education opportunities, facilitating meaningful discussions, and turning ideas into impactful initiatives for the future.</p>
+          <p><strong>Purpose</strong><br>
+
+          Build an inclusive educational ecosystematic community that seamlessly blends top-tier learning, collaborative engagement, and actionable initiatives.</p>
+          <button class="learn-more-btn" onclick="location.href='app/about/about.component.html'">Learn More</button>
+      </div>
+      
+      <!-- Right side -->
+      <div class="about-us-b">
+          <img src="app/assets/about.jpg" alt="About Us">
+      </div>
+    </div>
+
+<hr class="section-break">
+
+    <!-- SECTION 4: OUR STUDENTS -->
+    <div class="our-students-section">
+      <h2 class="our-students-header">OUR STUDENTS</h2>
+  
+      <div class="slideshow-container">
+          <div class="slideshow-inner">
+
+            <!-- Student No1 Info: Injinaash -->
+            <div class="slide">
+              <img class="studentpictures" src="app/assets/students/injii.jpg" alt="Injinaash">
+              <div class="student-description">
+                  <div class="student-name"><strong>Injinaash</strong></div>
+                  <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                  <div class="student-info">Hello, I'm Injinaash Ogoosambuu and I'm a student who is interested in making money. I love money.</div>
+              </div>
+            </div>
+
+            <!-- Student No1 Info: Injinaash -->
+            <div class="slide">
+              <img class="studentpictures" src="app/assets/students/injii.jpg" alt="Injinaash">
+              <div class="student-description">
+                  <div class="student-name"><strong>Injinaash</strong></div>
+                  <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                  <div class="student-info">Hello, I'm Injinaash Ogoosambuu and I'm a student who is interested in making money. I love money.</div>
+              </div>
+            </div>
+
+            <!-- Student No1 Info: Injinaash -->
+            <div class="slide">
+              <img class="studentpictures" src="app/assets/students/injii.jpg" alt="Injinaash">
+              <div class="student-description">
+                  <div class="student-name"><strong>Injinaash</strong></div>
+                  <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                  <div class="student-info">Hello, I'm Injinaash Ogoosambuu and I'm a student who is interested in making money. I love money.</div>
+              </div>
+             </div>
+            
+            <!-- Student No1 Info: Injinaash -->
+            <div class="slide">
+              <img class="studentpictures" src="app/assets/students/injii.jpg" alt="Injinaash">
+              <div class="student-description">
+                  <div class="student-name"><strong>Injinaash</strong></div>
+                  <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                  <div class="student-info">Hello, I'm Injinaash Ogoosambuu and I'm a student who is interested in making money. I love money.</div>
+              </div>
+            </div>
+
+
+            <div class="slide">
+              <img class="studentpictures" src="app/assets/students/injii.jpg" alt="Injinaash">
+              <div class="student-description">
+                  <div class="student-name"><strong>Injinaash</strong></div>
+                  <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                  <div class="student-info">Hello, I'm Injinaash Ogoosambuu and I'm a student who is interested in making money. I love money.</div>
+              </div>
+          </div>
+           
+              
+      </div>
+  </div>
+
+  
+      <button class="learn-more-button" onclick="location.href='app/about/about.component.html'">Learn More</button>
+  </div>
+ 
+
+    <!-- SECTION 5: APPLICATION PORTAL -->
+    <div class="spring-semester-section">
+      <div class="left-side">
+          <h2 class="spring-semester-header">APPLY TO OUR SPRING SEMESTER</h2>
+          <p class="spring-semester-description">Become one of the few selected students for our Spring Semester 2024!</p>
+          <a href="app/programs/programs.component.html" class="learn-more-link">Learn More</a>
+      </div>
+      <div class="right-side">
+          <a href="app/resources/resources.component.html" class="apply-now-button">Apply Now!</a>
+      </div>
+    </div>
+
+    <hr class="section-break">
+
+    <!-- SECTION 6: Feedback Section -->
+    <div class="feedback-section">
+      <h2 class="feedback-header">FEEDBACK</h2>
+      
+      <div class="review-carousel">
+          <div class="arrow left-arrow">&lt;</div> <!-- Left arrow -->
+          
+          <div class="review-container">
+              <div class="review-box active">
+                  <p class="review-title">Review</p>
+                  <p class="review-comment">"This is an amazing platform for learning and growth!"</p>
+                  <div class="reviewer-info">
+                      <img src="app/assets/users/users.png" alt="Reviewer 1" class="reviewer-picture">
+                      <span class="reviewer-name">John Doe</span>
+                  </div>
+              </div>
+              <div class="review-box">
+                  <p class="review-title">Review</p>
+                  <p class="review-comment">"I've had a great experience with the program."</p>
+                  <div class="reviewer-info">
+                      <img src="app/assets/users/users.png" alt="Reviewer 2" class="reviewer-picture">
+                      <span class="reviewer-name">Jane Smith</span>
+                  </div>
+              </div>
+              <div class="review-box">
+                  <p class="review-title">Review</p>
+                  <p class="review-comment">"Highly recommend for anyone interested in the subject."</p>
+                  <div class="reviewer-info">
+                      <img src="app/assets/users/users.png" alt="Reviewer 3" class="reviewer-picture">
+                      <span class="reviewer-name">Alice Johnson</span>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="arrow right-arrow">&gt;</div> <!-- Right arrow -->
+      </div>
+      
+      <a href="#" class="submit-feedback-link">-- Submit a Feedback --</a>
+      
+</div>
+
+    <!-- SECTION 7: Footer Menu Section -->
+  
+<div class="footer-menu">
+  <div class="footer-column">
+      <h3 class="footer-header">About Us</h3>
+      <button onclick="location.href='app/about/about.component.html'">Our Story</button>
+      <button onclick="location.href='app/about/about.component.html'">Our Team</button>
+      <button onclick="location.href='app/about/about.component.html'">Students</button>
+      <button onclick="location.href='app/about/about.component.html'">Impact & Achievements</button>
+  </div>
+  <div class="footer-column">
+      <h3 class="footer-header">Programs</h3>
+      <button onclick="location.href='app/programs/programs.component.html'">GOBISCHOLARS Academy</button>
+      <button onclick="location.href='app/programs/programs.component.html'">Activities</button>
+      <button onclick="location.href='app/programs/programs.component.html'">Mongolia Education Forum</button>
+      <button onclick="location.href='app/programs/programs.component.html'">Think Tank</button>
+  </div>
+  <div class="footer-column">
+      <h3 class="footer-header">Resources</h3>
+      <button onclick="location.href='app/resources/resources.component.html'">Students Guides</button>
+      <button onclick="location.href='app/resources/resources.component.html'">Research & Publications</button>
+      <button onclick="location.href='app/resources/resources.component.html'">Tools</button>
+  </div>
+  <div class="footer-column">
+      <h3 class="footer-header">Get Involved</h3>
+      <button onclick="location.href='app/getinvolved/getinvolved.component.html'">Join Our Team</button>
+      <button onclick="location.href='app/getinvolved/getinvolved.component.html'">Donate & Support</button>
+      <button onclick="location.href='app/getinvolved/getinvolved.component.html'">Partnership Opportunities</button>
+  </div>
+</div>
+
+
+    <!-- SECTION 8: FOOTER END-->
+  <div class="footer-end">
+      <!--Copyright Text -->
+        <div class="footer-end-column">
+            <p class="copyright-text">Copyright &copy; 2024 The President and Fellows of GOBISCHOLARS</p>
+        </div>
+      
+        <div class="footer-end-column">
+            <img src="app/assets/logo.png" alt="Logo" class="footer-logo">
+        </div>
+
+        <!--Social Media Icons -->
+        <div class="footer-end-column social-media-icons">
+            <a href="https://www.google.com/maps?q=GOBI+Scholars,+17042+Ulaanbaatar,+Mongolia&hl=en&fbclid=IwY2xjawF_76ZleHRuA2FlbQIxMAABHW9Xkoyae8wjHZ2xZF2U7EYXYQC5kG9PjHspgAEqVgtqGwgqp9c4E4Cf7w_aem_-pMiw8F2Z-WEXKcKjsJx-g" target="_blank">
+              <img src="app/assets/icons/location.png" alt="Location">
+           </a>
+            <a href="https://www.facebook.com/profile.php?id=61558703803366" target="_blank">
+                <img src="app/assets/icons/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/company/gobi-scholars/posts/?feedView=all" target="_blank">
+                <img src="app/assets/icons/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.youtube.com/@gobi.scholars" target="_blank">
+                <img src="app/assets/icons/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/gobi.scholars?fbclid=IwY2xjawF_8AhleHRuA2FlbQIxMAABHdVnwmtmj2u5oFHZbDljrm7a3j4zUIEfQWr-WcibtDxlkILDAIKSwM8Ezg_aem_BjGGUpvNYhByXbx4p-dPyw" target="_blank">
+                <img src="app/assets/icons/instagram.png" alt="Instagram">
+            </a>
+        </div>
+      </div>
+
+
+  
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+        const reviewBoxes = document.querySelectorAll('.review-box');
+        let currentIndex = 1;
+
+        function updateCarousel() {
+            reviewBoxes.forEach((box, index) => {
+                box.classList.remove('active');
+                if (index === currentIndex) {
+                    box.classList.add('active');
+                }
+            });
+        }
+
+        leftArrow.addEventListener('click', () => {
+            currentIndex = (currentIndex === 0) ? reviewBoxes.length - 1 : currentIndex - 1;
+            updateCarousel();
+        });
+
+        rightArrow.addEventListener('click', () => {
+            currentIndex = (currentIndex === reviewBoxes.length - 1) ? 0 : currentIndex + 1;
+            updateCarousel();
+        });
+
+        updateCarousel();
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const slideshowContainer = document.querySelector('.slideshow-inner');
+        const slides = document.querySelectorAll('.slide');
+        let scrollPosition = 0;
+
+        // Clone the slides for seamless looping
+        slides.forEach(slide => {
+            const clone = slide.cloneNode(true);
+            slideshowContainer.appendChild(clone);
+        });
+
+        function autoScroll() {
+            scrollPosition += 2;
+            slideshowContainer.style.transform = `translateX(-${scrollPosition}px)`;
+            if (scrollPosition >= slideshowContainer.scrollWidth / 2) {
+                scrollPosition = 0;
+                slideshowContainer.style.transform = `translateX(0)`;
+            }
+        }
+
+        setInterval(autoScroll, 50);
+    });
+  </script>
+
+  </body>
+  </html>
+
+
+

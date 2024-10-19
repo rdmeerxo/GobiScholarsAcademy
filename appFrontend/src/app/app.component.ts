@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,  // Add this line to mark it as standalone
+  standalone: true,  
+  imports: [RouterModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'your-app-name';
+  title = 'Gobi Scholars Academy';
 }
