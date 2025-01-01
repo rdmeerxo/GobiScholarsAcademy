@@ -1,0 +1,483 @@
+/*Keep background photo for all the page :)*/
+body {
+    position: relative;
+    background-image: url('/appFrontend/src/app/assets/main01.jpeg'); 
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-attachment: fixed;
+    background-size: 100% auto;
+    margin: 0; 
+    padding: 0;
+    height: 100%;
+
+}
+
+/* Add Red Overlay */
+.red-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(166, 51, 51);
+    opacity: 0.3; /* 60% opacity */
+    z-index: 0; /* Ensure it's behind the text */
+}
+
+/*HEADER PART with MENU AND LOGO*/
+/*Shadow at the top*/
+.gradient-shadow {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    right: 0; 
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+    z-index: 0; 
+}
+
+.header-section {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 1s ease-in-out; 
+}
+
+.header-container {
+
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px; 
+    z-index: 1000;
+    padding: 10px 50px;
+}
+
+.logo {
+    margin-top: 8px;
+    height: 22px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    gap: 65px; 
+    flex-grow: 1;
+    justify-content: center;
+    position: relative;
+}
+
+
+.menu-item {
+    position: relative; /* Required for dropdown positioning */
+}
+
+.menu-item button {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* No padding to look like plain text */
+    transition: color 0.3s ease;
+}
+
+.menu-item button:hover {
+    color: #ffffff; /* Lighten text on hover */
+}
+
+.menu-item a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 12px;
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+}
+
+.menu-item a:hover {
+    color: #ffffff; /* Lighten text on hover */
+}
+
+
+.search-button {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.search-button i {
+    font-size: 16px; 
+    color: white; 
+    transition: color 0.3s ease;
+}
+
+.search-button i:hover {
+    color: #f0f0f0; /* Lighten the color on hover */
+}
+
+
+/* Centered content */
+.center-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+    max-width: 80%;
+    width: 100%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+/* PART 02: JUMP SMALL MENU*/
+.jump-menu {
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px 50px;
+}
+
+.jump-menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #7a7a7a; /* Greyish color for non-active links */
+    text-decoration: none; /* No underline */
+    margin: 0 20px; /* Add space between links */
+    transition: color 0.3s ease; /* Smooth color change effect */
+}
+
+/* Active Link (Black text for About Us) */
+.jump-menu a.active {
+    color: black;
+    font-weight: bold;
+}
+
+/* Hover effect for all links */
+.jump-menu a:hover {
+    color: #333; /* Dark grey color on hover */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*PART 3: PROGRAM DESCRIPTION*/
+.programs-section {
+    background-color: white;
+    margin:0;
+    padding: 50px 70px;
+}
+
+.programs-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+}
+
+.programs-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/*Line Break after program section*/
+.line-break-programs01 {
+    height: 1px;
+    border: none;
+    background-color: rgb(182, 92, 92);
+    width: 100%; 
+}
+
+/* TOGGLES Section STYLES */
+.toggle-section {
+    background-color: white;
+    margin: 0;
+    border: none;
+    border-bottom: 0.1px solid #ccc
+}
+
+.toggle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 50px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns content vertically */
+    width: 80%; /* Take up 80% of the width */
+}
+
+/* Header Text */
+.toggle-header h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.toggle-header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center; /* Center the toggle button horizontally */
+    align-items: center; /* Center the toggle button vertically */
+    width: 10%; /* Take up 20% of the width */
+}
+
+/* Toggle Button */
+.toggle-button {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+
+
+.toggle-content {
+    display: none;
+    overflow: hidden; 
+    height: 0;
+    margin-top: 0px;
+    background-color: #f9f9f9;
+    transition: height 0.5s ease; 
+}
+
+.toggle-content.show {
+    display: block;
+    height: auto;
+    max-height: 1000px;
+}
+
+.toggle-button i {
+    transition: transform 0.3s ease;
+}
+
+.toggle-button.open i {
+    transform: rotate(180deg);
+}
+
+/* Hover Effects */
+.toggle-button:hover {
+    transform: rotate(180deg); /* Rotate button when hovered */
+} 
+
+/*PART 04: GOBI SCHOLARS: SUmmer Fellowship & Scholars Academy*/
+/* Gobi Scholars Inner Content Layout */
+.gobi-scholars-inner {
+    display: flex;
+    justify-content:center;
+    background-color: rgb(160, 43, 43); /* Red background as per request */
+    padding: 60px 20px;
+}
+
+/* Content Column for Left and Right */
+.content-column {
+    width: 45%; /* Make both columns equal width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    color: white;
+}
+
+/* Image Styles */
+.content-column img {
+    width: 100%;
+    max-width: 250px; 
+    height: auto;
+    margin-bottom: 0px;
+    border-radius: 20px;
+}
+
+/* Title Styles */
+.content-column h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Description Text Styles */
+.content-column p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    max-width: 250px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Learn More Button Styles */
+.content-column .learn-more {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.content-column .learn-more:hover {
+    color: #f0f0f0; /* Lighten the color on hover */
+}
+
+/*Coming Soon part for toggles*/
+/* Common Styles for Coming Soon Sections */
+.coming-soon-inner {
+    background-color: rgb(160, 43, 43); /* Red background */
+    color: white;
+    padding: 60px 20px 80px 20px;
+    text-align: center;
+}
+
+/* Coming Soon Title */
+.coming-soon-inner h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Text */
+.coming-soon-inner p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the text */
+}
+
+
+
+/*SECTION 7: MAILING LIST */
+
+.email-signup-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    height: 70vh;
+    justify-content: center;
+    
+}
+
+
+.email-button {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 80px 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: normal;
+    border-radius: 50px;
+    border-width: 1px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.email-input {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: black;
+    margin: auto;
+}
+
+.email-header {
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.email-paragraph {
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+
+/* SECTION 8: PAGE END | SOCIAL ACCOUNTS */
+.footer-end {
+    margin-top: 0px;
+    background-color: black;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.social-media-icons {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.social-media-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    filter: grayscale(100%);
+    opacity: 0.7;
+
+
+}
+
+.social-media-icons a:hover img {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+

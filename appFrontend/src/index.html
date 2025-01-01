@@ -5,301 +5,492 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>Gobi Scholars Academy</title>
 </head>
 
 <body>
 
-   
+    <!--PART 1: Contains main menu and Logo-->
+        <div class="header-section">
+            <!-- Gradient Shadow -->
+            <div class="gradient-shadow"></div>
 
-  <!--PART 1: Contains main menu and vision statement.-->
-    <div class="header-section">
-      <!-- Gradient Shadow -->
-      <div class="gradient-shadow"></div>
+            <!--HEADER-->
+            <div class="header-container">
+                <a href="index.html">
+                    <img src="app/assets/Logo.png" alt="GOBISCHOLARS" class="logo">
+                </a>
 
-      <!--HEADER-->
-      <div class="header-container">
-        <a href="index.html">
-          <img src="app/assets/Logo.png" alt="GOBISCHOLARS" class="logo">
-        </a>
+                <div class="menu">
+                        <!-- About Us Dropdown -->
+                        <div class="menu-item dropdown">
+                            <button onclick="location.href='app/about/about.component.html'">About Us</button>
+                            <div class="dropdown-content">
+                                <a href="app/about/about.component.html">Our Story</a>
+                                <a href="app/about/about.component.html">Our Team</a>
+                                <a href="app/about/about.component.html">Students</a>
+                                <a href="app/about/about.component.html">Impact & Achievements</a>
+                            </div>
+                        </div>
 
-        <div class="menu">
-          <!-- About Us Dropdown -->
-          <div class="menu-item dropdown">
-              <button onclick="location.href='app/about/about.component.html'">About Us</button>
-              <div class="dropdown-content">
-                  <a href="app/about/about.component.html">Our Story</a>
-                  <a href="app/about/about.component.html">Our Team</a>
-                  <a href="app/about/about.component.html">Students</a>
-                  <a href="app/about/about.component.html">Impact & Achievements</a>
-              </div>
-          </div>
+                        <!-- Programs Dropdown -->
+                        <div class="menu-item">
+                            <a href="app/programs/programs.component.html">Programs</a>
+                        </div>
 
-          <!-- Programs Dropdown -->
-          <div class="menu-item">
-            <a href="app/programs/programs.component.html">Programs</a>
-        </div>
+                        <!-- Resources Dropdown -->
+                        <div class="menu-item dropdown">
+                            <button onclick="location.href='app/resources/resources.component.html'">Resources</button>
+                            <div class="dropdown-content">
+                                <a href="app/resources/resources.component.html">Student Guides</a>
+                                <a href="app/resources/resources.component.html">Research & Publications</a>
+                                <a href="app/resources/resources.component.html">Tools</a>
+                            </div>
+                        </div>
 
-          <!-- Resources Dropdown -->
-          <div class="menu-item dropdown">
-              <button onclick="location.href='app/resources/resources.component.html'">Resources</button>
-              <div class="dropdown-content">
-                  <a href="app/resources/resources.component.html">Student Guides</a>
-                  <a href="app/resources/resources.component.html">Research & Publications</a>
-                  <a href="app/resources/resources.component.html">Tools</a>
-              </div>
-          </div>
+                        <!-- Get Involved Dropdown -->
+                        <div class="menu-item dropdown">
+                            <button onclick="location.href='app/get-involved/get-involved.component.html'">Get Involved</button>
+                            <div class="dropdown-content">
+                                <a href="app/get-involved/get-involved.component.html">Join Our Team</a>
+                                <a href="app/get-involved/get-involved.component.html">Donate & Support</a>
+                                <a href="app/get-involved/get-involved.component.html">Partnership Opportunities</a>
+                            </div>
+                        </div>
+                </div>
 
-          <!-- Get Involved Dropdown -->
-          <div class="menu-item dropdown">
-              <button onclick="location.href='app/get-involved/get-involved.component.html'">Get Involved</button>
-              <div class="dropdown-content">
-                  <a href="app/get-involved/get-involved.component.html">Join Our Team</a>
-                  <a href="app/get-involved/get-involved.component.html">Donate & Support</a>
-                  <a href="app/get-involved/get-involved.component.html">Partnership Opportunities</a>
-              </div>
-          </div>
-
-          <!-- Search Button -->
-              <div class="menu-item">
-                <a href="#search">Search</a>
+                <!-- Search Button -->
+                <div class="menu-item search button">
+                    <a href="#search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
             </div>
 
+            <!--BIG LOGO ON MAIN BACKGROUND-->
+            <div class="center-content">
+                <img src="app/assets/Logo.png" alt="GOBISCHOLARS" class="center-logo">
+            </div>
         </div>
-      </div>
 
+    <!--PART 02 MISSION STATAMENT-->
+        <div class="second-part">
+            <div class="vertical-line"></div>
+            <div class="second-part-content">
+                <h1>Building Pathways to Excellence in Education.</h1>
+                <p>Join us in shaping Mongolia's future through innovation, empowerment, and opportunity.</p>
+            </div>
+        </div>       
+                
 
-    <!--CENTER CONTENT-->
-    <div class="center-content">
-      <img src="app/assets/Logo.png" alt="GOBISCHOLARS" class="center-logo">
-          <p>Gobi Scholars is a dynamic educational platform dedicated to empowering students
-             by providing world-class learning opportunities, fostering meaningful connections, 
-             and turning ideas into impactful initiatives.</p>
-    </div>
-  </div>
+    <!--PART 03: ABOUT US IN TWO SENTENCE-->
+        <div class="second-section">
+            <h1 class="section-header">GOBISCHOLARS</h1>
+            <p class="section-paragraph">
+                Gobischolars is a dynamic education-focused NGO working to transform lives through learning. Our mission is
+                simple: to empower the next generation of leaders, thinkers, and innovators. With initiatives like personalized
+                college prep, groundbreaking research, and international fellowships, we're creating a global community of 
+                changemakers.
+            </p>
+        </div>
 
+    <!--PART 04: OUR STUDENTS-->
 
-
-    <!-- SECTION 2: NEWS PART -->
-
-  <div class="news-section">
-      <h2 class="news-header">NEWS</h2>
-      <div class="recent-news">
-          <div class="news-box" onclick="location.href='app/news/news.component.html'">
-              <img src="app/assets/article1.jpg" alt="News 1">
-              <h3>Bootcamp 2024</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercise ullamco</p>
-          </div>
-
-          <div class="news-box" onclick="location.href='app/news/news.component.html'">
-              <img src="app/assets/article1.jpg" alt="News 2">
-              <h3>Bootcamp 2024</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercise ullamco</p>
-          </div>
-
-          <div class="news-box" onclick="location.href='app/news/news.component.html'">
-              <img src="app/assets/article1.jpg" alt="News 3">
-              <h3>Bootcamp 2024</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercise ullamco</p>
-          </div>
-      </div>
-      <button class="read-more-btn" onclick="location.href='app/news/news.component.html'">Read More</button>
-  </div>
-
-  <hr class="section-break">
-
-    <!-- SECTION 3: About Us Part -->
-    <div class="about-us-section">
-      <!-- left side -->
-      <div class="about-us-a">
-          <h2>ABOUT US</h2>
-          <p><strong>Vision</strong><br>
-
-          Establish the world's most innovative and influential educational ecosystematic community.</p>
-          <p><strong>Mission</strong><br>
-
-          Providing world-class education opportunities, facilitating meaningful discussions, and turning ideas into impactful initiatives for the future.</p>
-          <p><strong>Purpose</strong><br>
-
-          Build an inclusive educational ecosystematic community that seamlessly blends top-tier learning, collaborative engagement, and actionable initiatives.</p>
-          <button class="learn-more-btn" onclick="location.href='app/about/about.component.html'">Learn More</button>
-      </div>
-      
-      <!-- Right side -->
-      <div class="about-us-b">
-          <img src="app/assets/about.jpg" alt="About Us">
-      </div>
-    </div>
-
-<hr class="section-break">
-
-    <!-- SECTION 4: OUR STUDENTS -->
     <div class="our-students-section">
-      <h2 class="our-students-header">OUR STUDENTS</h2>
+        <h2 class="our-students-header">Our Students</h2>
+        <p>Every year, Gobischolars selects 12 talented and driven high school students to join our comprehensive college preparation program.
+            Through 100% financial aid, we provide these students with personalized guidance, mentorship, and resources to navigate the college application process and achieve their academic dreams.
+        </p>
+        <p><span>Meet our students and discover their inspiring journeys.</span></p>
+    
+        <div class="slideshow-container">
+            <div class="slideshow-inner">
   
-      <div class="slideshow-container">
-          <div class="slideshow-inner">
-
-            <!-- Student No1 Info: Injinaash -->
-            <div class="slide">
-              <img class="studentpictures" src="app/assets/students/injii.jpg" alt="Injinaash">
-              <div class="student-description">
-                  <div class="student-name"><strong>Injinaash</strong></div>
-                  <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
-                  <div class="student-info">Hello, I'm Injinaash Ogoosambuu and I'm a student who is interested in making money. I love money.</div>
+              <!-- Student No1 Info: Undram -->
+              <div class="slide">
+                <img class="studentpictures" src="app/assets/students/undram.jpg" alt="Undram">
+                <div class="student-description">
+                    <div class="student-name"><strong>Undram U.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Wassup, I am a gap year student who recently graduated from the 84th public school...</span>
+                        <span class="full-info hidden">Wassup, I am a gap year student who recently graduated from the 84th public school. 
+                            I am a hopeless-romantic with a passion for humanity’s unification and debating. 
+                            You can find me debating with anyone on anything during my free time and 
+                            if I am not debating then I am probably reading some manga while debating with myself inside my head. 
+                            To relax, I like to compete with people or make some cosplay using EVA foam. 
+                            My favorite food is large quantities of food. If you meet me, we will debate and that is a fact.</span>
+                        <button class="read-more-btn">Read more</button>
+                    </div>
+                </div>
               </div>
-            </div>
-
-            <!-- Student No1 Info: Injinaash -->
-            <div class="slide">
-              <img class="studentpictures" src="app/assets/students/injii.jpg" alt="Injinaash">
-              <div class="student-description">
-                  <div class="student-name"><strong>Injinaash</strong></div>
-                  <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
-                  <div class="student-info">Hello, I'm Injinaash Ogoosambuu and I'm a student who is interested in making money. I love money.</div>
+  
+              <!-- Student No2 Info: Bolormaa -->
+              <div class="slide">
+                <img class="studentpictures" src="app/assets/students/bolormaa.jpg" alt="Bolormaa">
+                <div class="student-description">
+                    <div class="student-name"><strong>Bolormaa M.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for 
+                            the hexagons of the organic chemistry....</span>
+                        <span class="full-info hidden">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for 
+                            the hexagons of the organic chemistry. Being passionate in Chemistry, 
+                            I am also interested in providing quality education for Mongolian youth– future of our country! 
+                            I have led multiple projects on engineering education, and has impacted over a thousand students.
+                             Check out @young.engineers_org on IG if you want to be part of a spectacular community of future engineers. 
+                             Besides academics, I love walking, running, exercising, and trying out home-made hair masks with different ingredients.</span>
+                        <button class="read-more-btn">Read more</button>
+                    </div>
               </div>
-            </div>
-
-            <!-- Student No1 Info: Injinaash -->
-            <div class="slide">
-              <img class="studentpictures" src="app/assets/students/injii.jpg" alt="Injinaash">
-              <div class="student-description">
-                  <div class="student-name"><strong>Injinaash</strong></div>
-                  <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
-                  <div class="student-info">Hello, I'm Injinaash Ogoosambuu and I'm a student who is interested in making money. I love money.</div>
               </div>
-             </div>
-            
-            <!-- Student No1 Info: Injinaash -->
-            <div class="slide">
-              <img class="studentpictures" src="app/assets/students/injii.jpg" alt="Injinaash">
-              <div class="student-description">
-                  <div class="student-name"><strong>Injinaash</strong></div>
-                  <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
-                  <div class="student-info">Hello, I'm Injinaash Ogoosambuu and I'm a student who is interested in making money. I love money.</div>
-              </div>
-            </div>
-
-
-            <div class="slide">
-              <img class="studentpictures" src="app/assets/students/injii.jpg" alt="Injinaash">
-              <div class="student-description">
-                  <div class="student-name"><strong>Injinaash</strong></div>
-                  <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
-                  <div class="student-info">Hello, I'm Injinaash Ogoosambuu and I'm a student who is interested in making money. I love money.</div>
-              </div>
-          </div>
-           
+  
+              <!-- Student No3 Info: Orgilbayar -->
+              <div class="slide">
+                <img class="studentpictures" src="app/assets/students/orgilbayar.jpg" alt="Orgilbayar">
+                <div class="student-description">
+                    <div class="student-name"><strong>Orgilbayar S.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11...</span>
+                        <span class="full-info hidden">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar, 
+                            who loves exploring the magic of the universe. You can say that Interstellar sparked my passion to investigate physics 
+                            and beyond. I believe there are so many things to explore besides academics too. I am a combination of blue and color, 
+                            being a strong advocate of environmental sustainability and gardening. Just give me a shovel, I can plant a flower for you. 
+                            Fyodor Dostoevsky- my favorite novelist. But do not assume I'm emo. Nothing can change my perpetual mood- being happy.</span>
+                        <button class="read-more-btn">Read more</button>
+                    </div>
+                </div>
+               </div>
               
-      </div>
-  </div>
-
+              <!-- Student No4 Info: Enkh-Orchlon -->
+              <div class="slide">
+                <img class="studentpictures" src="app/assets/students/enkh-orchlon.jpg" alt="Enkh-Orchlon">
+                <div class="student-description">
+                    <div class="student-name"><strong>Enkh-Orchlon A.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration...</span>
+                        <span class="full-info hidden">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration. 
+                            I’m passionate about child development, children’s mental health, & psychology.  I love working with children, 
+                            especially toddlers & preschoolers, & I’m eager to teach parents how to better support their kids’ growth.
+                             As a compassionate listener, I find joy in making others feel seen, heard, & understood. In my free time, 
+                             I enjoy reading self-development books, listening to podcasts (Mel Robbins is a favorite), & writing poems, 
+                             photography, & dancing.</span>
+                        <button class="read-more-btn">Read more</button>
+                    </div>
+                </div>
+              </div>
   
-      <button class="learn-more-button" onclick="location.href='app/about/about.component.html'">Learn More</button>
-  </div>
- 
+              <!-- Student No5 Info: Goomaral -->
+              <div class="slide">
+                  <img class="studentpictures" src="app/assets/students/goomaral.png" alt="Goomaral">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Goomaral A.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">Greetings! I am a high school senior at Sant school, 
+                            aspiring to further delve into Philosophy...</span>
+                        <span class="full-info hidden">Greetings! I am a high school senior at Sant school, 
+                            aspiring to further delve into Philosophy. 
+                            As for academics, I have been involved in several debate tournaments and writing 
+                            roles such as article writer at Sant Journal. For fun, I indulge in tedious activities:
+                             Sewing, crocheting, writing or yapping. I am also an enthusiastic reader, often reading 
+                            classic literature, especially Jane Austen!</span>
+                        <button class="read-more-btn">Read more</button>
+                      </div>
+                  </div>
+                </div>
+  
+                <!-- Student No6 Info: Javkhlantugs -->
+              <div class="slide">
+                  <img class="studentpictures" src="app/assets/students/javkhlantugs.png" alt="Javkhlantugs">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Javkhlantugs S.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">I'm a gap year student from Shine Mongol Harumafuji High School, 
+                            gearing up to major in physics and computer science...</span>
+                        <span class="full-info hidden">I'm a gap year student from Shine Mongol Harumafuji High School, 
+                            gearing up to major in physics and computer science. Curiosity and adventure 
+                            fuel me—I’m always down for fun, crazy activities and thrive in competitive settings. 
+                            I love volleyball, skiing, and riding motorbikes, and I'm all about making memories with friends. 
+                            With experience in leadership and a passion for community building, I'm excited to take on college in the U.S., 
+                            where I can dive into new challenges, 
+                            both academic and recreational, and make the most out of every moment.</span>
+                        <button class="read-more-btn">Read more</button>
+                        </div>
 
-    <!-- SECTION 5: APPLICATION PORTAL -->
-    <div class="spring-semester-section">
-      <div class="left-side">
-          <h2 class="spring-semester-header">APPLY TO OUR SPRING SEMESTER</h2>
-          <p class="spring-semester-description">Become one of the few selected students for our Spring Semester 2024!</p>
-          <a href="app/programs/programs.component.html" class="learn-more-link">Learn More</a>
-      </div>
-      <div class="right-side">
-          <a href="app/resources/resources.component.html" class="apply-now-button">Apply Now!</a>
-      </div>
+                  </div>
+                </div>
+  
+                <!-- Student No7Info: Mungunzul -->
+              <div class="slide">
+                  <img class="studentpictures" src="app/assets/students/mungunzul.png" alt="mungunzul">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Mungunzul U.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">Mungunzul Ulziidelger is an ambitious high school senior from the smallest province of Mongolia...</span>
+                        <span class="full-info hidden">Mungunzul Ulziidelger is an ambitious high school senior from the smallest province of Mongolia, 
+                            currently on a gap year filled with enriching experiences. Passionate about environmental science, 
+                            she has taken the initiative as a youth climate activist, leading projects that inspire others to engage in sustainability.
+                             During her gap year, Mungunzul has honed her skills through various part-time jobs, gaining independence and
+                              preparing for her future studies. </span>
+                        <button class="read-more-btn">Read more</button>
+                        </div>
+                  </div>
+                </div>
+  
+                <!-- Student No8 Info: Ryenchinsonom -->
+              <div class="slide">
+                  <img class="studentpictures" src="app/assets/students/ryenchinsonom.png" alt="Ryenchinsonom">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Ryenchinsonom Kh.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen interest 
+                            in Economics and Computer Science...</span>
+                        <span class="full-info hidden">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen interest 
+                            in Economics and Computer Science. I graduated from Khumuun Complex High School, 
+                            located in Tuv, Zuunmod. I enjoy managing resources and balancing my life. 
+                            Outside of academics, I love hiking, playing chess and trading.</span>
+                        <button class="read-more-btn">Read more</button>
+                        </div>
+                  </div>
+                </div>
+             
+                <!-- Student No1 Info: Undram -->
+              <div class="slide">
+                <img class="studentpictures" src="app/assets/students/undram.jpg" alt="Undram">
+                <div class="student-description">
+                    <div class="student-name"><strong>Undram U.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Wassup, I am a gap year student who recently graduated from the 84th public school...</span>
+                        <span class="full-info hidden">Wassup, I am a gap year student who recently graduated from the 84th public school. 
+                            I am a hopeless-romantic with a passion for humanity’s unification and debating. 
+                            You can find me debating with anyone on anything during my free time and 
+                            if I am not debating then I am probably reading some manga while debating with myself inside my head. 
+                            To relax, I like to compete with people or make some cosplay using EVA foam. 
+                            My favorite food is large quantities of food. If you meet me, we will debate and that is a fact.</span>
+                        <button class="read-more-btn">Read more</button>
+                    </div>
+                </div>
+              </div>
+  
+              <!-- Student No2 Info: Bolormaa -->
+              <div class="slide">
+                <img class="studentpictures" src="app/assets/students/bolormaa.jpg" alt="Bolormaa">
+                <div class="student-description">
+                    <div class="student-name"><strong>Bolormaa M.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for 
+                            the hexagons of the organic chemistry....</span>
+                        <span class="full-info hidden">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for 
+                            the hexagons of the organic chemistry. Being passionate in Chemistry, 
+                            I am also interested in providing quality education for Mongolian youth– future of our country! 
+                            I have led multiple projects on engineering education, and has impacted over a thousand students.
+                             Check out @young.engineers_org on IG if you want to be part of a spectacular community of future engineers. 
+                             Besides academics, I love walking, running, exercising, and trying out home-made hair masks with different ingredients.</span>
+                        <button class="read-more-btn">Read more</button>
+                    </div>
+              </div>
+              </div>
+  
+              <!-- Student No3 Info: Orgilbayar -->
+              <div class="slide">
+                <img class="studentpictures" src="app/assets/students/orgilbayar.jpg" alt="Orgilbayar">
+                <div class="student-description">
+                    <div class="student-name"><strong>Orgilbayar S.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11...</span>
+                        <span class="full-info hidden">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar, 
+                            who loves exploring the magic of the universe. You can say that Interstellar sparked my passion to investigate physics 
+                            and beyond. I believe there are so many things to explore besides academics too. I am a combination of blue and color, 
+                            being a strong advocate of environmental sustainability and gardening. Just give me a shovel, I can plant a flower for you. 
+                            Fyodor Dostoevsky- my favorite novelist. But do not assume I'm emo. Nothing can change my perpetual mood- being happy.</span>
+                        <button class="read-more-btn">Read more</button>
+                    </div>
+                </div>
+               </div>
+              
+              <!-- Student No4 Info: Enkh-Orchlon -->
+              <div class="slide">
+                <img class="studentpictures" src="app/assets/students/enkh-orchlon.jpg" alt="Enkh-Orchlon">
+                <div class="student-description">
+                    <div class="student-name"><strong>Enkh-Orchlon A.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration...</span>
+                        <span class="full-info hidden">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration. 
+                            I’m passionate about child development, children’s mental health, & psychology.  I love working with children, 
+                            especially toddlers & preschoolers, & I’m eager to teach parents how to better support their kids’ growth.
+                             As a compassionate listener, I find joy in making others feel seen, heard, & understood. In my free time, 
+                             I enjoy reading self-development books, listening to podcasts (Mel Robbins is a favorite), & writing poems, 
+                             photography, & dancing.</span>
+                        <button class="read-more-btn">Read more</button>
+                    </div>
+                </div>
+              </div>
+  
+              <!-- Student No5 Info: Goomaral -->
+              <div class="slide">
+                  <img class="studentpictures" src="app/assets/students/goomaral.png" alt="Goomaral">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Goomaral A.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">Greetings! I am a high school senior at Sant school, 
+                            aspiring to further delve into Philosophy...</span>
+                        <span class="full-info hidden">Greetings! I am a high school senior at Sant school, 
+                            aspiring to further delve into Philosophy. 
+                            As for academics, I have been involved in several debate tournaments and writing 
+                            roles such as article writer at Sant Journal. For fun, I indulge in tedious activities:
+                             Sewing, crocheting, writing or yapping. I am also an enthusiastic reader, often reading 
+                            classic literature, especially Jane Austen!</span>
+                        <button class="read-more-btn">Read more</button>
+                      </div>
+                  </div>
+                </div>
+  
+                <!-- Student No6 Info: Javkhlantugs -->
+              <div class="slide">
+                  <img class="studentpictures" src="app/assets/students/javkhlantugs.png" alt="Javkhlantugs">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Javkhlantugs S.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">I'm a gap year student from Shine Mongol Harumafuji High School, 
+                            gearing up to major in physics and computer science...</span>
+                        <span class="full-info hidden">I'm a gap year student from Shine Mongol Harumafuji High School, 
+                            gearing up to major in physics and computer science. Curiosity and adventure 
+                            fuel me—I’m always down for fun, crazy activities and thrive in competitive settings. 
+                            I love volleyball, skiing, and riding motorbikes, and I'm all about making memories with friends. 
+                            With experience in leadership and a passion for community building, I'm excited to take on college in the U.S., 
+                            where I can dive into new challenges, 
+                            both academic and recreational, and make the most out of every moment.</span>
+                        <button class="read-more-btn">Read more</button>
+                        </div>
+
+                  </div>
+                </div>
+  
+                <!-- Student No7Info: Mungunzul -->
+              <div class="slide">
+                  <img class="studentpictures" src="app/assets/students/mungunzul.png" alt="mungunzul">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Mungunzul U.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">Mungunzul Ulziidelger is an ambitious high school senior from the smallest province of Mongolia...</span>
+                        <span class="full-info hidden">Mungunzul Ulziidelger is an ambitious high school senior from the smallest province of Mongolia, 
+                            currently on a gap year filled with enriching experiences. Passionate about environmental science, 
+                            she has taken the initiative as a youth climate activist, leading projects that inspire others to engage in sustainability.
+                             During her gap year, Mungunzul has honed her skills through various part-time jobs, gaining independence and
+                              preparing for her future studies. </span>
+                        <button class="read-more-btn">Read more</button>
+                        </div>
+                  </div>
+                </div>
+  
+                <!-- Student No8 Info: Ryenchinsonom -->
+              <div class="slide">
+                  <img class="studentpictures" src="app/assets/students/ryenchinsonom.png" alt="Ryenchinsonom">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Ryenchinsonom Kh.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen interest 
+                            in Economics and Computer Science...</span>
+                        <span class="full-info hidden">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen interest 
+                            in Economics and Computer Science. I graduated from Khumuun Complex High School, 
+                            located in Tuv, Zuunmod. I enjoy managing resources and balancing my life. 
+                            Outside of academics, I love hiking, playing chess and trading.</span>
+                        <button class="read-more-btn">Read more</button>
+                        </div>
+                  </div>
+                </div>
+                
+        </div>
+    </div>
+  
+    
+        <button class="learn-more-button" onclick="location.href='app/about/about.component.html'">Learn More!</button>
+    </div>
+   
+    <!--PART 05: INJII'S PART-->
+    <div class="mr-nash-section">
+        <div class="mr-nash-left">
+            <img src="app/assets/students/injinaash.png" alt="Injiinash" class="injiinash-image">
+        </div>
+
+        <div class="mr-nash-right">
+            <p class="mr-nash-paragraph1">
+                "Education isn't just preparation for the future -- it's the foundation for shaping it. At Gobischolars, we strive to inspire and empower individuals to realize their potential."
+            </p>
+            <p class="mr-nash-paragraph2">
+                Our mission is more than guiding students to prestigious universities; it's about reshaping the future of education in Mongolia and creating lasting change.
+            </p>
+            <p class="mr-nash-paragraph3">
+                Injinaash O.<br>
+                CEO of Gobischolars
+            </p>
+        </div>
+    </div>
+
+
+    <!-- PART 06:  NEWS PART -->
+
+    <hr class="section-break">
+
+    <div class="news-section">
+        <h2 class="news-header">NEWS</h2>
+        <div class="recent-news">
+            <div class="news-box" onclick="location.href='app/news/news.component.html'">
+                <img src="app/assets/article1.jpg" alt="News 1">
+                <h3>Bootcamp 2024</h3>
+                <p>We’re working on exciting announcements. 
+                    Check back for news on upcoming courses, events, and academy milestones.</p>
+            </div>
+
+            <div class="news-box" onclick="location.href='app/news/news.component.html'">
+                <img src="app/assets/article1.jpg" alt="News 2">
+                <h3>Bootcamp 2024</h3>
+                <p>We’re working on exciting announcements. 
+                    Check back for news on upcoming courses, events, and academy milestones.</p>
+            </div>
+
+            <div class="news-box" onclick="location.href='app/news/news.component.html'">
+                <img src="app/assets/article1.jpg" alt="News 3">
+                <h3>Bootcamp 2024</h3>
+                <p>We’re working on exciting announcements. 
+                    Check back for news on upcoming courses, events, and academy milestones.</p>
+            </div>
+        </div>
+        <button class="news-read-more-btn" onclick="location.href='app/news/news.component.html'">More</button>
     </div>
 
     <hr class="section-break">
 
-    <!-- SECTION 6: Feedback Section -->
-    <div class="feedback-section">
-      <h2 class="feedback-header">FEEDBACK</h2>
-      
-      <div class="review-carousel">
-          <div class="arrow left-arrow">&lt;</div> <!-- Left arrow -->
-          
-          <div class="review-container">
-              <div class="review-box active">
-                  <p class="review-title">Review</p>
-                  <p class="review-comment">"This is an amazing platform for learning and growth!"</p>
-                  <div class="reviewer-info">
-                      <img src="app/assets/users/users.png" alt="Reviewer 1" class="reviewer-picture">
-                      <span class="reviewer-name">John Doe</span>
-                  </div>
-              </div>
-              <div class="review-box">
-                  <p class="review-title">Review</p>
-                  <p class="review-comment">"I've had a great experience with the program."</p>
-                  <div class="reviewer-info">
-                      <img src="app/assets/users/users.png" alt="Reviewer 2" class="reviewer-picture">
-                      <span class="reviewer-name">Jane Smith</span>
-                  </div>
-              </div>
-              <div class="review-box">
-                  <p class="review-title">Review</p>
-                  <p class="review-comment">"Highly recommend for anyone interested in the subject."</p>
-                  <div class="reviewer-info">
-                      <img src="app/assets/users/users.png" alt="Reviewer 3" class="reviewer-picture">
-                      <span class="reviewer-name">Alice Johnson</span>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="arrow right-arrow">&gt;</div> <!-- Right arrow -->
-      </div>
-      
-      <a href="#" class="submit-feedback-link">-- Submit a Feedback --</a>
-      
-</div>
 
-    <!-- SECTION 7: Footer Menu Section -->
-  
-<div class="footer-menu">
-  <div class="footer-column">
-      <h3 class="footer-header">About Us</h3>
-      <button onclick="location.href='app/about/about.component.html'">Our Story</button>
-      <button onclick="location.href='app/about/about.component.html'">Our Team</button>
-      <button onclick="location.href='app/about/about.component.html'">Students</button>
-      <button onclick="location.href='app/about/about.component.html'">Impact & Achievements</button>
-  </div>
-  <div class="footer-column">
-      <h3 class="footer-header">Programs</h3>
-      <button onclick="location.href='app/programs/programs.component.html'">GOBISCHOLARS Academy</button>
-      <button onclick="location.href='app/programs/programs.component.html'">Activities</button>
-      <button onclick="location.href='app/programs/programs.component.html'">Mongolia Education Forum</button>
-      <button onclick="location.href='app/programs/programs.component.html'">Think Tank</button>
-  </div>
-  <div class="footer-column">
-      <h3 class="footer-header">Resources</h3>
-      <button onclick="location.href='app/resources/resources.component.html'">Students Guides</button>
-      <button onclick="location.href='app/resources/resources.component.html'">Research & Publications</button>
-      <button onclick="location.href='app/resources/resources.component.html'">Tools</button>
-  </div>
-  <div class="footer-column">
-      <h3 class="footer-header">Get Involved</h3>
-      <button onclick="location.href='app/getinvolved/getinvolved.component.html'">Join Our Team</button>
-      <button onclick="location.href='app/getinvolved/getinvolved.component.html'">Donate & Support</button>
-      <button onclick="location.href='app/getinvolved/getinvolved.component.html'">Partnership Opportunities</button>
-  </div>
-</div>
+    <!--PART 7: Mailing List Section-->
+    <div class="email-signup-section">
+        <button class="email-button" id="emailButton">WANT TO STAY IN THE LOOP?</button>
+        <input type="email" class="email-input" id="emailInput" placeholder="Enter your email" style="display:none;">
+        <h2 class="email-header">GOBISCHOLARS</h2>
+        <p class="email-paragraph">Education Without Limits.</p>
+    </div>
 
+
+    
 
     <!-- SECTION 8: FOOTER END-->
   <div class="footer-end">
-      <!--Copyright Text -->
-        <div class="footer-end-column">
-            <p class="copyright-text">Copyright &copy; 2024 The President and Fellows of GOBISCHOLARS</p>
-        </div>
-      
-        <div class="footer-end-column">
-            <img src="app/assets/logo.png" alt="Logo" class="footer-logo">
-        </div>
 
         <!--Social Media Icons -->
         <div class="footer-end-column social-media-icons">
@@ -322,39 +513,65 @@
       </div>
 
 
-  
+<!--JavaScripts kakakaka-->
 
-  <script>
+<script>
+    //Fade in first part
+    window.onload = function() {
+        const secondPart = document.querySelector('.second-part');
+        secondPart.style.opacity = 1; 
+    };
+    //script 1 ends here
+
+    //script 2: for Read More for our students part
     document.addEventListener('DOMContentLoaded', () => {
-        const leftArrow = document.querySelector('.left-arrow');
-        const rightArrow = document.querySelector('.right-arrow');
-        const reviewBoxes = document.querySelectorAll('.review-box');
-        let currentIndex = 1;
+    const readMoreButtons = document.querySelectorAll('.read-more-btn');
 
-        function updateCarousel() {
-            reviewBoxes.forEach((box, index) => {
-                box.classList.remove('active');
-                if (index === currentIndex) {
-                    box.classList.add('active');
-                }
-            });
-        }
+    readMoreButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const infoContainer = button.closest('.student-info'); // Get the parent container
+            const shortInfo = infoContainer.querySelector('.short-info'); // Short info
+            const fullInfo = infoContainer.querySelector('.full-info'); // Full info
 
-        leftArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex === 0) ? reviewBoxes.length - 1 : currentIndex - 1;
-            updateCarousel();
+            if (fullInfo.classList.contains('hidden')) {
+                fullInfo.classList.remove('hidden');
+                shortInfo.style.display = 'none';
+                button.textContent = 'Read less';
+            } else {
+                fullInfo.classList.add('hidden');
+                shortInfo.style.display = 'inline';
+                button.textContent = 'Read more';
+            }
         });
-
-        rightArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex === reviewBoxes.length - 1) ? 0 : currentIndex + 1;
-            updateCarousel();
-        });
-
-        updateCarousel();
     });
-  </script>
+});
 
-  <script>
+
+    //for mailing list script starts here
+    // Handle button text change and email input display
+    let emailButton = document.getElementById("emailButton");
+    let emailInput = document.getElementById("emailInput");
+    let buttonTextState = "initial"; // Track the state of the button text
+
+    emailButton.addEventListener("click", function() {
+        if (buttonTextState === "initial") {
+            // Change to "JOIN OUR MAILING LIST ->"
+            emailButton.innerHTML = "JOIN OUR MAILING LIST";
+            buttonTextState = "hover";
+        } else if (buttonTextState === "hover") {
+            // Change to "Email"
+            emailButton.innerHTML = "Email";
+            buttonTextState = "email";
+        } else if (buttonTextState === "email") {
+            // Show the email input field
+            emailInput.style.display = "block";
+            emailButton.style.display = "none"; // Hide the button after email is clicked
+            buttonTextState = "input"; // Update state to track input phase
+        }
+    });
+
+
+
     document.addEventListener('DOMContentLoaded', () => {
         const slideshowContainer = document.querySelector('.slideshow-inner');
         const slides = document.querySelectorAll('.slide');
@@ -377,8 +594,8 @@
 
         setInterval(autoScroll, 50);
     });
+    
   </script>
-
   </body>
   </html>
 

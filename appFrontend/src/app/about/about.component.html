@@ -1,1 +1,372 @@
-<p>about works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.component.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>About Us Page</title>
+</head>
+
+<body>
+
+    <!--PART 1: Contains main menu and Logo-->
+        <div class="header-section">
+            <!-- Gradient Shadow -->
+            <div class="gradient-shadow"></div>
+
+            <div class="red-overlay"></div> <!-- New red overlay -->
+
+            <!--HEADER-->
+            <div class="header-container">
+                <a href="/appFrontend/src/index.html">
+                    <img src="about.assets/Logo.png" alt="GOBISCHOLARS" class="logo">
+                </a>
+
+                <div class="menu">
+
+                        <div class="menu-item dropdown">
+                            <button onclick="location.href='/appFrontend/src/app/about/about.component.html'">About Us</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="/appFrontend/src/app/programs/programs.component.html">Programs</a>
+                        </div>
+
+                        <div class="menu-item dropdown">
+                            <button onclick="location.href='/appFrontend/src/app/resources/resources.component.html'">Resources</button>
+                        </div>
+
+                        <div class="menu-item dropdown">
+                            <button onclick="location.href='app/get-involved/get-involved.component.html'">Get Involved</button>
+                        </div>
+                </div>
+
+                <!-- Search Button -->
+                <div class="menu-item search button">
+                    <a href="#search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--main text O ON MAIN BACKGROUND-->
+            <div class="center-content">
+                <h1>About Us</h1>
+            </div>
+        </div>
+
+        <!--PART 02: Small Menu Part-->
+        <div class="jump-menu">
+            <a href="#about-us" class="active">About Us</a> / 
+            <a href="#our-story">Our Story</a> 
+            <a href="#our-team">Our Team</a> 
+            <a href="#students">Students</a>
+        </div>
+        
+        <!-- PART 03: ABOUT US PART -->
+        <div id="about-us">
+            <h2>About Us</h2>
+            <p>Gobischolars is a global education-driven initiative dedicated to transforming access to quality education. We empower students through individualized mentorship, connect aspiring scholars with prestigious global institutions, and lead the charge in advancing educational reforms through innovative programs. Our mission extends beyond borders, shaping future leaders and fostering a global exchange of knowledge and ideas.</p>
+        </div>
+
+        <!--PART 04: TEAM MESSAGE-->
+        <div class="about-image-section">
+            <div class="content">
+                <p>
+                    "We believe education is the most powerful tool to unlock potential, bridge divides, and create lasting impact. At Gobischolars, we are committed to shaping a future where every individual has the opportunity to learn, grow, and lead."
+                </p>
+                               
+                <div class="line-break"></div>
+    
+                <p class="team-signature">
+                    From Gobischolars Team
+                </p>
+            </div>
+        </div>
+
+        <!--PART 05: Mission Statement-->
+        <div class="mission-section">
+            <!-- Left Side: Text -->
+            <div class="mission-text">
+                <h2>Mission</h2>
+                <p>
+                    Providing world-class educational opportunities, facilitating meaningful discussions, and turning ideas into impactful initiatives for the future.
+                </p>
+            </div>
+            
+            <!-- Right Side: Image -->
+            <div class="mission-image">
+                <img src="about.assets/mission01.jpg" alt="Mission Image">
+            </div>
+        </div>
+
+        <div class="line-break-mission"></div>
+
+        <!--PART 06: Vision Statement-->
+        <div class="vision-section">
+            <!--Left side: image vision01.jpg-->
+            <div class="vision-image">
+                <img src="about.assets/vision01.jpg" alt="Vision Image">
+            </div>
+
+            <!--Rigth side: Text-->
+            <div class="vision-text">
+                <h2>Vision</h2>
+                <p>Providing world-class educational opportunities, facilitating meaningful discussions, and turning ideas into impactful initiatives for the future.</p>
+            </div>
+        </div>
+
+
+        <div class="line-break-vision"></div>
+
+        <!--PART 07: VALUES-->
+        <div class="values-section">
+            <h2 class="values-header">Values</h2>
+        
+            <!-- Text Containers -->
+            <div class="values-container">
+
+                <!-- 1st Container -->
+                <div class="value-box">
+                    <h3>Persistence</h3>
+                    <p>We pursue our passions, goals, and dreams persistently.</p>
+                </div>
+
+                <!-- 2nd Container -->
+                <div class="value-box">
+                    <h3>Community</h3>
+                    <p>We foster a sense of belonging and support, valuing collaboration and mutual respect.</p>
+                </div>
+
+                <!-- 3rd Container -->
+                <div class="value-box">
+                    <h3>Diversity</h3>
+                    <p>We celebrate and embrace the richness of diverse perspectives, backgrounds, and experiences.</p>
+                </div>
+
+                <!-- 4th Container -->
+                <div class="value-box">
+                    <h3>Integrity</h3>
+                    <p>We uphold honesty, transparency, and ethical conduct in all our interactions, building trust and credibility.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="line-break-values"></div>
+
+
+
+        <!--PART 08: OUR STORY-->
+        <div id="our-story" class="toggle-section">
+            <div class="toggle-header" onclick="toggleContent('our-story-content')">
+                <h2>Our Story</h2>
+                <div class="toggle-button">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            
+            <div id="our-story-content" class="toggle-content">
+                <div class="our-story-container">
+                    <!-- Left Side: Text -->
+                    <div class="our-story-text">
+                        <p>
+                            Growing up as a nomad in eastern Mongolia, Bayarjavkhlan (Jack) Bayanmunkh experienced the scarcity of 
+                            educational resources and guidance. Motivated by this experience, he co-founded Gobi Scholars to create a supportive 
+                            community of scholars committed to shaping Mongolia's future. Gobi Scholars connects ambitious Mongolian students 
+                            with top U.S. colleges and offers opportunities for U.S. students to teach in Mongolia, 
+                            bridging global knowledge with local needs. In addition to empowering students, 
+                            we organize educational forums to engage policymakers, raise awareness about the challenges facing Mongolia's 
+                            education system, and advocate for meaningful reforms. By uniting students, educators, and policymakers, 
+                            Gobi Scholars is dedicated to building a stronger, more innovative education system for Mongolia's future.
+                        </p>
+                    </div>
+            
+                    <!-- Right Side: Image -->
+                    <div class="our-story-image-container">
+                        <img src="about.assets/allabout01.jpg" alt="All Picture">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+       <!-- OUR TEAM SECTION -->
+        <div id="our-team" class="toggle-section">
+            <div class="toggle-header" onclick="toggleContent('our-team-content')">
+                <h2>Our Team</h2>
+                <div class="toggle-button">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div id="our-team-content" class="toggle-content">
+                <!-- Countdown and "Coming Soon" message here -->
+                <div id="countdown-container-team" class="countdown-center">
+                    <p id="coming-soon-team">Stay Tuned!</p>
+                    <p id="countdown-team"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- OUR STUDENTS SECTION -->
+        <div id="our-students" class="toggle-section">
+            <div class="toggle-header" onclick="toggleContent('our-students-content')">
+                <h2>Our Students</h2>
+                <div class="toggle-button">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div id="our-students-content" class="toggle-content">
+                <!-- Countdown and "Coming Soon" message here -->
+                <div id="countdown-container-students" class="countdown-center">
+                    <p id="coming-soon-students">Stay Tuned!</p>
+                    <p id="countdown-students"></p>
+                </div>
+            </div>
+        </div>
+
+        <!--PART 7: Mailing List Section-->
+        <div class="email-signup-section">
+            <button class="email-button" id="emailButton">WANT TO STAY IN THE LOOP?</button>
+            <input type="email" class="email-input" id="emailInput" placeholder="Enter your email" style="display:none;">
+            <h2 class="email-header">GOBISCHOLARS</h2>
+            <p class="email-paragraph">Education Without Limits.</p>
+        </div>
+
+
+    
+
+        <!-- SECTION 8: FOOTER END-->
+        <div class="footer-end">
+
+            <!--Social Media Icons -->
+            <div class="footer-end-column social-media-icons">
+                <a href="https://www.google.com/maps?q=GOBI+Scholars,+17042+Ulaanbaatar,+Mongolia&hl=en&fbclid=IwY2xjawF_76ZleHRuA2FlbQIxMAABHW9Xkoyae8wjHZ2xZF2U7EYXYQC5kG9PjHspgAEqVgtqGwgqp9c4E4Cf7w_aem_-pMiw8F2Z-WEXKcKjsJx-g" target="_blank">
+                <img src="/appFrontend/src/app/assets/icons/location.png" alt="Location">
+            </a>
+                <a href="https://www.facebook.com/profile.php?id=61558703803366" target="_blank">
+                    <img src="/appFrontend/src/app/assets/icons/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/gobi-scholars/posts/?feedView=all" target="_blank">
+                    <img src="/appFrontend/src/app/assets/icons/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/@gobi.scholars" target="_blank">
+                    <img src="/appFrontend/src/app/assets/icons/youtube.png" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/gobi.scholars?fbclid=IwY2xjawF_8AhleHRuA2FlbQIxMAABHdVnwmtmj2u5oFHZbDljrm7a3j4zUIEfQWr-WcibtDxlkILDAIKSwM8Ezg_aem_BjGGUpvNYhByXbx4p-dPyw" target="_blank">
+                    <img src="/appFrontend/src/app/assets/icons/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+
+
+<script>
+    //JUMP MENU SCRTIP
+    const links = document.querySelectorAll('.jump-menu a');
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            links.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
+    //SCRIPT END
+
+    //// TOGGLE BUTTON SCRIPT
+    function toggleContent(contentId) {
+        const content = document.getElementById(contentId);
+        const toggleButton = content.previousElementSibling.querySelector('.toggle-button i');
+
+        // Get the header element to toggle the arrow rotation
+        const header = content.previousElementSibling;
+
+        // Toggle visibility of the content section
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block"; // Show the content
+            header.classList.add("open");   // Rotate the arrow
+
+            // Start the countdown if "Our Team" or "Our Students" section is opened
+            if (contentId === "our-team-content" || contentId === "our-students-content") {
+                startCountdown(); // Start the countdown for both sections
+            }
+            
+        } else {
+            content.style.display = "none"; // Hide the content
+            header.classList.remove("open"); // Reset the arrow
+        }
+    }
+
+    // COUNTDOWN SCRIPT (for both sections)
+    function startCountdown() {
+        const launchDate = new Date("January 11, 2025 00:00:00").getTime();
+        
+        // Countdown for Our Team section
+        const countdownElementTeam = document.getElementById("countdown-team");
+        const comingSoonElementTeam = document.getElementById("coming-soon-team");
+        
+        // Countdown for Our Students section
+        const countdownElementStudents = document.getElementById("countdown-students");
+        const comingSoonElementStudents = document.getElementById("coming-soon-students");
+
+        // Update the countdown every second
+        const countdownInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const timeRemaining = launchDate - now;
+
+            // Calculate days, hours, minutes, and seconds remaining
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Display the countdown in the format: "X days X hours"
+            const countdownText = `Launching in ${days} days ${hours} hours ${minutes} minutes`;
+
+            // Update both sections with the same countdown
+            countdownElementTeam.innerHTML = countdownText;
+            countdownElementStudents.innerHTML = countdownText;
+
+            // When the countdown is finished
+            if (timeRemaining < 0) {
+                clearInterval(countdownInterval);
+                const finishedText = "Stay tuned!";
+                countdownElementTeam.innerHTML = finishedText;
+                countdownElementStudents.innerHTML = finishedText;
+                comingSoonElementTeam.innerHTML = "Now live!";
+                comingSoonElementStudents.innerHTML = "Now live!";
+            }
+        }, 1000);
+    }
+
+
+    //SCRIPT STARTS FOR MAILING LIST
+    //for mailing list script starts here
+    // Handle button text change and email input display
+    let emailButton = document.getElementById("emailButton");
+    let emailInput = document.getElementById("emailInput");
+    let buttonTextState = "initial"; // Track the state of the button text
+
+    emailButton.addEventListener("click", function() {
+        if (buttonTextState === "initial") {
+            // Change to "JOIN OUR MAILING LIST ->"
+            emailButton.innerHTML = "JOIN OUR MAILING LIST";
+            buttonTextState = "hover";
+        } else if (buttonTextState === "hover") {
+            // Change to "Email"
+            emailButton.innerHTML = "Email";
+            buttonTextState = "email";
+        } else if (buttonTextState === "email") {
+            // Show the email input field
+            emailInput.style.display = "block";
+            emailButton.style.display = "none"; // Hide the button after email is clicked
+            buttonTextState = "input"; // Update state to track input phase
+        }
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,654 @@
+/*Keep background photo for all the page :)*/
+body {
+    position: relative;
+    background-image: url('about.assets/main01.jpeg'); 
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-attachment: fixed;
+    background-size: 100% auto;
+    margin: 0; 
+    padding: 0;
+    height: 100%;
+
+}
+
+/* Add Red Overlay */
+.red-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(166, 51, 51);
+    opacity: 0.3; /* 60% opacity */
+    z-index: 0; /* Ensure it's behind the text */
+}
+
+/*HEADER PART with MENU AND LOGO*/
+/*Shadow at the top*/
+.gradient-shadow {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    right: 0; 
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+    z-index: 0; 
+}
+
+.header-section {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 1s ease-in-out; 
+}
+
+.header-container {
+
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px; 
+    z-index: 1000;
+    padding: 10px 50px;
+}
+
+.logo {
+    margin-top: 8px;
+    height: 22px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    gap: 65px; 
+    flex-grow: 1;
+    justify-content: center;
+    position: relative;
+}
+
+
+.menu-item {
+    position: relative; /* Required for dropdown positioning */
+}
+
+.menu-item button {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* No padding to look like plain text */
+    transition: color 0.3s ease;
+}
+
+.menu-item button:hover {
+    color: #ffffff; /* Lighten text on hover */
+}
+
+.menu-item a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 12px;
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+}
+
+.menu-item a:hover {
+    color: #ffffff; /* Lighten text on hover */
+}
+
+
+.search-button {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.search-button i {
+    font-size: 16px; 
+    color: white; 
+    transition: color 0.3s ease;
+}
+
+.search-button i:hover {
+    color: #f0f0f0; /* Lighten the color on hover */
+}
+
+
+/* Centered content */
+.center-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+    max-width: 80%;
+    width: 100%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+/* PART 02: JUMP SMALL MENU*/
+.jump-menu {
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px 50px;
+}
+
+.jump-menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #7a7a7a; /* Greyish color for non-active links */
+    text-decoration: none; /* No underline */
+    margin: 0 20px; /* Add space between links */
+    transition: color 0.3s ease; /* Smooth color change effect */
+}
+
+/* Active Link (Black text for About Us) */
+.jump-menu a.active {
+    color: black;
+    font-weight: bold;
+}
+
+/* Hover effect for all links */
+.jump-menu a:hover {
+    color: #333; /* Dark grey color on hover */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*PART 03: ABOUT US */
+#about-us {
+    background-color: white;
+    margin: 0;
+    padding: 50px 70px;
+
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 30px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+/*PART 04: TEAM MESSAGE*/
+.about-image-section {
+    height: 60vh;
+    background-image: url('about.assets/about01.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px 65px;
+    color: white; 
+    text-align: center;
+}
+
+/* Red Overlay with 30% Opacity */
+.about-image-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(166, 51, 51, 0.3); /* Red background with 30% opacity */
+    z-index: 0; /* Ensure the overlay is behind the content */
+}
+
+
+.content {
+    position: relative;
+    z-index: 1; /* Make sure content is above the red overlay */
+    padding: 30px 20px; /* Add some padding to prevent text from touching edges */
+}
+
+
+.content p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.line-break {
+    width: 90%; 
+    height: 0.3px;
+    background-color: white;
+    margin: 50px auto; 
+}
+
+
+.team-signature p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/*PART 05: MISSION STATEMENT*/
+.mission-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+    padding-left: 50px; 
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 0px;
+}
+
+.mission-text {
+    flex: 1; /* Taking up available space */
+   
+}
+
+.mission-text h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: black;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.mission-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    line-height: 1.4; 
+    margin-top: 100px;
+}
+
+.mission-image {
+    flex: 1; /* 1/2 space */
+    display: flex;
+    justify-content: flex-end; 
+    overflow: hidden; /* Hide the overflowing part of the image */
+}
+
+.mission-image img {
+    border-radius: 20px; /* Rounded corners */
+    width: 100%; /* Ensure the image is responsive */
+    max-width: 100%; /* Limit the image width */
+    object-fit: cover; /* Ensure the image covers the given space */
+    transform: translateX(10%); /* Make it look like it's coming from the right */
+}
+
+.line-break-mission {
+    width: 100%;
+    color: rgb(173, 172, 172);
+    height: 0.1px;
+}
+
+/*PART 06: VISION STATEMENT*/
+.vision-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+    padding: 40px 50px 80px 0px; 
+}
+
+.vision-text {
+    flex: 1; /* Taking up available space */
+   
+}
+
+.vision-text h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: black;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.vision-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    line-height: 1.4; 
+    margin-top: 100px;
+}
+
+.vision-image {
+    flex: 1; /* 1/2 space */
+    display: flex;
+    justify-content: flex-start; 
+    overflow: hidden; /* Hide the overflowing part of the image */
+}
+
+.vision-image img {
+    border-radius: 20px; /* Rounded corners */
+    width: 100%; /* Ensure the image is responsive */
+    max-width: 100%;
+    object-fit: cover; /* Ensure the image covers the given space */
+    transform: translateX(-10%); /* Make it look like it's coming from the right */
+}
+
+.line-break-vision {
+    width: 100%;
+    color: rgb(173, 172, 172);
+    height: 0.5px;
+}
+
+/*PART 07: VALUES*/
+.values-section {
+    background-color: white; 
+    padding: 30px 50px 80px 50px; 
+}
+
+.values-header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.values-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    justify-content: space-between; /* Evenly distribute space between boxes */
+    gap: 20px; /* Space between boxes */
+}
+
+
+.value-box {
+    flex: 1; 
+    min-width: calc(25% - 20px);
+    background-color: #ffffff; /* Light grey background for the boxes */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+}
+
+.value-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+
+.value-box h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: rgb(185, 54, 54); 
+    margin-bottom: 10px; 
+}
+
+.value-box p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: black;
+    line-height: 1.1; 
+    text-align: center;
+}
+
+.line-break-values {
+    height: 0.5px;
+    color: #7a7a7a;
+    width: 100%;
+}
+
+/*TOGGLE STYLING FOR OUR [ ... ] PARTS*/
+.toggle-section {
+    background-color: white;
+    border: none;
+    overflow: hidden; 
+    transition: all 0.3s ease;
+    border-bottom: 0.1px solid #ccc
+}
+
+.toggle-content {
+    display: none;
+}
+
+/* Header Styling */
+.toggle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px;
+    cursor: pointer;
+    background-color: #ffffff; /* Light grey background for header */
+    transition: background-color 0.3s ease;
+}
+
+.toggle-header:hover {
+    background-color: #ffffff; /* Slightly darker grey on hover */
+}
+
+/* Header Text */
+.toggle-header h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: black;
+    margin: 0;
+}
+
+/* Toggle Button */
+.toggle-button {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.toggle-header.open .toggle-button {
+    transform: rotate(180deg); /* Rotate arrow when open */
+}
+
+/*PART 8: OUR STORY*/
+#our-story {
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 0;
+    
+}
+
+.our-story-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; /* Add space between text and image */
+    padding: 0px; /* Adjust padding as needed */
+}
+
+.our-story-text {
+    flex: 7; /* Allow text to take up available space */
+}
+
+.our-story-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: black;
+    text-align: justify;
+}
+
+.our-story-image-container {
+    flex: 2.5; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.our-story-image-container img {
+    max-width: 100%; /* Ensure the image scales responsively */
+    height: 400px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+/* PART 09: OUR TEAM AND OUR STUDENTS */
+#our-team, #our-students {
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 0;
+}
+
+.countdown-center {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#coming-soon-team, #coming-soon-students {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #504a49;
+}
+
+#countdown-team, #countdown-students {
+    font-size: 18px;
+    color: #504a49; /* Choose a color for countdown */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*SECTION 7: MAILING LIST */
+
+.email-signup-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    height: 70vh;
+    justify-content: center;
+    
+}
+
+
+.email-button {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 80px 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: normal;
+    border-radius: 50px;
+    border-width: 1px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.email-input {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: black;
+    margin: auto;
+}
+
+.email-header {
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.email-paragraph {
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+
+/* SECTION 8: PAGE END | SOCIAL ACCOUNTS */
+.footer-end {
+    margin-top: 0px;
+    background-color: black;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.social-media-icons {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.social-media-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    filter: grayscale(100%);
+    opacity: 0.7;
+
+
+}
+
+.social-media-icons a:hover img {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
