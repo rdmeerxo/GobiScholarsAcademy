@@ -1,94 +1,282 @@
-
-* {
-    margin: 0;
+body {
+    position: relative;
+    background-image: url('/appFrontend/src/app/assets/research_main.jpeg'); 
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-attachment: fixed;
+    background-size: 100% auto;
+    margin: 0; 
     padding: 0;
-    box-sizing: border-box;
+    height: 100%;
+
 }
 
-body, html {
+/* Add Red Overlay */
+.red-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(166, 51, 51);
+    opacity: 0.3; /* 60% opacity */
+    z-index: 0; /* Ensure it's behind the text */
+}
+
+/*HEADER PART with MENU AND LOGO*/
+/*Shadow at the top*/
+.gradient-shadow {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    right: 0; 
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+    z-index: 0; 
+}
+
+.header-section {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 1s ease-in-out; 
+}
+
+.header-container {
+
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px; 
+    z-index: 1000;
+    padding: 10px 50px;
+}
+
+.logo {
+    margin-top: 8px;
+    height: 22px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    gap: 65px; 
+    flex-grow: 1;
+    justify-content: center;
+    position: relative;
+}
+
+
+.menu-item {
+    position: relative; /* Required for dropdown positioning */
+}
+
+.menu-item button {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* No padding to look like plain text */
+    transition: color 0.3s ease;
+}
+
+.menu-item button:hover {
+    color: #000000; /* Lighten text on hover */
+}
+
+.menu-item a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 12px;
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+}
+
+.menu-item a:hover {
+    color: #000000; /* Lighten text on hover */
+}
+
+
+.search-button {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.search-button i {
+    font-size: 16px; 
+    color: white; 
+    transition: color 0.3s ease;
+}
+
+.search-button i:hover {
+    color: #f0f0f0; /* Lighten the color on hover */
+}
+
+
+/* Centered content */
+.center-content {
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+    max-width: 80%;
+    width: 100%;
+    color: white;
+    font-family: 'STIXGeneral', serif;
+    font-size: 40px;
+}
+
+/* PART 02: JUMP SMALL MENU*/
+.jump-menu {
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px 50px;
+}
+
+.jump-menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #7a7a7a; /* Greyish color for non-active links */
+    text-decoration: none; /* No underline */
+    margin: 0 20px; /* Add space between links */
+    transition: color 0.3s ease; /* Smooth color change effect */
+}
+
+/* Active Link (Black text for About Us) */
+.jump-menu a.active {
+    color: black;
+    font-weight: bold;
+}
+
+/* Hover effect for all links */
+.jump-menu a:hover {
+    color: #333; /* Dark grey color on hover */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*PART 3: RESEARCH & PUBLICATION DESCRIPTION*/
+.research-pub-section {
+    background-color: white;
+    margin:0;
+    padding: 50px 70px;
+}
+
+.research-pub-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+}
+
+.research-pub-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/*Line Break after program section*/
+.line-break-programs01 {
+    height: 1px;
+    border: none;
+    background-color: rgb(182, 92, 92);
+    width: 100%; 
+}
+
+
+/* PART 04: Featured Section */
+.featured-section {
+    background-color: white;
+    padding: 50px 70px;
+}
+
+.featured-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: black;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+/* Featured Article Styling */
+.featured-article {
+    max-width: 100%; /* Container width */
+    margin: 0 auto; /* Center it */
+}
+
+.image-container {
+    width: 100%;
+    height: 320px;
+    margin: 0 auto 20px; /* Space below image */
+    overflow: hidden; /* Prevents image overflow */
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+}
+
+.image-container img {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
+    object-fit: cover; /* Ensures image fills the container */
+}
+
+.article-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0 10px; /* Space above and below */
+}
+
+.author {
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+    font-size: 16px;
+    color: black;
+    margin: 0 0 20px; /* Space below */
 }
 
-/* Main container */
-.coming-soon-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-    background-color: black;
-    color: white;
+/* Grey Line */
+.line-break-featured {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+    margin: 0 auto 20px; /* Center it and add space below */
+}
+
+/* Date */
+.date {
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px; /* Space below */
+}
+
+/* Read More Button */
+.read-more {
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    font-size: 16px;
+    color: rgb(158, 158, 158);
+    text-decoration: underline; /* Underlined by default */
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.coming-soon-title {
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-/* Countdown Timer */
-.countdown {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-
-.countdown div {
-    text-align: center;
-}
-
-.social-media-icons {
-    display: flex;
-    gap: 20px; 
-    margin-top: 40px;
-}
-
-.social-media-icons img {
-    width: 15px; 
-    height: auto; 
-    filter: grayscale(100%) brightness(0.3); 
-    transition: filter 0.3s; 
-}
-
-.social-media-icons img:hover {
-    filter: grayscale(0%); 
-}
-
-/* Animation dots */
-.animation {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-/* Dot style */
-.dot {
-    background-color: white;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 5px;
-    animation: bounce 1s infinite alternate;
-}
-
-/* Individual dot animation delays for staggered effect */
-.dot1 { animation-delay: 0s; }
-.dot2 { animation-delay: 0.2s; }
-.dot3 { animation-delay: 0.4s; }
-
-/* Bounce animation */
-@keyframes bounce {
-    from { transform: translateY(0); }
-    to { transform: translateY(-10px); }
+.read-more:hover {
+    color: red; /* Red on hover */
 }

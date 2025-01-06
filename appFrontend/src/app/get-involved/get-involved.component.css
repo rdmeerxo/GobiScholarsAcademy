@@ -11,7 +11,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(129, 29, 29);
+    background-color: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
 }
@@ -23,7 +23,7 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh; 
-    background-color: rgb(129, 29, 29);
+    background-color: rgb(0, 0, 0);
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;

@@ -3,51 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="research.component.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="news.component.css">
-    <title>news</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Research & Publication</title>
 </head>
+
 <body>
-    <div class="coming-soon-container">
-        <h1 class="coming-soon-title">Coming Soon, Stay Tuned!</h1>
 
-        <!-- Countdown Timer -->
-        <div class="countdown">
-            <div><span id="days">0</span> Days</div>
-            <div><span id="hours">0</span> Hours</div>
-            <div><span id="minutes">0</span> Minutes</div>
-            <div><span id="seconds">0</span> Seconds</div>
+    <!--PART 1: Contains main menu and Logo-->
+        <div class="header-section">
+            <!-- Gradient Shadow -->
+            <div class="gradient-shadow"></div>
+
+            <div class="red-overlay"></div> <!-- New red overlay -->
+
+            <!--HEADER-->
+            <div class="header-container">
+                <a href="/index.html">
+                    <img src="/appFrontend/src/app/assets/Logo.png" alt="GOBISCHOLARS" class="logo">
+                </a>
+
+                <div class="menu">
+
+                        <div class="menu-item dropdown">
+                            <button onclick="location.href='/appFrontend/src/app/about/about.component.html'">About Us</button>
+                        </div>
+
+                        <!-- Programs -->
+                        <div class="menu-item">
+                            <a href="/appFrontend/src/app/programs/programs.component.html">Programs</a>
+                        </div>
+
+                        <!-- Research & Publication -->
+                        <div class="menu-item">
+                            <a href="/appFrontend/src/app/research/research.component.html">Research & Publications</a>
+                        </div>
+
+                        <div class="menu-item dropdown">
+                            <button onclick="location.href='/appFrontend/src/app/get-involved/get-involved.component.html'">Get Involved</button>
+                        </div>
+                </div>
+
+                <!-- Search Button -->
+                <div class="menu-item search button">
+                    <a href="#search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--main text ON MAIN BACKGROUND-->
+            <div class="center-content">
+                <h1>Research & Publication</h1>
+            </div>
         </div>
 
-        <!-- Animation Dots -->
-        <div class="animation">
-            <div class="dot dot1"></div>
-            <div class="dot dot2"></div>
-            <div class="dot dot3"></div>
+        <!--PART 02: Small Menu Part-->
+        <div class="jump-menu">
+            <a href="#research-pub" class="active">Research & Publication</a> / 
+            <a href="#featured">Featured</a> 
+            <a href="#news">News</a> 
         </div>
 
-        <!-- Social Media Icons -->
-    
-        <div class="footer-end-column social-media-icons">
-            <a href="https://www.google.com/maps?q=GOBI+Scholars,+17042+Ulaanbaatar,+Mongolia&hl=en&fbclid=IwY2xjawF_76ZleHRuA2FlbQIxMAABHW9Xkoyae8wjHZ2xZF2U7EYXYQC5kG9PjHspgAEqVgtqGwgqp9c4E4Cf7w_aem_-pMiw8F2Z-WEXKcKjsJx-g" target="_blank">
-              <img src="../assets/icons/location.png" alt="Location">
-           </a>
-            <a href="https://www.facebook.com/profile.php?id=61558703803366" target="_blank">
-                <img src="../assets/icons/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.linkedin.com/company/gobi-scholars/posts/?feedView=all" target="_blank">
-                <img src="../assets/icons/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://www.youtube.com/@gobi.scholars" target="_blank">
-                <img src="../assets/icons/youtube.png" alt="YouTube">
-            </a>
-            <a href="https://www.instagram.com/gobi.scholars?fbclid=IwY2xjawF_8AhleHRuA2FlbQIxMAABHdVnwmtmj2u5oFHZbDljrm7a3j4zUIEfQWr-WcibtDxlkILDAIKSwM8Ezg_aem_BjGGUpvNYhByXbx4p-dPyw" target="_blank">
-                <img src="../assets/icons/instagram.png" alt="Instagram">
-            </a>
+         <!-- PART 03: Research & Publication Section -->
+         <div id="research-pub">
+            <div class="research-pub-section">
+                <h2>Research & Publication</h2>
+                <p>At Gobischolars, we believe in the power of research and the importance of sharing knowledge. 
+                    Through our initiatives, both students and faculty contribute to the broader educational conversation in Mongolia 
+                    and beyond. This section highlights the research, articles, and publications produced by our community, 
+                    showcasing our commitment to critical thinking, knowledge sharing, and continuous learning.
+                </p>
+            </div>    
         </div>
-    </div>
 
-    <script src="countdown.js"></script>
-</body>
-</html>
+        <div class="line-break-programs01"></div>
 
+        <!-- PART 04: FEATURED-->
+        <div id="featured">
+            <div class="featured-section">
+                <!-- Header -->
+                <h2>Featured</h2>
+        
+                <!-- Featured Article -->
+                <div class="featured-article">
+                    <!-- Image Container -->
+                    <div class="image-container">
+                        <img src="/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg" alt="Featured Article">
+                    </div>
+        
+                    <!-- Article Title -->
+                    <h3 class="article-title">"Can gender-equality coexist with culture & tradition?"</h3>
+        
+                    <!-- Author Name -->
+                    <p class="author">By Goomaral Amarbayar, Class of 2025</p>
+        
+                    <!-- Grey Line -->
+                    <div class="line-break-featured"></div>
+        
+                    <!-- Date -->
+                    <p class="date">Dec 20, 2024</p>
+        
+                    <!-- Read More -->
+                    <a href="/appFrontend/src/app/get-involved/goomaral01.html" class="read-more">Read More -></a>
+                </div>
+            </div>
+        </div>
