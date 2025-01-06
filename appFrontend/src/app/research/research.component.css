@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+/* Main container */
+.coming-soon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.coming-soon-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* Countdown Timer */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.countdown div {
+    text-align: center;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 20px; 
+    margin-top: 40px;
+}
+
+.social-media-icons img {
+    width: 15px; 
+    height: auto; 
+    filter: grayscale(100%) brightness(0.3); 
+    transition: filter 0.3s; 
+}
+
+.social-media-icons img:hover {
+    filter: grayscale(0%); 
+}
+
+/* Animation dots */
+.animation {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Dot style */
+.dot {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    animation: bounce 1s infinite alternate;
+}
+
+/* Individual dot animation delays for staggered effect */
+.dot1 { animation-delay: 0s; }
+.dot2 { animation-delay: 0.2s; }
+.dot3 { animation-delay: 0.4s; }
+
+/* Bounce animation */
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}

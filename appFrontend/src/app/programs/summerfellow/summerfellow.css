@@ -1,7 +1,7 @@
 /*Keep background photo for all the page :)*/
 body {
     position: relative;
-    background-image: url('/appFrontend/src/app/assets/main01.jpeg'); 
+    background-image: url('/appFrontend/src/app/assets/programs_assets/summer_internship01.jpg'); 
     background-repeat: no-repeat;
     background-position: top center; 
     background-attachment: fixed;
@@ -9,6 +9,7 @@ body {
     margin: 0; 
     padding: 0;
     height: 100%;
+    overflow-y: auto;
 
 }
 
@@ -142,4 +143,541 @@ body {
     font-family:'Times New Roman', Times, serif;
     font-weight: normal;
     font-size: 36px;
+}
+
+/* PART 02: JUMP SMALL MENU*/
+.jump-menu {
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px 50px;
+}
+
+.jump-menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #7a7a7a; /* Greyish color for non-active links */
+    text-decoration: none; /* No underline */
+    margin: 0 20px; /* Add space between links */
+    transition: color 0.3s ease; /* Smooth color change effect */
+}
+
+/* Active Link (Black text for About Us) */
+.jump-menu a.active {
+    color: black;
+    font-weight: bold;
+}
+
+/* Hover effect for all links */
+.jump-menu a:hover {
+    color: #333; /* Dark grey color on hover */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*PART 3: PROGRAM DESCRIPTION*/
+.summer-internship-section {
+    background-color: white;
+    margin:0;
+    padding: 50px 70px;
+}
+
+.summer-internship-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.summer-internship-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.apply-now-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(205, 25, 25);  /* Button color */
+    color: white;  /* Text color */
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.apply-now-btn:hover {
+    background-color: #c10000;  /* Darker red on hover */
+}
+
+
+/*Line Break after description section*/
+.line-break-programs01 {
+    height: 1px;
+    border: none;
+    background-color: rgb(182, 92, 92);
+    width: 100%; 
+}
+
+/* TOGGLE STYLES */
+.toggle-section {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 0.1px solid #ccc
+}
+
+.toggle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 50px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns content vertically */
+    width: 80%; /* Take up 80% of the width */
+}
+
+/* Header Text */
+.toggle-header h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.toggle-header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center; /* Center the toggle button horizontally */
+    align-items: center; /* Center the toggle button vertically */
+    width: 10%; /* Take up 20% of the width */
+}
+
+/* Toggle Button */
+.toggle-button {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+
+
+.toggle-content {
+    display: none;
+    overflow: hidden; 
+    max-height: 0;
+    margin-top: 0px;
+    background-color: #ffffff;
+    transition: height 0.5s ease; 
+}
+
+.toggle-content.show {
+    display: block;
+    height: auto;
+    max-height: 2000px;
+}
+
+.toggle-button i {
+    transition: transform 0.3s ease;
+}
+
+.toggle-button.open i {
+    transform: rotate(180deg);
+}
+
+/* Hover Effects */
+.toggle-button:hover {
+    transform: rotate(180deg); /* Rotate button when hovered */
+} 
+
+/*Professional Development SECTION*/
+#development-content {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.development-content-inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Left Side - Image */
+.development-content-inner .left-side {
+    margin-left: 60px;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.pd-image {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Side - Slideshow */
+.development-content-inner .right-side {
+    display:block;
+    margin-right: 80px;
+    width: 60%;
+    padding: 20px;
+    position: relative;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    height: 100%;
+}
+
+/* Slideshow Slides */
+.slideshow-slide {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+/* Active slide */
+.slideshow-slide.active {
+    display: block;
+}
+
+/* Slide Titles */
+.slideshow-slide h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'montserrat', sans-serif;
+}
+
+/* Slide Paragraphs */
+.slideshow-slide p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Dots for the slideshow */
+.slideshow-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: rgb(181, 39, 39);
+    border-color: rgb(181, 39, 39);
+}
+
+/* Slide Animation */
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+/*CULTURAL IMMERSION SECTION*/
+#exploration-content {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.exploration-content-inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Left Side - Image */
+.exploration-content-inner .left-side-exploration {
+    margin-left: 60px;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.ci-image {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Side - Slideshow */
+.exploration-content-inner .right-side-exploration {
+    display:block;
+    margin-right: 80px;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+}
+
+/* Slideshow Container */
+.slideshow-container-exploration {
+    position: relative;
+    height: 100%;
+}
+
+/* Slideshow Slides */
+.slideshow-slide-exploration {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+/* Active slide */
+.slideshow-slide-exploration.active {
+    display: block;
+}
+
+/* Slide Titles */
+.slideshow-slide-exploration h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'montserrat', sans-serif;
+}
+
+/* Slide Paragraphs */
+.slideshow-slide-exploration p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Dots for the slideshow */
+.slideshow-dots-exploration {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot-exploration {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot-exploration.active {
+    background-color: rgb(181, 39, 39);
+    border-color: rgb(181, 39, 39);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* On smaller screens, the content will stack vertically */
+    .development-content-inner {
+        flex-direction: column; /* Stack image and slideshow vertically */
+    }
+
+    .development-content-inner .left-side, 
+    .development-content-inner .right-side {
+        width: 100%; /* Both take up full width */
+    }
+
+    .pd-image {
+        height: 250px; /* Reduce image height on smaller screens */
+    }
+
+    /* Adjust the slideshow container height */
+    .slideshow-container {
+        height: 300px;
+    }
+}
+
+/* ELIGIBILITY CRITERIA SECTION */
+#criteria-content {
+    background-color: #fff;
+    margin:0 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(174, 16, 16, 0.3);
+}
+
+.criteria-content-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 50px 80px 50px;
+}
+
+/* Criteria Part */
+.criteria-part {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.criteria-part h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.criteria-part p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Arrow */
+.arrow {
+    font-size: 20px;
+    color: rgb(181, 39, 39);
+    margin-top: 28px;
+}
+
+/* Apply Message */
+.apply-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e2e0e0;
+    border-left: 12px solid rgb(181, 39, 39);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+
+/* REQUIRED APPLICATION MATERIALS SECTION */
+#materials-content {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(174, 16, 16, 0.3);
+}
+
+.materials-content-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 50px 80px 50px;
+    height: 100%;
+}
+
+/* Materials Part */
+.materials-part {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.materials-part h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.materials-part p, .materials-part ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* ADDITIONAL INFORMATION SECTION */
+#additional-content {
+    background-color: #fff;
+    margin:0 60px;
+}
+
+.additional-content-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 30px 50px 20px;
+}
+
+
+.additional-content-inner h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.additional-content-inner p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
 }

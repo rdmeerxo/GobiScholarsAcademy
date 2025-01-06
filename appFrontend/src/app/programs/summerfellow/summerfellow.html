@@ -17,11 +17,11 @@
             <!-- Gradient Shadow -->
             <div class="gradient-shadow"></div>
 
-            <div class="red-overlay"></div> <!-- New red overlay -->
+            <div class="red-overlay"></div> <!-- New red overlay -->  
 
             <!--HEADER-->
             <div class="header-container">
-                <a href="/appFrontend/src/index.html">
+                <a href="/index.html">
                     <img src="/appFrontend/src/app/assets/Logo.png" alt="GOBISCHOLARS" class="logo">
                 </a>
 
@@ -31,12 +31,14 @@
                             <button onclick="location.href='/appFrontend/src/app/about/about.component.html'">About Us</button>
                         </div>
 
+                        <!-- Programs -->
                         <div class="menu-item">
                             <a href="/appFrontend/src/app/programs/programs.component.html">Programs</a>
                         </div>
 
-                        <div class="menu-item dropdown">
-                            <button onclick="location.href='/appFrontend/src/app/resources/resources.component.html'">Resources</button>
+                        <!-- Research & Publication -->
+                        <div class="menu-item">
+                            <a href="/appFrontend/src/app/research/research.component.html">Research & Publications</a>
                         </div>
 
                         <div class="menu-item dropdown">
@@ -54,6 +56,455 @@
 
             <!--main text ON MAIN BACKGROUND-->
             <div class="center-content">
-                <h1>Summer Fellowship 2024</h1>
+                <h1>Summer Internship 2025</h1>
             </div>
         </div>
+
+    <!--PART 02: Small Menu Part-->
+        <div class="jump-menu">
+            <a href="#summer-internship" class="active">Summer Internship 2025</a> / 
+            <a href="#development">Development</a> 
+            <a href="#exploration">Exploration</a> 
+            <a href="#criteria">Criteria</a>
+            <a href="#materials">Materials</a>
+            <a href="#additional">Additional</a>
+        </div>
+
+    <!-- PART 03:Internship Description -->
+        <div id="summer-internship">
+            <div class="summer-internship-section">
+                <h2>GobiScholars Internship Program</h2>
+                <p>Dive into a unique opportunity to teach, connect, and grow in Mongolia. 
+                    The Mongolia Summer Fellowship Program offers U.S. university students a platform to gain professional skills, 
+                    explore Mongolian culture, and inspire the next generation—all while making a tangible impact on local communities.
+                </p>
+
+                <a href="https://form.jotform.com/250014968072455" class="apply-now-btn" target="_blank">Apply Now</a>
+            </div>
+            
+        </div>
+
+        <div class="line-break-programs01"></div>
+    
+    <!-- PART 04: Professional Development Section (Toggleable) -->
+        <div id="development" class="toggle-section">
+            <div class="toggle-header" onclick="toggleContent('development-content')">
+                <div class="left-side">
+                    <h2>Professional Development</h2>
+                    <p>Interns will have the opportunity to engage in exclusive events and workshops led by industry leaders and 
+                        distinguished local professionals, particularly those excelling in fields aligned with their interests. </p>
+                </div>
+                <div class="right-side">
+                    <div class="toggle-button">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="development-content" class="toggle-content">
+                <div class="development-content-inner">
+                    <div class="left-side">
+                        <img src="/appFrontend/src/app/assets/programs_assets/si_pd.jpg" alt="Professional Development" class="pd-image">
+                    </div>
+
+                    <div class="right-side">
+                        <div class="slideshow-container">
+                            <div class="slideshow-slide" id="slide-1">
+                                <h4>Networking Opportunities</h4>
+                                <p>Interns will have the opportunity to engage in exclusive events and workshops led by industry leaders and distinguished local professionals, particularly those excelling in fields aligned with their interests.</p>
+                            </div>
+                            <div class="slideshow-slide" id="slide-2">
+                                <h4>Local Company Visits</h4>
+                                <p>Collaborate with communities, NGOs, and schools to gain insights into Mongolian society while making a meaningful impact.</p>
+                            </div>
+                            <div class="slideshow-slide" id="slide-3">
+                                <h4>Career Guidance</h4>
+                                <p>Participate in workshops focused on building resumes, CVs, and cover letters, designed to support your professional growth.</p>
+                            </div>
+                        </div>
+
+                        <div class="slideshow-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+    <!-- PART 05: Cultural Immersion Section (Toggleable) -->
+        <div id="exploration" class="toggle-section">
+            <div class="toggle-header" onclick="toggleContent('exploration-content')">
+                <div class="left-side">
+                    <h2>Cultural Immersion</h2>
+                    <p>Dive into Mongolia's heritage with workshops on language, traditional script, and vibrant social customs.</p>
+                </div>
+                <div class="right-side">
+                    <div class="toggle-button">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="exploration-content" class="toggle-content">
+                <div class="exploration-content-inner">
+                    <div class="left-side-exploration">
+                        <img src="/appFrontend/src/app/assets/programs_assets/si_ci.jpg" alt="Cultural Immersion" class="ci-image">
+                    </div>
+
+                    <div class="right-side-exploration">
+                        <div class="slideshow-container-exploration">
+                            <div class="slideshow-slide-exploration" id="slide-1-exploration">
+                                <h4>How to Live in Mongolia 101</h4>
+                                <p>Dive into Mongolian pop culture and social life to better understand the local lifestyle and traditions.</p>
+                            </div>
+
+                            <div class="slideshow-slide-exploration" id="slide-2-exploration">
+                                <h4>Mongolian Script Calligraphy</h4>
+                                <p>A one-day workshop exploring the art and history of traditional Mongolian script, guided by a skilled calligrapher.</p>
+                            </div>
+
+                            <div class="slideshow-slide-exploration" id="slide-3-exploration">
+                                <h4>Basics of the Mongolian Language</h4>
+                                <p>A three-day immersive language workshop taught by a professional instructor, designed to help you master essential phrases and conversational skills.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="slideshow-dots-exploration">
+                            <span class="dot-exploration" onclick="currentSlideExploration(1)"></span>
+                            <span class="dot-exploration" onclick="currentSlideExploration(2)"></span>
+                            <span class="dot-exploration" onclick="currentSlideExploration(3)"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    <!-- PART 06: Eligbility Criteria Section (Toggleable) -->
+        <div id="criteria" class="toggle-section">
+            <div class="toggle-header" onclick="toggleContent('criteria-content')">
+                <div class="left-side">
+                    <h2>Eligibility Criteria</h2>
+                    <p>We welcome applications from U.S. university students who meet the following requirements.</p>
+                </div>
+                <div class="right-side">
+                    <div class="toggle-button">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="criteria-content" class="toggle-content">
+                <div class="criteria-content-inner">
+                    <div class="criteria-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>Enrollment Status</h4>
+                            <p>Must be a current undergraduate student (sophomore, junior, or senior) at a U.S. university.</p>
+                        </div>
+                    </div>
+
+                    <div class="criteria-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>Academic Excellence</h4>
+                            <p>GPA of 3.5 or higher (on a 4.0 scale).</p>
+                        </div>
+                    </div>
+        
+                    <div class="criteria-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>Commitment to Education</h4>
+                            <p>Demonstrated enthusiasm for teaching and inspiring younger generations.</p>
+                        </div>
+                    </div>
+
+                    <div class="criteria-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>Financial Independence</h4>
+                            <p>Must be able to sponsor your participation in the program (as this is an unpaid internship with an NGO).</p>
+                        </div>
+                    </div>
+        
+                    <div class="criteria-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>Relevant Academic Background</h4>
+                            <p>Must be majoring in the subject they intend to teach during the internship (minors or unrelated fields will not be considered).<br><br></p>
+                            <p><strong>Below are common courses we are looking for, but not limited to:</strong> Computer Science and Technology, Business, Engineering, Environmental Studies, Political Science, Education, Communications and Media Studies, Anthropology.</p>
+                        </div>
+                    </div>
+
+                    <div class="apply-message">
+                        <p>If you meet these criteria and are eager to contribute your expertise while immersing yourself in a transformative cultural experience,
+                             we encourage you to apply!</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    <!-- PART 07: Required Application Materials Section (Toggleable) -->
+         <div id="materials" class="toggle-section">
+            <div class="toggle-header" onclick="toggleContent('materials-content')">
+                <div class="left-side">
+                    <h2>Required Application Materials</h2>
+                    <p>Applicants for the Mongolia Summer Internship Program must submit the following materials to complete their application.</p>
+                </div>
+                <div class="right-side">
+                    <div class="toggle-button">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="materials-content" class="toggle-content">
+                <div class="materials-content-inner">
+
+                    <div class="materials-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>1. Application Form</h4>
+                            <p>Complete the official application form with accurate and up-to-date information that contains all required materials.</p>
+                        </div>
+                    </div>
+
+                    <div class="materials-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>2. Identification Documents</h4>
+                            <p>Provide copies of your passport or government-issued ID card.</p>
+                        </div>
+                    </div>
+        
+                    <div class="materials-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>3. Resume</h4>
+                            <p>Submit your current resume that highlights your academic achievements, professional experience, and extracurricular activities.</p>
+                        </div>
+                    </div>
+        
+                    <div class="materials-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>4. Cover Letter</h4>
+                            <p>Prepare a 1-page cover letter addressing the following:</p>
+                            <ul>
+                                <li>Your motivation for applying to this program.</li>
+                                <li>The skills and experiences you bring to the role.</li>
+                                <li>What you hope to gain from participating in this internship.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="materials-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>5. Motivational Letter</h4>
+                            <p>Write a motivation letter including:</p>
+                            <ul>
+                                <li>Indicate the subject you are interested in teaching.</li>
+                                <li>Explain your reasons for choosing this subject, including how your academic background, experiences, and interests align with it and how you hope to inspire others through teaching it.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="materials-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>6. Lesson Plan</h4>
+                            <p>Provide a concise lesson plan outlining the subject you intend to teach, including key objectives, activities, and methods to engage students effectively.</p>
+                        </div>
+                    </div>
+        
+                    <div class="materials-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>7. Letters of Recommendation</h4>
+                            <p>Submit 1–2 letters of recommendation from professors, mentors, or supervisors who can attest to your:</p>
+                            <ul>
+                                <li>Academic abilities.</li>
+                                <li>Personal character.</li>
+                                <li>Suitability for this program.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="materials-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>8. Proof of Academic Standing</h4>
+                            <p>Include a copy of your most recent official transcript to verify your academic performance.</p>
+                        </div>
+                    </div>
+        
+                    <div class="materials-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>9. Optional Materials</h4>
+                            <p>Applicants may choose to submit additional materials that showcase their qualifications, such as:</p>
+                            <ul>
+                                <li>A portfolio or samples of work (for fields like art, design, or writing).</li>
+                                <li>Certificates, awards, or other recognitions relevant to the internship.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="materials-part">
+                        <span class="arrow">&#10148;</span>
+                        <div>
+                            <h4>Submission Instructions</h4>
+                            <p>All required materials must be submitted via <a href="https://form.jotform.com/250014968072455" target="_blank" style="color: rgb(181, 39, 39); text-decoration: underline;">Application Form</a>.</p>
+                            <p>For more information or assistance, please contact us at <a href="mailto:info@gobischolars.com" style="color: rgb(181, 39, 39); text-decoration: underline;">info@gobischolars.com</a>.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    <!-- PART 08: Additional Information Section (Toggleable) -->
+    <div id="additional" class="toggle-section">
+        <div class="toggle-header" onclick="toggleContent('additional-content')">
+            <div class="left-side">
+                <h2>Additional Information</h2>
+                <p>Further details about the Summer Internship 2025 program.</p>
+            </div>
+            <div class="right-side">
+                <div class="toggle-button">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="additional-content" class="toggle-content">
+            <div class="additional-content-inner">
+                <div>
+                    <h4>Legal Consultation</h4>
+                    <p>U.S. citizens can visit Mongolia without a visa for up to 90 days for tourism or short-term visits. Currently, there are no specific legal 
+                        provisions for international students in Mongolia. If any legal issues arise, interns are advised to contact the U.S. Embassy for assistance.</p>
+                </div>
+
+                <div>
+                    <h4>Insurance Guidelines</h4>
+                    <p>Insurance coverage for incoming interns will depend on their individual plans. Most U.S.-based insurance does not cover services abroad. 
+                        Interns with international insurance should confirm that Mongolia is included in their coverage. For added security, purchasing insurance 
+                        from a Mongolian provider for the duration of the two-month stay is recommended.</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        //JUMP MENU SCRTIP
+        const links = document.querySelectorAll('.jump-menu a');
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                links.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+        //SCRIPT END
+
+
+        // Toggle the visibility of the Gobi Scholars content with a smooth slide
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            const toggleButton = content.previousElementSibling.querySelector('.toggle-button i');
+            
+            // Check if the content is already visible
+            if (content.classList.contains('show')) {
+                // If it is visible, collapse it
+                content.classList.remove('show');
+                toggleButton.classList.remove('open'); // Remove the 'open' class from the icon
+            } else {
+                // If it is hidden, expand it
+                content.classList.add('show');
+                toggleButton.classList.add('open'); // Add the 'open' class to the icon
+            }
+        }
+
+        //SLIDESHOW FOR PROFESSIONAL DEVELOPMENT PART
+        let slideIndex = 1;
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.slideshow-slide');
+            let dots = document.querySelectorAll('.dot');
+            
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Show current slide
+            slides[slideIndex - 1].classList.add('active');
+            dots[slideIndex - 1].classList.add('active');
+            
+            // Increment the slide index, reset if needed
+            slideIndex++;
+            if (slideIndex > slides.length) slideIndex = 1;
+        }
+
+        // Manual navigation through dots
+        function currentSlide(n) {
+            slideIndex = n;
+            showSlides();
+        }
+
+        // Automatically change slides every 3 seconds
+        setInterval(showSlides, 3000);
+
+        // Initial call to display first slide
+        showSlides();
+
+        //// SLIDESHOW FOR CULTURAL IMMERSION PART 
+        let slideIndexExploration = 1;
+
+        function showSlidesExploration() {
+            let slides = document.querySelectorAll('.slideshow-slide-exploration');
+            let dots = document.querySelectorAll('.dot-exploration');
+
+            // If the index exceeds the number of slides, reset to 1
+            if (slideIndexExploration > slides.length) slideIndexExploration = 1;
+            if (slideIndexExploration < 1) slideIndexExploration = slides.length;
+            
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Show current slide
+            slides[slideIndexExploration - 1].classList.add('active');
+            dots[slideIndexExploration - 1].classList.add('active');
+        }
+
+
+
+        function currentSlideExploration(n) {
+            slideIndexExploration = n; // Set the index to the selected slide
+            showSlidesExploration(); // Display the selected slide
+        }
+
+
+        // Automatically change slides every 3 seconds
+        setInterval(() => {
+            slideIndexExploration++; // Increment slide index
+            showSlidesExploration(); // Show the updated slide
+        }, 3000);
+
+        // Initial call to display the first slide
+        showSlidesExploration();
+
+
+    </script>
+</body>
+</html>
