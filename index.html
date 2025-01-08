@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <title>Gobi Scholars Academy</title>
+    <title>Gobi Scholars</title>
 </head>
 
 <body>
@@ -28,9 +28,10 @@
                         <div class="menu-item dropdown">
                             <button onclick="location.href='/appFrontend/src/app/about/about.component.html'">About Us</button>
                             <div class="dropdown-content">
+                                <!--
                                 <a href="/appFrontend/src/app/about/about.component.html">Our Story</a>
                                 <a href="/appFrontend/src/app/about/about.component.html">Our Team</a>
-                                <a href="/appFrontend/src/app/about/about.component.html">Students</a>
+                                <a href="/appFrontend/src/app/about/about.component.html">Students</a> -->
                             </div>
                         </div>
 
@@ -48,27 +49,29 @@
                         <div class="menu-item dropdown">
                             <button onclick="location.href='/appFrontend/src/app/get-involved/get-involved.component.html'">Get Involved</button>
                             <div class="dropdown-content">
+                                <!--
                                 <a href="/appFrontend/src/app/get-involved/get-involved.component.html">Join Our Team</a>
                                 <a href="/appFrontend/src/app/get-involved/get-involved.component.html">Donate & Support</a>
-                                <a href="/appFrontend/src/app/get-involved/get-involved.component.html">Partnership Opportunities</a>
+                                <a href="/appFrontend/src/app/get-involved/get-involved.component.html">Partnership Opportunities</a> -->
                             </div>
                         </div>
                 </div>
 
-                <!-- Search Button -->
+                <!-- Search Button 
                 <div class="menu-item search button">
                     <a href="#search">
                         <i class="fas fa-search"></i>
                     </a>
-                </div>
+                </div>   
+                -->
             </div>
 
             <!--BIG LOGO ON MAIN BACKGROUND-->
             <div class="center-content">
                 <p1>Experience Mongolia:<br><br>
                     Summer Internship Program 2025<br><br></p1>
-                <p2>Join Gobischolars’ Summer Internship Program in Mongolia and make a
-                    lasting impact while gaining teaching experience.<br><br></p2>
+                <p2>Join Gobischolars’ Summer Internship Program in Mongolia and make a 
+                    lasting impact while <br>gaining teaching and professional experience.<br><br></p2>
 
                 <button onclick="location.href='/appFrontend/src/app/programs/summerfellow/summerfellow.html'">Apply Now</button>
             </div>
@@ -76,7 +79,7 @@
 
     <!--PART 02 MISSION STATAMENT-->
         <div class="second-part">
-            <div class="vertical-line"></div>
+            <!-- <div class="vertical-line"></div> -->
             <div class="second-part-content">
                 <h1>Building Pathways to Excellence in Education.</h1>
                 <p>Join us in shaping Mongolia's future through innovation, empowerment, and opportunity.</p>
@@ -88,11 +91,11 @@
         <div class="second-section">
             <h1 class="section-header">First Ever Gobischolars Internship Program</h1>
             <p class="section-paragraph">
-                Gobischolars is a dynamic education-focused NGO working to transform lives through learning. Our mission is
-                simple: to empower the next generation of leaders, thinkers, and innovators. With initiatives like personalized
-                college prep, groundbreaking research, and international fellowships, we're creating a global community of 
-                changemakers.
+                Step into an unparalleled learning journey with Gobischolars' inaugural internship program. Designed for ambitious minds, 
+                this program combines professional development, cultural immersion, and hands-on experiences to inspire future global 
+                leaders. Join us to make an impact while discovering Mongolia's vibrant heritage.
             </p>
+            <button onclick="location.href='/appFrontend/src/app/programs/summerfellow/summerfellow.html'">Learn More</button>
         </div>
 
     <!--PART 04: OUR STUDENTS-->
@@ -115,13 +118,7 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Wassup, I am a gap year student who recently graduated from the 84th public school...</span>
-                        <span class="full-info hidden">Wassup, I am a gap year student who recently graduated from the 84th public school. 
-                            I am a hopeless-romantic with a passion for humanity’s unification and debating. 
-                            You can find me debating with anyone on anything during my free time and 
-                            if I am not debating then I am probably reading some manga while debating with myself inside my head. 
-                            To relax, I like to compete with people or make some cosplay using EVA foam. 
-                            My favorite food is large quantities of food. If you meet me, we will debate and that is a fact.</span>
-                        <button class="read-more-btn">Read more</button>
+                        <button class="learn-more-btn" onclick="openModal('undram')">Learn More</button>
                     </div>
                 </div>
               </div>
@@ -133,15 +130,8 @@
                     <div class="student-name"><strong>Bolormaa M.</strong></div>
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
-                        <span class="short-info">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for 
-                            the hexagons of the organic chemistry....</span>
-                        <span class="full-info hidden">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for 
-                            the hexagons of organic chemistry. Being passionate in Chemistry, 
-                            I am also interested in providing quality education for Mongolian youth– the future of our country! 
-                            I have led multiple projects on engineering education, and has impacted over a thousand students.
-                             Check out @young.engineers_org on IG if you want to be part of a spectacular community of future engineers. 
-                             Besides academics, I love walking, running, exercising, and trying out home-made hair masks with different ingredients.</span>
-                        <button class="read-more-btn">Read more</button>
+                        <span class="short-info">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for the ...</span>
+                        <button class="learn-more-btn" onclick="openModal('bolormaa')">Learn More</button>
                     </div>
               </div>
               </div>
@@ -153,13 +143,8 @@
                     <div class="student-name"><strong>Orgilbayar S.</strong></div>
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
-                        <span class="short-info">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11...</span>
-                        <span class="full-info hidden">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar, 
-                            who loves exploring the magic of the universe. You can say that Interstellar sparked my passion to investigate physics 
-                            and beyond. I believe there are so many things to explore besides academics too. I am a combination of blue and color, 
-                            being a strong advocate of environmental sustainability and gardening. Just give me a shovel, I can plant a flower for you. 
-                            Fyodor Dostoevsky- my favorite novelist. But do not assume I'm emo. Nothing can change my perpetual mood- being happy.</span>
-                        <button class="read-more-btn">Read more</button>
+                        <span class="short-info">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar...</span>
+                        <button class="learn-more-btn" onclick="openModal('orgilbayar')">Learn More</button>
                     </div>
                 </div>
                </div>
@@ -172,13 +157,7 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration...</span>
-                        <span class="full-info hidden">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration. 
-                            I’m passionate about child development, children’s mental health, & psychology.  I love working with children, 
-                            especially toddlers & preschoolers, & I’m eager to teach parents how to better support their kids’ growth.
-                             As a compassionate listener, I find joy in making others feel seen, heard, & understood. In my free time, 
-                             I enjoy reading self-development books, listening to podcasts (Mel Robbins is a favorite), & writing poems, 
-                             photography, & dancing.</span>
-                        <button class="read-more-btn">Read more</button>
+                        <button class="learn-more-btn" onclick="openModal('enkhorchlon')">Learn More</button>
                     </div>
                 </div>
               </div>
@@ -191,14 +170,8 @@
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
                         <span class="short-info">Greetings! I am a high school senior at Sant school, 
-                            aspiring to further delve into Philosophy...</span>
-                        <span class="full-info hidden">Greetings! I am a high school senior at Sant school, 
-                            aspiring to further delve into Philosophy. 
-                            As for academics, I have been involved in several debate tournaments and writing 
-                            roles such as article writer at Sant Journal. For fun, I indulge in tedious activities:
-                             Sewing, crocheting, writing or yapping. I am also an enthusiastic reader, often reading 
-                            classic literature, especially Jane Austen!</span>
-                        <button class="read-more-btn">Read more</button>
+                            aspiring to further delve into...</span>
+                        <button class="learn-more-btn" onclick="openModal('goomaral')">Learn More</button>
                       </div>
                   </div>
                 </div>
@@ -211,16 +184,9 @@
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
                         <span class="short-info">I'm a gap year student from Shine Mongol Harumafuji High School, 
-                            gearing up to major in physics and computer science...</span>
-                        <span class="full-info hidden">I'm a gap year student from Shine Mongol Harumafuji High School, 
-                            gearing up to major in physics and computer science. Curiosity and adventure 
-                            fuel me—I’m always down for fun, crazy activities and thrive in competitive settings. 
-                            I love volleyball, skiing, and riding motorbikes, and I'm all about making memories with friends. 
-                            With experience in leadership and a passion for community building, I'm excited to take on college in the U.S., 
-                            where I can dive into new challenges, 
-                            both academic and recreational, and make the most out of every moment.</span>
-                        <button class="read-more-btn">Read more</button>
-                        </div>
+                            gearing up to major in...</span>
+                        <button class="learn-more-btn" onclick="openModal('javkhlantugs')">Learn More</button>
+                  </div>
 
                   </div>
                 </div>
@@ -233,13 +199,8 @@
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
                         <span class="short-info">Mungunzul Ulziidelger is from the smallest province of Mongolia, currently on a gap year...</span>
-                        <span class="full-info hidden">Mungunzul Ulziidelger is from the smallest province of Mongolia, currently on a gap year filled with enriching experiences.
-                             Passionate about environmental science, she has taken the initiative as a youth climate activist, 
-                             leading projects that inspire others to engage in sustainability. 
-                             During her gap year, Mungunzul has honed her skills through various part-time jobs, 
-                             gaining independence and preparing for her future studies.  </span>
-                        <button class="read-more-btn">Read more</button>
-                        </div>
+                        <button class="learn-more-btn" onclick="openModal('mungunzul')">Learn More</button>
+                      </div>
                   </div>
                 </div>
   
@@ -250,14 +211,10 @@
                       <div class="student-name"><strong>Ryenchinsonom Kh.</strong></div>
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
-                        <span class="short-info">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen interest 
-                            in Economics and Computer Science...</span>
-                        <span class="full-info hidden">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen interest 
-                            in Economics and Computer Science. I graduated from Khumuun Complex High School, 
-                            located in Tuv, Zuunmod. I enjoy managing resources and balancing my life. 
-                            Outside of academics, I love hiking, playing chess and trading.</span>
-                        <button class="read-more-btn">Read more</button>
-                        </div>
+                        <span class="short-info">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen...</span>
+                        <button class="learn-more-btn" onclick="openModal('ryenchinsonom')">Learn More</button>
+                        
+                      </div>
                   </div>
                 </div>
 
@@ -268,14 +225,9 @@
                     <div class="student-name"><strong>Khaliungoo Kh.</strong></div>
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
-                      <span class="short-info">Hey there! I’m currently taking a gap year pursuing my passion for environmental science and sociology...</span>
-                      <span class="full-info hidden">Hey there! I’m currently taking a gap year pursuing my passion for environmental science and sociology
-                         (my intended majors actually). I spent much of my time organizing youth-led programs, 
-                         advocating for climate action, and even renovating schools with hundreds of volunteers. 
-                         If you’re down for deep convos over coffee or a hike to clear the mind, let’s connect! 
-                    </span>
-                      <button class="read-more-btn">Read more</button>
-                      </div>
+                      <span class="short-info">Hey there! I’m currently taking a gap year pursuing my passion for environmental science...</span>
+                      <button class="learn-more-btn" onclick="openModal('khaliungoo')">Learn More</button>
+                    </div>
                 </div>
               </div>
 
@@ -287,17 +239,9 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                       <span class="short-info">Hi everyone! I'm a rising senior at NBIS with a passion for politics and 
-                        social justice, focusing on women's rights and disability issues....</span>
-                      <span class="full-info hidden">Hi everyone! I'm a rising senior at NBIS with a passion for politics and social justice, focusing on women's rights and disability issues. 
-                        I love meeting new people and exploring diverse cultures, and I'm particularly interested in the political systems of China, 
-                        the USA, Russia, and Mongolia. My internships with Mongolia's People's Party and Democratic Party
-                         have enriched my understanding of politics, though I align more with the Democratic Party. 
-                         My goal is to help create a world where everyone feels accepted and valued. 
-                         I believe in learning from historical ideologies like Leninism and Maoism to adopt successful strategies for development, 
-                         as China has done. While I hold strong views, I'm committed to listening and growing through others' experiences.
-                    </span>
-                      <button class="read-more-btn">Read more</button>
-                      </div>
+                        social justice...</span>
+                      <button class="learn-more-btn" onclick="openModal('naranchuluu')">Learn More</button>
+                    </div>
                 </div>
               </div>
              
@@ -310,19 +254,13 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                       <span class="short-info">Hi, I’m Tansagaa, a kid from Bayankhongor, Baatsagaan, 
-                        and a graduate of 52nd Secondary School and I took gap year.....</span>
-                      <span class="full-info hidden">Hi, I’m Tansagaa, a kid from Bayankhongor, Baatsagaan, and a graduate of 52nd Secondary 
-                        School and I took gap year. Currently my goal is to work in urban planning, environmental engineering, or industry in future. 
-                        I’m an ENFP/ENFJ who loves video editing, photography, and martial arts—especially judo, drawing and poetry. 
-                        I’m not one to brag, so I’ll keep it brief! I love balancing between academics and activities 
-                        cuz you can talk to whatever you want; I’m incredibly talkative. 
-                    </span>
-                      <button class="read-more-btn">Read more</button>
+                        and a graduate of 52nd...</span>
+                      <button class="learn-more-btn" onclick="openModal('tansagmergen')">Learn More</button>
                       </div>
                 </div>
               </div>
-             
-                <!-- Student No1 Info: Undram -->
+
+              <!-- Student No1 Info: Undram -->
               <div class="slide">
                 <img class="studentpictures" src="/appFrontend/src/app/assets/students/undram.jpg" alt="Undram">
                 <div class="student-description">
@@ -330,13 +268,7 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Wassup, I am a gap year student who recently graduated from the 84th public school...</span>
-                        <span class="full-info hidden">Wassup, I am a gap year student who recently graduated from the 84th public school. 
-                            I am a hopeless-romantic with a passion for humanity’s unification and debating. 
-                            You can find me debating with anyone on anything during my free time and 
-                            if I am not debating then I am probably reading some manga while debating with myself inside my head. 
-                            To relax, I like to compete with people or make some cosplay using EVA foam. 
-                            My favorite food is large quantities of food. If you meet me, we will debate and that is a fact.</span>
-                        <button class="read-more-btn">Read more</button>
+                        <button class="learn-more-btn" onclick="openModal('undram')">Learn More</button>
                     </div>
                 </div>
               </div>
@@ -348,15 +280,8 @@
                     <div class="student-name"><strong>Bolormaa M.</strong></div>
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
-                        <span class="short-info">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for 
-                            the hexagons of the organic chemistry....</span>
-                        <span class="full-info hidden">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for 
-                            the hexagons of the organic chemistry. Being passionate in Chemistry, 
-                            I am also interested in providing quality education for Mongolian youth– future of our country! 
-                            I have led multiple projects on engineering education, and has impacted over a thousand students.
-                             Check out @young.engineers_org on IG if you want to be part of a spectacular community of future engineers. 
-                             Besides academics, I love walking, running, exercising, and trying out home-made hair masks with different ingredients.</span>
-                        <button class="read-more-btn">Read more</button>
+                        <span class="short-info">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for the ...</span>
+                        <button class="learn-more-btn" onclick="openModal('bolormaa')">Learn More</button>
                     </div>
               </div>
               </div>
@@ -368,13 +293,8 @@
                     <div class="student-name"><strong>Orgilbayar S.</strong></div>
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
-                        <span class="short-info">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11...</span>
-                        <span class="full-info hidden">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar, 
-                            who loves exploring the magic of the universe. You can say that Interstellar sparked my passion to investigate physics 
-                            and beyond. I believe there are so many things to explore besides academics too. I am a combination of blue and color, 
-                            being a strong advocate of environmental sustainability and gardening. Just give me a shovel, I can plant a flower for you. 
-                            Fyodor Dostoevsky- my favorite novelist. But do not assume I'm emo. Nothing can change my perpetual mood- being happy.</span>
-                        <button class="read-more-btn">Read more</button>
+                        <span class="short-info">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar...</span>
+                        <button class="learn-more-btn" onclick="openModal('orgilbayar')">Learn More</button>
                     </div>
                 </div>
                </div>
@@ -387,13 +307,7 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration...</span>
-                        <span class="full-info hidden">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration. 
-                            I’m passionate about child development, children’s mental health, & psychology.  I love working with children, 
-                            especially toddlers & preschoolers, & I’m eager to teach parents how to better support their kids’ growth.
-                             As a compassionate listener, I find joy in making others feel seen, heard, & understood. In my free time, 
-                             I enjoy reading self-development books, listening to podcasts (Mel Robbins is a favorite), & writing poems, 
-                             photography, & dancing.</span>
-                        <button class="read-more-btn">Read more</button>
+                        <button class="learn-more-btn" onclick="openModal('enkhorchlon')">Learn More</button>
                     </div>
                 </div>
               </div>
@@ -406,14 +320,8 @@
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
                         <span class="short-info">Greetings! I am a high school senior at Sant school, 
-                            aspiring to further delve into Philosophy...</span>
-                        <span class="full-info hidden">Greetings! I am a high school senior at Sant school, 
-                            aspiring to further delve into Philosophy. 
-                            As for academics, I have been involved in several debate tournaments and writing 
-                            roles such as article writer at Sant Journal. For fun, I indulge in tedious activities:
-                             Sewing, crocheting, writing or yapping. I am also an enthusiastic reader, often reading 
-                            classic literature, especially Jane Austen!</span>
-                        <button class="read-more-btn">Read more</button>
+                            aspiring to further delve into...</span>
+                        <button class="learn-more-btn" onclick="openModal('goomaral')">Learn More</button>
                       </div>
                   </div>
                 </div>
@@ -426,16 +334,9 @@
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
                         <span class="short-info">I'm a gap year student from Shine Mongol Harumafuji High School, 
-                            gearing up to major in physics and computer science...</span>
-                        <span class="full-info hidden">I'm a gap year student from Shine Mongol Harumafuji High School, 
-                            gearing up to major in physics and computer science. Curiosity and adventure 
-                            fuel me—I’m always down for fun, crazy activities and thrive in competitive settings. 
-                            I love volleyball, skiing, and riding motorbikes, and I'm all about making memories with friends. 
-                            With experience in leadership and a passion for community building, I'm excited to take on college in the U.S., 
-                            where I can dive into new challenges, 
-                            both academic and recreational, and make the most out of every moment.</span>
-                        <button class="read-more-btn">Read more</button>
-                        </div>
+                            gearing up to major in...</span>
+                        <button class="learn-more-btn" onclick="openModal('javkhlantugs')">Learn More</button>
+                  </div>
 
                   </div>
                 </div>
@@ -447,14 +348,9 @@
                       <div class="student-name"><strong>Mungunzul U.</strong></div>
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
-                        <span class="short-info">Mungunzul Ulziidelger is an ambitious high school senior from the smallest province of Mongolia...</span>
-                        <span class="full-info hidden">Mungunzul Ulziidelger is an ambitious high school senior from the smallest province of Mongolia, 
-                            currently on a gap year filled with enriching experiences. Passionate about environmental science, 
-                            she has taken the initiative as a youth climate activist, leading projects that inspire others to engage in sustainability.
-                             During her gap year, Mungunzul has honed her skills through various part-time jobs, gaining independence and
-                              preparing for her future studies. </span>
-                        <button class="read-more-btn">Read more</button>
-                        </div>
+                        <span class="short-info">Mungunzul Ulziidelger is from the smallest province of Mongolia, currently on a gap year...</span>
+                        <button class="learn-more-btn" onclick="openModal('mungunzul')">Learn More</button>
+                      </div>
                   </div>
                 </div>
   
@@ -465,16 +361,12 @@
                       <div class="student-name"><strong>Ryenchinsonom Kh.</strong></div>
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
-                        <span class="short-info">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen interest 
-                            in Economics and Computer Science...</span>
-                        <span class="full-info hidden">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen interest 
-                            in Economics and Computer Science. I graduated from Khumuun Complex High School, 
-                            located in Tuv, Zuunmod. I enjoy managing resources and balancing my life. 
-                            Outside of academics, I love hiking, playing chess and trading.</span>
-                        <button class="read-more-btn">Read more</button>
-                        </div>
+                        <span class="short-info">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen...</span>
+                        <button class="learn-more-btn" onclick="openModal('ryenchinsonom')">Learn More</button>
+                        
+                      </div>
                   </div>
-            </div>
+                </div>
 
                 <!-- Student No9 Info: Khaliungoo -->
               <div class="slide">
@@ -483,14 +375,9 @@
                     <div class="student-name"><strong>Khaliungoo Kh.</strong></div>
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
-                      <span class="short-info">Hey there! I’m currently taking a gap year pursuing my passion for environmental science and sociology...</span>
-                      <span class="full-info hidden">Hey there! I’m currently taking a gap year pursuing my passion for environmental science and sociology
-                         (my intended majors actually). I spent much of my time organizing youth-led programs, 
-                         advocating for climate action, and even renovating schools with hundreds of volunteers. 
-                         If you’re down for deep convos over coffee or a hike to clear the mind, let’s connect! 
-                    </span>
-                      <button class="read-more-btn">Read more</button>
-                      </div>
+                      <span class="short-info">Hey there! I’m currently taking a gap year pursuing my passion for environmental science...</span>
+                      <button class="learn-more-btn" onclick="openModal('khaliungoo')">Learn More</button>
+                    </div>
                 </div>
               </div>
 
@@ -502,17 +389,9 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                       <span class="short-info">Hi everyone! I'm a rising senior at NBIS with a passion for politics and 
-                        social justice, focusing on women's rights and disability issues....</span>
-                      <span class="full-info hidden">Hi everyone! I'm a rising senior at NBIS with a passion for politics and social justice, focusing on women's rights and disability issues. 
-                        I love meeting new people and exploring diverse cultures, and I'm particularly interested in the political systems of China, 
-                        the USA, Russia, and Mongolia. My internships with Mongolia's People's Party and Democratic Party
-                         have enriched my understanding of politics, though I align more with the Democratic Party. 
-                         My goal is to help create a world where everyone feels accepted and valued. 
-                         I believe in learning from historical ideologies like Leninism and Maoism to adopt successful strategies for development, 
-                         as China has done. While I hold strong views, I'm committed to listening and growing through others' experiences.
-                    </span>
-                      <button class="read-more-btn">Read more</button>
-                      </div>
+                        social justice...</span>
+                      <button class="learn-more-btn" onclick="openModal('naranchuluu')">Learn More</button>
+                    </div>
                 </div>
               </div>
              
@@ -525,20 +404,15 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                       <span class="short-info">Hi, I’m Tansagaa, a kid from Bayankhongor, Baatsagaan, 
-                        and a graduate of 52nd Secondary School and I took gap year.....</span>
-                      <span class="full-info hidden">Hi, I’m Tansagaa, a kid from Bayankhongor, Baatsagaan, and a graduate of 52nd Secondary 
-                        School and I took gap year. Currently my goal is to work in urban planning, environmental engineering, or industry in future. 
-                        I’m an ENFP/ENFJ who loves video editing, photography, and martial arts—especially judo, drawing and poetry. 
-                        I’m not one to brag, so I’ll keep it brief! I love balancing between academics and activities 
-                        cuz you can talk to whatever you want; I’m incredibly talkative. 
-                    </span>
-                      <button class="read-more-btn">Read more</button>
+                        and a graduate of 52nd...</span>
+                      <button class="learn-more-btn" onclick="openModal('tansagmergen')">Learn More</button>
                       </div>
                 </div>
               </div>
+
                 
         </div>
-    </div>
+    </div> <!--big container closes here-->
   
     
         <button class="learn-more-button" onclick="location.href='/appFrontend/src/app/about/about.component.html'">Learn More!</button>
@@ -552,7 +426,7 @@
 
         <div class="mr-nash-right">
             <p class="mr-nash-paragraph1">
-                "Education isn't just preparation for the future -- it's the foundation for shaping it. At Gobischolars, we strive to inspire and empower individuals to realize their potential."
+                "Education isn't just preparation for the future - it's the foundation for shaping it. At Gobischolars, we strive to inspire and empower individuals to realize their potential."
             </p>
             <p class="mr-nash-paragraph2">
                 Our mission is more than guiding students to prestigious universities; it's about reshaping the future of education in Mongolia and creating lasting change.
@@ -565,7 +439,7 @@
     </div>
 
 
-    <!-- PART 06:  NEWS PART -->
+    <!-- PART 06:  NEWS PART 
 
     <hr class="section-break">
 
@@ -596,7 +470,7 @@
         <button class="news-read-more-btn" onclick="location.href='appFrontend/src/app/news/news.component.html'">More</button>
     </div>
 
-    <hr class="section-break">
+    <hr class="section-break"> -->
 
 
     <!--PART 7: Mailing List Section-->
@@ -615,23 +489,44 @@
 
         <!--Social Media Icons -->
         <div class="footer-end-column social-media-icons">
-            <a href="https://www.google.com/maps?q=GOBI+Scholars,+17042+Ulaanbaatar,+Mongolia&hl=en&fbclid=IwY2xjawF_76ZleHRuA2FlbQIxMAABHW9Xkoyae8wjHZ2xZF2U7EYXYQC5kG9PjHspgAEqVgtqGwgqp9c4E4Cf7w_aem_-pMiw8F2Z-WEXKcKjsJx-g" target="_blank">
-              <img src="/appFrontend/src/app/assets/icons/location.png" alt="Location">
-           </a>
-            <a href="https://www.facebook.com/profile.php?id=61558703803366" target="_blank">
-                <img src="/appFrontend/src/app/assets/icons/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.linkedin.com/company/gobi-scholars/posts/?feedView=all" target="_blank">
-                <img src="/appFrontend/src/app/assets/icons/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://www.youtube.com/@gobi.scholars" target="_blank">
-                <img src="appFrontend/src/app/assets/icons/youtube.png" alt="YouTube">
-            </a>
-            <a href="https://www.instagram.com/gobischolars" target="_blank">
-                <img src="appFrontend/src/app/assets/icons/instagram.png" alt="Instagram">
-            </a>
+            <a href="https://www.google.com/maps?q=GOBI+Scholars,+17042+Ulaanbaatar,+Mongolia&hl=en&fbclid=IwY2xjawF_76ZleHRuA2FlbQIxMAABHW9Xkoyae8wjHZ2xZF2U7EYXYQC5kG9PjHspgAEqVgtqGwgqp9c4E4Cf7w_aem_-pMiw8F2Z-WEXKcKjsJx-g" target="_blank" aria-label="Location"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61558703803366" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/gobischolars" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@gobi.scholars" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/gobi-scholars/posts/?feedView=all" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:info@gobischolars.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
+
+    <!-- Dynamic Student Modal -->
+    <div id="studentModal" class="student-modal" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('studentModal')">&times;</span>
+
+            <!-- Dynamic Content -->
+            <div class="modal-header">
+                <h1 id="modalStudentName"></h1>
+                <p id="modalStudentTitle" class="student-title"></p>
+            </div>
+
+            <div class="modal-main-info">
+                <div class="student-description-home">
+                    <p id="modalStudentDescription"></p>
+                </div>
+
+                <div class="student-image">
+                    <img id="modalStudentImage" src="" alt="Student Image">
+                </div>
+            </div>
+
+            <div class="modal-works">
+                <h2>Works</h2>
+                <div id="modalWorksContainer" class="works-container"></div>
+            </div>
+
+        </div>
+    </div>
+
 
 
 <!--JavaScripts kakakaka-->
@@ -715,7 +610,480 @@
 
         setInterval(autoScroll, 50);
     });
-    
+
+    //individual model window for students
+    // Student Data (Store all student details here)
+    const students = {
+
+    //UNDRAM
+    undram: {
+        name: "Undram Uyasakh",
+        title: "Gobi Scholars, Class of 2025 - 84th Secondary Public School",
+        description: `  Undram is a passionate debater and a thoughtful leader with a strong desire to promote unity among humanity. 
+                        He founded the debate club at his school in 10th grade and went on to coach multiple teams, guiding them to 
+                        participate in national competitions. <br><br>
+
+                        With a competitive spirit, Undram has excelled in over 30 essay writing, 
+                        public speaking, and English competitions, earning top honors throughout his high school years.<br><br>
+
+                        Driven by a deep curiosity about humanity’s current challenges, he plans to study political science to explore ways 
+                        of fostering greater unity and understanding, aiming to lay the foundation for a more connected world." <br><br>
+
+                        <strong>Message:</strong>Wassup, I am a gap year student who recently graduated from the 84th public school. 
+                        I am a hopeless-romantic with a passion for humanity’s unification and debating. 
+                        You can find me debating with anyone on anything during my free time and if I am not debating 
+                        then I am probably reading some manga while debating with myself inside my head. 
+                        To relax, I like to compete with people or make some cosplay using EVA foam. My favorite food 
+                        is large quantities of food. If you meet me, we will debate and that is a fact.<br>`,
+
+        image: "/appFrontend/src/app/assets/students/undram.jpg",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg",
+                title: "Article 1",
+                desc: "Coming Soon!",
+                link: "/appFrontend/src/app/research/research.component.html",
+            },
+        ],
+    },
+
+    //BOLORMAA
+    bolormaa: {
+        name: "Bolormaa Munkhbat",
+        title: "Gobi Scholars, Class of 2025 - Mongol Aspiration International School",
+        description: `Bolormaa Munkhbat is a driven young leader and aspiring chemical engineer with a vision to advance STEM education in Mongolia. 
+                        As the founder and CEO of Young Engineers Mongolia, she has organized events, workshops, and engineering programs that have engaged 
+                        over 300 students in two major cities, fostering hands-on learning and inspiring interest in engineering. Leading a team of 
+                        5 managers and 49 interns, Bolormaa has coordinated partnerships with six NGOs and successfully raised $800 in funding, further 
+                        supporting her mission to expand access to engineering education.<br><br>
+
+                        In addition to her contributions through Young Engineers, Bolormaa launched Mastering Minds Academy, a tutoring business focused on 
+                        mathematics, English, and science, with profits supporting her social initiatives. Her dedication to empowering young people through 
+                        education reflects the core values of Gobi Scholars. She is interested in studying Chemical Engineering, Chemistry, and Computer 
+                        Science in college, with aspirations to drive technological and scientific progress in Mongolia.<br><br>
+
+                        <strong>Message:</strong> Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for the hexagons of 
+                        organic chemistry. Being passionate in Chemistry, I am also interested in providing quality education for Mongolian youth– 
+                        the future of our country! I have led multiple projects on engineering education, and has impacted over a thousand students. 
+                        Check out @young.engineers_org on IG if you want to be part of a spectacular community of future engineers. Besides academics, 
+                        I love walking, running, exercising, and trying out home-made hair masks with different ingredients.<br>`,
+
+        image: "/appFrontend/src/app/assets/students/bolormaa.jpg",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg",
+                title: "Article 1",
+                desc: "Coming Soon!",
+                link: "/appFrontend/src/app/research/research.component.html",
+            },
+        ],
+    },
+
+    //ORGILBAYAR
+    orgilbayar: {
+        name: "Orgilbayar Sukhchuluun",
+        title: "Gobi Scholars, Class of 2025 - 11th Secondary Public School",
+        description: `Orgilbayar Sukhchuluun is a passionate student with a keen interest in engineering and environmental science. 
+        He conducted an innovative research project on argal (dried cattle dung) as a potential eco-fuel to reduce air pollution in Ulaanbaatar, 
+        working alongside the General Department of Education and with support from the U.S. Embassy. His findings offer practical insights into using 
+        argal as a sustainable energy source, addressing the city’s pressing pollution challenges. <br><br>
+
+        Orgilbayar is also compiling a physics handbook of essential formulas, aimed at assisting high school students in mastering key concepts. 
+        As a committed physics Olympiad participant since the 7th grade, he has earned multiple medals and actively supports classmates and his peers as a 
+        physics tutor. His experiences include an internship at the Mongolian Academy of Sciences Physics and Technology Institute, where he gained hands-on 
+        exposure to labs in renewable energy and material science. <br><br>
+        
+        Driven by a dedication to practical solutions and scientific exploration, Orgilbayar plans to study both electrical and bio engineering, 
+        aiming to apply his skills to environmental innovation and technological advancements in Mongolia. <br><br>
+        
+        <strong>Message:</strong> Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar, who loves exploring the magic 
+        of the universe. You can say that Interstellar sparked my passion to investigate physics and beyond. I believe there are so many things to explore 
+        besides academics too. I am a combination of blue and color, being a strong advocate of environmental sustainability and gardening. 
+        Just give me a shovel, I can plant a flower for you. Fyodor Dostoevsky- my favorite novelist. But do not assume I'm emo. Nothing can change 
+        my perpetual mood- being happy.`,                            
+
+        image: "/appFrontend/src/app/assets/students/orgilbayar.jpg",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg",
+                title: "Article 1",
+                desc: "Coming Soon!",
+                link: "/appFrontend/src/app/research/research.component.html",
+            },
+        ],
+    },
+
+    //ENKH-ORCHLON
+    enkhorchlon: {
+        name: "Enkh-Orchlon Ariunbold",
+        title: "Gobi Scholars, Class of 2025 - Mongolia - Mongol Aspiration International School",
+        description: `Enkh-Orchlon deeply cares about improving mental health and wellness in her community. 
+        She founded "Minds Matter", her school’s first psychology club, organizing over ten workshops on mental health and self-discovery that impacted 300+ 
+        students.<br><br>
+
+        Beyond school, she also worked with "Setgel Zuich Mom", helping to create and translate content about child development 
+        and infant care. Through her efforts, over 650 mothers in an online community were able to access valuable resources.<br><br>
+        
+        Looking ahead, Enkh-Orchlon aspires to design programs that guide parents in fostering their children’s growth and well-being, 
+        empowering families to create positive and nurturing environments for future generations. <br><br>
+        
+        <strong>Message:</strong> Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration. 
+        I’m passionate about child development, children’s mental health, & psychology.  I love working with children, 
+        especially toddlers & preschoolers, & I’m eager to teach parents how to better support their kids’ growth. 
+        As a compassionate listener, I find joy in making others feel seen, heard, & understood. In my free time, I enjoy 
+        reading self-development books, listening to podcasts (Mel Robbins is a favorite), & writing poems, photography, & dancing.`,                            
+
+        image: "/appFrontend/src/app/assets/students/enkh-orchlon.jpg",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg",
+                title: "Article 1",
+                desc: "Coming Soon!",
+                link: "/appFrontend/src/app/research/research.component.html",
+            },
+        ],
+    },
+
+    //GOOMARAL
+    goomaral: {
+        name: "Goomaral Amarbayar",
+        title: "Gobi Scholars, Class of 2025 - Sant Secondary School",
+        description: `Goomaral is enthusiastic about pursuing a career in writing and thinking, Journalism and Philosophy. 
+        She has expanded on them through her Debate club at Sant, fostering her critical thinking and writing skills as the member and
+        the President. Besides training young debaters whilst nurturing her skills further, she acts as the editor of Sant Journal. <br><br>
+
+        During her time with Gobi Scholars, Goomaral co-authored an insightful 
+        <a href="https://itoim.mn/a/2024/11/03/world/jwi?afbd8a1aecfd634b532b60d5a39ea617" target="_blank">article on the US presidential election</a> in collaboration 
+        with co-founder Bayarjavkhlan Bayanmunkh. Additionally, she interned at American Corner, supported by the U.S Embassy. 
+        She taught English through innovative programs and worked closely with native speakers to develop engaging lessons for a 
+        participant of +1000. <br><br>
+        
+        Looking ahead, Goomaral envisions herself immersed in the Humanities field, particularly Philosophy and Gender Studies. 
+        She aims to integrate her passion for writing with her intellectual pursuits, fostering meaningful contributions to the field.<br><br>
+        
+        <strong>Message:</strong> Greetings! I am a high school senior at Sant school, aspiring to further delve into Philosophy. 
+        As for academics, I have been involved in several debate tournaments and writing roles such as article writer at Sant Journal. 
+        For fun, I indulge in tedious activities: Sewing, crocheting, writing or yapping. I am also an enthusiastic reader, often 
+        reading classic literature, especially Jane Austen!`,                            
+
+        image: "/appFrontend/src/app/assets/students/goomaral.png",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/articles/goomaral_article01.png",
+                title: "A Key Global Event: November 5 ",
+                desc: "The United States (US) presidential election is held every four years, on the first Tuesday in November each...",
+                link: "https://itoim.mn/a/2024/11/03/world/jwi?afbd8a1aecfd634b532b60d5a39ea617",
+            },
+
+            {
+                img: "/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg",
+                title: "Can gender-equality coexist with culture & tradition?",
+                desc: "Coming Soon!",
+                link: "/appFrontend/src/app/research/research.component.html",
+            },
+        ],
+    },
+
+    //JAVKHLANTUGS
+    javkhlantugs: {
+        name: "Javkhlantugs Sainsuren",
+        title: "Gobi Scholars, Class of 2025- Shine Mongol Harumafuji School",
+        description: `Javkhlantugs Sainsuren is an aspiring physicist with a passion for innovation and discovery. 
+        He has researched plant xylem systems for sustainable energy solutions and is currently investigating the challenges and 
+        prospects of constructing Mongolia’s first atomic power plant through an academic paper.<br><br>
+
+        Academically, he excelled with perfect 800s in Math and Physics on Mongolia’s National College Entrance Exam, 
+        ranking in the top 0.13% of over 21,200 students. He also earned two silver medals at the international SIMOC Olympiad, 
+        competing against participants from 32 countries.<br><br>
+        
+        Beyond academics, Javkhlantugs thrives on adventure and competition. He is a volleyball enthusiast, an avid skier, 
+        running lover and a biker.<br><br>
+
+        With his strong background in physics and mathematics, he is interested in studying Physics and Computer Science with 
+        aspirations to become a renowned physicist from Mongolia. <br><br>
+        
+        <strong>Message:</strong> I'm a gap year student from Shine Mongol Harumafuji High School, gearing up to major in physics and 
+        computer science. Curiosity and adventure fuel me—I’m always down for fun, crazy activities and thrive in competitive settings. 
+        I love volleyball, skiing, and riding motorbikes, and I'm all about making memories with friends. With experience in leadership 
+        and a passion for community building, I'm excited to take on college in the U.S., where I can dive into new challenges, 
+        both academic and recreational, and make the most out of every moment.`,                            
+
+        image: "/appFrontend/src/app/assets/students/javkhlantugs.png",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg",
+                title: "Article 1",
+                desc: "Coming Soon!",
+                link: "/appFrontend/src/app/research/research.component.html",
+            },
+        ],
+    },
+
+    //KHALIUNGOO
+    khaliungoo: {
+        name: "Khaliungoo Khuyagtbaatar",
+        title: "Gobi Scholars, Class of 2025 - New Beginning International School",
+        description: `Khaliungoo Khuyagtbaatar is a passionate leader committed to improving her community’s future. 
+        She has piloted over 250 youth-driven projects, organized entrepreneurship events with 1,300 participants, 
+        and raised more than 10 million MNT from local investors. Her initiatives, including education workshops on the 
+        Sustainable Development Goals and school renovations, have benefitted over 3,000 students.<br><br>
+
+        Her work also extends to rural communities, where she initiated climate seminars and submitted proposals on children’s 
+        safety to Mongolia’s Parliament. During the COVID-19 pandemic, she raised $3000 in supplies for children’s centers and 
+        hospitals. Her “Santa Campaign” also collected over 1,000 gifts for underprivileged children.<br><br>
+        
+        An accomplished public speaker, Khaliungoo has addressed audiences of over 10,000 and presented her research on air pollution 
+        at international forums. She presented the UNICEF Child-Friendly Cities Initiative Youth Advisory Board at the Inspire Awards 
+        in 2021 and was a team lead at the UNICEF Urban Youth Photography Workshop. Her academic interests include but are not limited 
+        to environmental science, public policy, and economics, aiming to tackle climate change and social inequality. 
+        Outside of academics, she enjoys horseback archery, traditional Mongolian calligraphy, photography, and swimming, 
+        excelling as a first-degree athlete.<br><br>
+
+        Khaliungoo is driven to create sustainable solutions and inspire others to contribute to positive social change.<br><br>
+
+
+        <strong>Message:</strong> Hey there! I’m currently taking a gap year pursuing my passion for environmental science and sociology 
+        (my intended majors actually). I spent much of my time organizing youth-led programs, advocating for climate action, and even renovating schools 
+        with hundreds of volunteers. If you’re down for deep convos over coffee or a hike to clear the mind, let’s connect! `,                            
+
+        image: "/appFrontend/src/app/assets/students/khaliungoo.png",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg",
+                title: "Article 1",
+                desc: "Coming Soon!",
+                link: "/appFrontend/src/app/research/research.component.html",
+            },
+        ],
+    },
+
+    //MUNGUNZUL
+    mungunzul: {
+        name: "Mungunzul Ulziidelger",
+        title: "Gobi Scholars, Class of 2025 - The 2nd School of Govisumber Province",
+        description: `Mungunzul Ulziidelger is a passionate youth leader and environmental advocate from Mongolia’s smallest province. Since 2020, she has led 
+        over 15 climate projects, benefiting more than 20,000 people, and advocating for environmental justice at local and global levels. 
+        As a board member of "Temuulel Amjiltiin Guur" NGO, she has organized numerous events to empower youth and strengthen communities in her province.<br><br>
+
+        Mungunzul represented Mongolia at the Transforming Education Summit in New York, where she advocated for youth facing the extreme climate conditions 
+        and dzud (severe winter storms). She emphasized the need for better access to education, resources, and skill-building opportunities for these young 
+        people, as part of Generation Unlimited (Gen-U).<br><br>
+        
+        Outside of her professional work, Mungunzul finds peace and focus in practicing Mongolian traditional script calligraphy. 
+        She also enjoys watching marching band performances and playing chess, both of which help her develop teamwork, strategic thinking, and personal 
+        growth.<br><br>
+
+        With her strong commitment to social responsibility and leadership, Mungunzul embodies the core values of Gobi Scholars. 
+        She is dedicated to continuing her work in education and climate, inspiring future leaders in Mongolia and beyond. <br><br>
+
+        
+        <strong>Message:</strong> Mungunzul Ulziidelger is from the smallest province of Mongolia, currently on a gap year filled with enriching experiences. 
+        Passionate about environmental science, she has taken the initiative as a youth climate activist, leading projects that inspire others to engage in 
+        sustainability. During her gap year, Mungunzul has honed her skills through various part-time jobs, gaining independence and preparing for her 
+        future studies.`,                            
+
+        image: "/appFrontend/src/app/assets/students/mungunzul.png",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/articles/mungunzul_article01.png",
+                title: "The next generation cares about our planet",
+                desc: "Mungunzul is an energetic girl who loves nature with big dreams for the future. She is 16 years old and lives with her parents and four siblings in Sumber soum of Gobi-Sumber,",
+                link: "https://www.unicef.org/mongolia/stories/next-generation-cares-about-our-planet",
+            },
+        ],
+    },
+
+    //RYENCHINSONOM
+    ryenchinsonom: {
+        name: "Ryenchinsonom Khatanbaatar",
+        title: "Gobi Scholars, Class of 2025 – Khumuun Complex High School",
+        description: `Ryenchinsonom is a driven and socially conscious student passionate about social entrepreneurship and economics. 
+        He is originally from Tuv province of Mongolia, but transferred to Khumuun Compex High School in Ulaanbaatar in his junior year. 
+        During his gap year, he successfully led eco-friendly social projects, including HTSO and ODOO, which ranked among the top 10 out of over 
+        400 initiatives. Notably, he presented the HTSO project on Shark Tank Mongolia, securing investments from all participating investors.<br><br>
+
+        A committed advocate for human rights, Ryenchinsonom has organized impactful events to raise awareness about LGBTQ+ and disability rights, inspiring 
+        his peers to engage in social justice initiatives. His contributions as a board member of the Mongolian Federation of Women’s Associations (MFWA) 
+        and his collaborations with various non-profit organizations demonstrate his dedication to driving meaningful change.<br><br>
+        
+        During his internship at Idax, a leading cryptocurrency exchange in Mongolia, he gained valuable insights into blockchain and cryptocurrencies, 
+        publishing over 20 articles to educate and inform others about the field.<br><br>
+
+        Ryenchinsonom is committed to creating sustainable solutions and empowering communities through innovation, advocacy, and education. His achievements 
+        reflect his unwavering dedication to building a more inclusive and equitable society.<br><br>
+
+
+        <strong>Message:</strong> Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen interest in Economics and Computer Science. 
+        I graduated from Khumuun Complex High School, located in Tuv, Zuunmod. I enjoy managing resources and balancing my life. Outside of academics, 
+        I love hiking, playing chess and trading. `,                            
+
+        image: "/appFrontend/src/app/assets/students/ryenchinsonom.png",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg",
+                title: "Article 1",
+                desc: "Coming Soon!",
+                link: "/appFrontend/src/app/research/research.component.html",
+            },
+        ],
+    },
+
+    //NARANCHULUU
+    naranchuluu: {
+        name: "Naranchuluu Ochir",
+        title: "Gobi Scholars Class of 2025 - New Beginning International School",
+        description: `Naranchuluu Ochir is a passionate advocate for disability rights, sustainable development, and youth empowerment, with a vision for 
+        driving meaningful change in Mongolia. Her political internships with the People’s Party and the Democratic Party have deepened her understanding of 
+        governance and inspired her to pursue inclusive policies and innovative leadership.<br><br>
+
+        Naranchuluu’s advocacy for disability rights stems from her personal connections within the community. As a participant in the U.S. 
+        Embassy-funded ASL 2023–2025 program, she promotes American Sign Language (ASL) in her school and community, teaching others and 
+        fostering inclusivity through social media campaigns.<br><br>
+        
+        Her environmental leadership has been recognized nationally. As a Junior Ranger, she led a clean water project benefiting over 2,500 students and, 
+        as leader of her school’s Eco Council, implemented initiatives that earned recognition from UNICEF’s Earth School program. Her efforts have included 
+        providing free environmental science courses to hundreds of students and promoting sustainable practices.<br><br>
+
+        Naranchuluu’s academic focus on political philosophy explores applying the Socratic method to Mongolian governance, blending critical thinking with 
+        modern decision-making. Her leadership in Model United Nations and education outreach through EducationUSA further highlights her commitment to 
+        inspiring societal progress. Naranchuluu aims to address inequality, improve governance, and create a sustainable future for Mongolia.<br><br>
+
+        <strong>Message:</strong>  Hi everyone! I'm a rising senior at NBIS with a passion for politics and social justice, focusing on women's 
+        rights and disability issues. I love meeting new people and exploring diverse cultures, and I'm particularly interested in the political systems of 
+        China, the USA, Russia, and Mongolia. My internships with Mongolia's People's Party and Democratic Party have enriched my understanding of politics, 
+        though I align more with the Democratic Party. My goal is to help create a world where everyone feels accepted and valued. I believe in learning from 
+        historical ideologies like Leninism and Maoism to adopt successful strategies for development, as China has done. While I hold strong views, 
+        I'm committed to listening and growing through others' experiences. `,                            
+
+        image: "/appFrontend/src/app/assets/students/naranchuluu.png",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg",
+                title: "Article 1",
+                desc: "Coming Soon!",
+                link: "/appFrontend/src/app/research/research.component.html",
+            },
+        ],
+    },
+
+    //TANSAGMERGEN
+    tansagmergen: {
+        name: "Tansagmergen Terbish",
+        title: "Gobi Scholars, Class of 2025 - 52nd Secondary Public School",
+        description: `Tansagmergen Terbish is a passionate urban planning enthusiast and aspiring environmental engineer dedicated to creating sustainable, 
+        inclusive communities. His vision focuses on addressing the challenges of rapid urbanization, particularly in Mongolia, by integrating innovative 
+        planning strategies and environmental solutions. During his internship at the Ministry of Urban Development and Construction, he worked on urban 
+        projects addressing infrastructure and housing issues, gaining invaluable insight into policy-making and city planning.<br><br>
+
+        Beyond his urban planning interests, Tansagmergen has contributed extensively to environmental and social causes. With over 700 volunteer hours at 
+        Lantuun Dohio and other NGOs, he has raised over $21,000 for three impactful environmental projects. His thrift campaign (Gargen1101), 
+        successfully sold 800 items, saving an estimated 20,430,000 liters of water. What began as a sustainability initiative has now evolved into one of 
+        his own thriving businesses. His research on urbanization, published in Bloomberg Mongolia, delves into the effects of rapid urban growth on housing 
+        and infrastructure, offering innovative strategies to improve urban sustainability and living conditions. This work demonstrates his ability to merge 
+        analytical research with actionable solutions, making a meaningful contribution to Mongolia's urban discourse.<br><br>
+        
+        Tansagmergen’s diverse experiences reflect his adaptability and leadership. As an international scout teacher, he has fostered teamwork and resilience 
+        among youth. During his exchange year in Denver, Colorado with the Zorig Foundation, he embraced global perspectives, further shaping his vision of a 
+        collaborative, sustainable future.<br><br>
+
+        <strong>Message:</strong>  Hi, I’m Tansagaa, a kid from Bayankhongor, Baatsagaan, and a graduate of 52nd Secondary School and I took gap year. 
+        Currently my goal is to work in urban planning, environmental engineering, or industry in future. I’m an ENFP/ENFJ who loves video editing, 
+        photography, and martial arts—especially judo, drawing and poetry. I’m not one to brag, so I’ll keep it brief! I love balancing between academics 
+        and activities cuz you can talk to whatever you want; I’m incredibly talkative.`,                            
+
+        image: "/appFrontend/src/app/assets/students/tansagmergen.png",
+        works: [
+            {
+                img: "/appFrontend/src/app/assets/aboutassets/publicationsexample.jpg",
+                title: "Article 1",
+                desc: "Coming Soon!",
+                link: "/appFrontend/src/app/research/research.component.html",
+            },
+        ],
+    },
+    };
+
+    // Open Modal
+    function openModal(studentKey) {
+        const modal = document.getElementById('studentModal');
+        const student = students[studentKey];
+
+        if (!student) {
+        console.warn(`Student with key "${studentKey}" not found.`);
+        return; // Don't open the modal if the student data is missing
+        }
+
+        // Populate Modal Content
+        document.getElementById('modalStudentName').textContent = student.name;
+        document.getElementById('modalStudentTitle').textContent = student.title;
+        document.getElementById('modalStudentDescription').innerHTML = student.description;
+        document.getElementById('modalStudentImage').src = student.image;
+        document.getElementById('modalStudentImage').alt = student.name;
+
+        // Populate Works
+        const worksContainer = document.getElementById('modalWorksContainer');
+        worksContainer.innerHTML = ""; // Clear previous content
+        student.works.forEach(work => {
+            const workItem = `
+                <div class="work-item">
+                    <img src="${work.img}" alt="${work.title}">
+                    <div class="work-details">
+                        <h3>${work.title}</h3>
+                        <p>${work.desc}</p>
+                        <a href="${work.link}" target="_blank" class="read-full">Continue Reading</a>
+                    </div>
+                </div>
+            `;
+            worksContainer.innerHTML += workItem;
+        });
+
+        // Show Modal
+        modal.style.display = "flex";
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+    }
+
+    // Close Modal
+    function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.style.display = "none";
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modal-open');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('studentModal');
+    modal.style.display = "none"; // Ensure modal is hidden on load
+    });
+
+    // Disable Right-Click
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
+// Disable Key Shortcuts (e.g., Ctrl+Shift+I, F12, etc.)
+document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.keyCode === 123) {
+        e.preventDefault();
+    }
+    // Ctrl+Shift+I or Cmd+Option+I
+    if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) {
+        e.preventDefault();
+    }
+    // Ctrl+Shift+J or Cmd+Option+J
+    if (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j')) {
+        e.preventDefault();
+    }
+    // Ctrl+U or Cmd+Option+U
+    if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
+        e.preventDefault();
+    }
+});
+
+
+
+        
   </script>
   </body>
   </html>

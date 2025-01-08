@@ -89,22 +89,22 @@ body {
 }
 
 .menu-item button:hover {
-    color: #f0f0f0; /* Lighten text on hover */
+    color: #6e6e6e; /* Lighten text on hover */
 }
 
 .menu-item a {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 12px;
     text-decoration: none; /* Remove underline */
     cursor: pointer;
 }
 
 .menu-item a:hover {
-    color: #f0f0f0; /* Lighten text on hover */
+    color: #6e6e6e; /* Lighten text on hover */
 }
 
-
+/*
 .dropdown {
     position: relative;
     
@@ -152,7 +152,7 @@ body {
 
 .search-button i:hover {
     color: #f0f0f0; /* Lighten the color on hover */
-}
+
 
 
 /* Centered content */
@@ -163,8 +163,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 30px;
-    width: 100%;
     z-index: 2;
+    width: 100%;
     
 }
 
@@ -181,11 +181,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 16px;
-    line-height: 2px;
     text-align: center;
     margin: 0 30px;
     color: rgba(255, 255, 255, 0.9);
+    max-width: 50%;
+    line-height: 1.5rem;
 }
+
 
 .center-content button {
     font-family: 'Montserrat', sans-serif;
@@ -314,6 +316,22 @@ body {
     line-height: 1.3;
 }
 
+.second-section button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #454545;
+    background-color: rgb(255, 255, 255); 
+    border: none;
+    padding-left: 50px;
+    border-radius: 0px;
+    cursor: pointer;
+    box-shadow: none;
+    text-decoration: underline;
+    text-align: left;
+    margin-top: 35px;
+
+}
 
 /*SECTION 04: OUR STUDENTS*/
 .our-students-section {
@@ -433,20 +451,199 @@ body {
     display: none;
 }
 
-.read-more-btn {
-    background: none;
-    border: none;
-    color: #474141;
-    font-family: 'Montserrat', sans-serif;
+.student-description .learn-more-btn {
+    color:grey;
+    font-family: 'montserrat', sans-serif;
     font-size: 12px;
+    background-color: rgb(0, 0, 0); 
+    border: none;
+    border-radius: 0px;
     cursor: pointer;
-    padding: 0 5px;
+    box-shadow: none;
     text-decoration: underline;
+    text-align: center;
+    margin-top: 15px;
 }
 
-.read-more-btn:hover {
-    color:white; 
+.student-description .learn-more-btn:hover {
+    color:white;
 }
+
+
+/*STUDENTS MODAL POP UP WINDOWSS*/
+.student-modal {
+    display: none; /* Default: Hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it appears above all other elements */
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    max-width: 70%;
+    max-height: 90%;
+    overflow-y: auto; /* Add scroll for overflowing content */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding: 40px 20px;
+    border-radius: 25px;
+}
+
+/* Close Button */
+.modal-content .close {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+
+body.modal-open {
+    overflow: hidden; /* Disable scrolling when modal is open */
+}
+
+body.modal-open .our-students-section {
+    filter: blur(3px); /* Add blur effect to the main page */
+}
+
+
+/* Modal Header */
+.modal-header h1 {
+    font-size: 55px;
+    font-family: 'Times New Roman', serif;
+    color: black;
+    font-weight: bold; 
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.modal-header .student-title {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(184, 28, 28);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+/* Main Info Section */
+.modal-main-info {
+    display: flex;
+    gap: 20px; /* Space between the description and the image */
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+/* Student Description (Left Part) */
+.student-description-home {
+    flex: 6; /* 60% width */
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif, !important;
+    color: black;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0px 30px;
+}
+
+/* Student Image (Right Part) */
+.student-image {
+    flex: 2; 
+    margin-top: 0px;
+}
+
+.student-image img {
+    width: 100%; /* Maintain width constraint */
+    max-width: 180px;
+    height: 280px; /* Preserve aspect ratio */
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+/* Works Section */
+.modal-works h2 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.works-container {
+    display: flex;
+    gap: 20px; /* Space between work items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    margin-left: 35px;
+}
+
+.work-item {
+    flex: 0 1 calc(33.333% - 20px); /* Each work takes up about 1/3rd of the container, minus the gap */
+    background-color: #ffffff;
+    border: 1px solid #a2a2a2;
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-10px); /* Hover effect for work items */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.work-item img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
+
+.work-details h3 {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin-top: 1em;
+    
+}
+
+.work-details p {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+ 
+}
+
+.read-full {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #34333356;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.read-full:hover {
+    color: #9b1a1a;
+}
+
 
 .learn-more-button {
     background-color: #a41111; 
@@ -620,9 +817,10 @@ body {
     color: white;
     text-align: center;
     padding: 50px 0;
-    height: 70vh;
+    height: 80vh;
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
+
 }
 
 
@@ -680,38 +878,36 @@ body {
 
 /* SECTION 8: PAGE END | SOCIAL ACCOUNTS */
 .footer-end {
-    margin-top: 0px;
-    background-color: black;
-    padding: 50px 25px;
+    margin-top: 0em;
+    background-color: rgb(0, 0, 0);
+    padding: 3em;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    height: 10em;
 }
 
 
 .social-media-icons {
-    display: inline;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    flex-wrap: nowrap;
+    gap: 20px;
+    
 }
 
-.social-media-icons img {
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
-    transition: transform 0.3s;
-    filter: grayscale(100%);
-    opacity: 0.7;
-
+.social-media-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 22px;
+    transition: color 0.3s ease;
 }
 
-.social-media-icons a:hover img {
-    transform: scale(1.2);
-    filter: grayscale(0%);
+.social-media-icons a:hover {
+    transform: scale(1.3);
+    color: #c10000;
     opacity: 1;
 }
 
