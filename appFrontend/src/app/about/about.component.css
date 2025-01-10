@@ -610,6 +610,133 @@ html {
     color:rgb(135, 17, 17); 
 }
 
+/* General Modal Styles */
+.team-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.team-modal .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    max-width: 70%;
+    max-height: 90%;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+    position: relative;
+    width: 60%;
+}
+
+.team-modal .close {
+    color: black;
+    top: 60px;
+    right: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+body.modal-open #our-team {
+    filter: blur(6px); /* Add blur effect to the main page */
+}
+
+/* Header Section */
+.modal-header h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(1, 1, 13);
+    margin-left: 30px;
+    margin-bottom: 10px
+}
+
+.modal-header .team-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: rgb(184, 28, 28);
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+/* Main Info Section */
+.modal-main-info {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.team-description {
+    flex: 6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: rgb(104, 104, 104);
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0px 30px;
+}
+
+.team-image {
+    flex: 3;
+    margin-top: 20px;
+
+}
+
+.team-image img {
+    max-width: 100%;
+    height: 280px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+
+/* Animations */
+@keyframes slide-down {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .team-modal-content {
+        width: 95%;
+    }
+
+    .team-modal-description {
+        font-size: 13px;
+    }
+
+    .team-modal-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
 
 /*PART 10: OUR STUDENTS */
 .our-students-section p {
@@ -712,9 +839,7 @@ html {
     white-space: wrap; /* Prevent line breaking */
 }
 
-.student-info .full-info-about {
-    display: none;
-}
+
 
 .learn-more-btn-about {
     background: none;
@@ -724,6 +849,7 @@ html {
     font-size: 12px;
     cursor: pointer;
     text-decoration: underline;
+    margin-top: 20px;
 }
 
 .learn-more-btn-about:hover {
@@ -827,7 +953,6 @@ body.modal-open #our-students {
 
 .student-image img {
     width: 100%; /* Maintain width constraint */
-    max-width: 180px;
     height: 280px; /* Preserve aspect ratio */
     border-radius: 30px;
     object-fit: cover;

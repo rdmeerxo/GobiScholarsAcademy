@@ -176,13 +176,13 @@
                     <div class="our-story-text">
                         <p>
                             Growing up as a nomad in eastern Mongolia, Bayarjavkhlan (Jack) Bayanmunkh experienced the scarcity of 
-                            educational resources and guidance. Motivated by this experience, he co-founded Gobi Scholars to create a supportive 
-                            community of scholars committed to shaping Mongolia's future. Gobi Scholars connects ambitious Mongolian students 
+                            educational resources and guidance. Motivated by this experience, he co-founded Gobischolars to create a supportive 
+                            community of scholars committed to shaping Mongolia's future. Gobischolars connects ambitious Mongolian students 
                             with top U.S. colleges and offers opportunities for U.S. students to teach in Mongolia, 
                             bridging global knowledge with local needs. In addition to empowering students, 
                             we organize educational forums to engage policymakers, raise awareness about the challenges facing Mongolia's 
                             education system, and advocate for meaningful reforms. By uniting students, educators, and policymakers, 
-                            Gobi Scholars is dedicated to building a stronger, more innovative education system for Mongolia's future.
+                            Gobischolars is dedicated to building a stronger, more innovative education system for Mongolia's future.
                         </p>
                     </div>
             
@@ -216,22 +216,15 @@
 
                         <!-- Employee 1 -->
                         <div class="slide-employee">
+                
                             <img class="employee-image" src="/appFrontend/src/app/assets/faculties/injinaash.png" alt="Injinaash Ogoosambuu">
                             <div class="employee-description">
                                 <div class="employee-name"><strong>Injinaash Ogoosambuu</strong></div>
-                                <div class="employee-role">Co-founder and CEO of GobiScholars</div>
+                                <div class="employee-role">Co-founder and CEO of Gobischolars</div>
                                 <div class="employee-info">
                                     <span class="short-info">Injinaash Ogoosambuu is a seasoned marketing professional and 
                                         the visionary CEO of GobiScholars...</span>
-                                    <span class="full-info-hidden">Injinaash Ogoosambuu is a seasoned marketing professional and 
-                                        the visionary CEO of GobiScholars. With years of experience leading innovative campaigns and strategies, 
-                                        he also runs his own successful marketing agency, helping businesses achieve their goals with creative 
-                                        and data-driven solutions. As co-founder of GobiScholars, Injinaash combines his passion for education 
-                                        and entrepreneurship, driving the organization’s mission to empower students and transform communities 
-                                        through impactful programs. His leadership reflects a commitment to fostering global connections and 
-                                        inspiring the next generation of changemakers.
-                                    </span>
-                                    <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                                    <button class="read-more-btn" onclick="openTeamModal('injinaash')">Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -242,17 +235,10 @@
                             <img class="employee-image" src="/appFrontend/src/app/assets/faculties/jacky.png" alt="Bayarjavkhlan Bayanmunkh">
                             <div class="employee-description">
                                 <div class="employee-name"><strong>Bayarjavkhlan (Jack) Bayanmunkh</strong></div>
-                                <div class="employee-role">Co-founder and Director of Gobi Scholars Institution</div>
+                                <div class="employee-role">Co-founder and Director of Gobischolars Institution</div>
                                 <div class="employee-info">
-                                    <span class="short-info">Jack is a senior at Swarthmore College, pursuing dual degrees in Political Science and Economics...</span>
-                                    <span class="full-info-hidden">Jack is a senior at Swarthmore College, pursuing dual degrees in Political Science and Economics. 
-                                        He has three years of experience as a Career Peer Advisor at Swarthmore’s Career Services Office, 
-                                        where he guided students in preparing job and graduate school applications. 
-                                        Previously, he served as President of the Mongolian Students’ Association in America, 
-                                        an NGO with a network of over 600 alumni in the U.S. Fun fact: Jack once taught beginner-level 
-                                        English to Korean kindergarteners, despite not speaking Korean at the time.
-                                        </span>
-                                    <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                                    <span class="short-info">Jack is a senior at Swarthmore College, pursuing dual degrees in Political Science and...</span>
+                                    <button class="read-more-btn" onclick="openTeamModal('bayarjavkhlan')">Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -263,19 +249,11 @@
                             <img class="employee-image" src="/appFrontend/src/app/assets/faculties/noko.png" alt="Norovsuren Khureltogoo">
                             <div class="employee-description">
                                 <div class="employee-name"><strong>Norovsuren Khureltogoo</strong></div>
-                                <div class="employee-role">Project Manager at Gobi Scholars Academy</div>
+                                <div class="employee-role">Project Manager at Gobischolars Academy</div>
                                 <div class="employee-info">
-                                    <span class="short-info">Norovsuren serves as a project manager at Gobi Scholars Academy, 
-                                        where she has successfully led initiatives such as...</span>
-                                    <span class="full-info-hidden">Norovsuren serves as a project manager at Gobi Scholars Academy, 
-                                        where she has successfully led initiatives such as the inaugural cohort of the Gobi Scholars 2024 
-                                        program and various intensive bootcamps. Driven by a deep curiosity about the intricacies of education 
-                                        systems, she plans to pursue studies in Public Policy and Educational Studies to develop 
-                                        innovative solutions for advancing education and policy reform. Beyond her professional 
-                                        and academic pursuits, Norovsuren is passionate about air rifle shooting, drumming, and 
-                                        empowering local communities through engaging workshops and knowledge-sharing sessions.
-                                    </span>
-                                    <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                                    <span class="short-info">Norovsuren serves as a project manager at Gobischolars Academy, 
+                                        where she has successfully...</span>
+                                    <button class="read-more-btn" onclick="openTeamModal('norovsuren')">Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -289,18 +267,8 @@
                                 <div class="employee-role">Program Assistant Intern at Gobischolars NGO</div>
                                 <div class="employee-info">
                                     <span class="short-info">Lkhagvasuren Olonbayar is a Program Assistant Intern at Gobischolars NGO, 
-                                        where she led the Gobi Scholars 2024 cohort...</span>
-                                    <span class="full-info-hidden">Lkhagvasuren Olonbayar is a Program Assistant Intern at Gobischolars NGO, 
-                                        where she led the Gobi Scholars 2024 cohort and actively contributes to the development of 
-                                        future initiatives. She brings valuable teaching experience from her roles as an English teacher at 
-                                        Kids Wider World EduTech and as a part-time educator at Tomujin Alternative High School. 
-                                        Lkhagvasuren has a deep interest in the intersection of education policy and economics and is 
-                                        committed to pursuing studies in Educational Studies, Economics, and Public Policy. 
-                                        Beyond her professional endeavors, Lkhagvasuren is dedicated to community engagement through 
-                                        local volunteering. She also enjoys hands-on creative pursuits, including crocheting, painting, 
-                                        and illustrating.
-                                    </span>
-                                    <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                                        where she led the Gobischolars 2024...</span>
+                                        <button class="read-more-btn" onclick="openTeamModal('lkhagvasuren')">Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -314,12 +282,7 @@
                                 <div class="employee-info">
                                     <span class="short-info">Erdemtugs Erdenetogtokh is a senior at the University of Pécs, 
                                         majoring in Computer Science...</span>
-                                    <span class="full-info-hidden">Erdemtugs Erdenetogtokh is a senior at the University of Pécs, majoring in Computer Science. 
-                                        She is deeply passionate about the intersection of technology and neuroscience, envisioning the use of her technical expertise 
-                                        to drive innovative applications in this field. Beyond her studies, she has a profound love for teaching. With over six years of 
-                                        experience teaching math, she also worked as an SAT Math Tutor at Gobi Scholars Academy in 2024, helping students excel academically.
-                                    </span>
-                                    <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                                    <button class="read-more-btn" onclick="openTeamModal('erdemtugs')">Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -332,15 +295,7 @@
                                 <div class="employee-role">Counselor</div>
                                 <div class="employee-info">
                                     <span class="short-info">Sunderya is a senior at Boston College pursuing a dual degree in Political Science and Communications...</span>
-                                    <span class="full-info-hidden">Sunderya is a senior at Boston College pursuing a dual degree in Political Science and Communications. 
-                                        She has a strong interest in comparative politics and IR theory, and has done independent research on the relationship between
-                                         energy security, critical mineral reserves, and U.S. grand strategy. Sunderya has professional work experience as a communications 
-                                         and media intern at Ulaanbaatar, Geneva, and Washington D.C. as well as a research assistant in the political science department. 
-                                         At Boston College, Sunderya is a Bowman Advocate, a student leader who strives to support and empower the undergraduate student body 
-                                         in building a more inclusive community through cross-cultural dialogue, and a contributor at the Heights, the independent student 
-                                         newspaper at Boston College. 
-                                    </span>
-                                    <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                                    <button class="read-more-btn" onclick="openTeamModal('sunderya')">Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -394,7 +349,7 @@
                                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                                     <div class="student-info">
                                         <span class="short-info-about">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for 
-                                            the hexagons of the organic chemistry....</span>
+                                            the...</span>
                                             <button class="learn-more-btn-about" onclick="openModal('bolormaa')">Learn More</button>
                                     </div>
                             </div>
@@ -407,7 +362,7 @@
                                     <div class="student-name"><strong>Orgilbayar S.</strong></div>
                                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                                     <div class="student-info">
-                                        <span class="short-info-about">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11...</span>
+                                        <span class="short-info-about">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar...</span>
                                         <button class="learn-more-btn-about" onclick="openModal('orgilbayar')">Learn More</button>
                                     </div>
                                 </div>
@@ -434,7 +389,7 @@
                                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                                     <div class="student-info">
                                         <span class="short-info-about">Greetings! I am a high school senior at Sant school, 
-                                            aspiring to further delve into Philosophy...</span>
+                                            aspiring to further delve into...</span>
                                         <button class="learn-more-btn-about" onclick="openModal('goomaral')">Learn More</button>
                                     </div>
                                 </div>
@@ -448,7 +403,7 @@
                                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                                     <div class="student-info">
                                         <span class="short-info-about">I'm a gap year student from Shine Mongol Harumafuji High School, 
-                                            gearing up to major in physics and computer science...</span>
+                                            gearing up to major in...</span>
                                         <button class="learn-more-btn-about" onclick="openModal('javkhlantugs')">Learn More</button>
                                         </div>
 
@@ -475,8 +430,7 @@
                                     <div class="student-name"><strong>Ryenchinsonom Kh.</strong></div>
                                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                                     <div class="student-info">
-                                        <span class="short-info-about">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen interest 
-                                            in Economics and Computer Science...</span>
+                                        <span class="short-info-about">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen...</span>
                                         <button class="learn-more-btn-about" onclick="openModal('ryenchinsonom')">Learn More</button>
                                         </div>
                                 </div>
@@ -489,7 +443,7 @@
                                     <div class="student-name"><strong>Khaliungoo Kh.</strong></div>
                                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                                     <div class="student-info">
-                                        <span class="short-info-about">Hey there! I’m currently taking a gap year pursuing my passion for environmental science and sociology...</span>
+                                        <span class="short-info-about">Hey there! I’m currently taking a gap year pursuing my passion for environmental science...</span>
                                         <button class="learn-more-btn-about" onclick="openModal('khaliungoo')">Learn More</button>
                                         </div>
                                 </div>
@@ -503,7 +457,7 @@
                                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                                     <div class="student-info">
                                         <span class="short-info-about">Hi everyone! I'm a rising senior at NBIS with a passion for politics and 
-                                            social justice, focusing on women's rights and disability issues....</span>
+                                            social justice, focusing...</span>
                                         <button class="learn-more-btn-about" onclick="openModal('naranchuluu')">Learn More</button>
                                     </div>
                                 </div>
@@ -518,7 +472,7 @@
                                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                                     <div class="student-info">
                                         <span class="short-info-about">Hi, I’m Tansagaa, a kid from Bayankhongor, Baatsagaan, 
-                                        and a graduate of 52nd Secondary School and I took gap year.....</span>
+                                        and a graduate of 52nd...</span>
                                         <button class="learn-more-btn-about" onclick="openModal('tansagmergen')">Learn More</button>
                                     </div>
                                 </div>
@@ -575,7 +529,7 @@
                     </div>
 
                     <div class="student-image">
-                        <img id="modalStudentImage" src="" alt="Student Image">
+                            <img id="modalStudentImage" src="" alt="Student Image">
                     </div>
                 </div>
 
@@ -587,6 +541,28 @@
             </div>
         </div>
 
+        <!-- DYNAMIC TEAM MODAL -->
+        <div id="teamModal" class="team-modal" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <span class="close" onclick="closeTeamModal()">&times;</span>
+
+                <!-- Dynamic Content -->
+                <div class="modal-header">
+                    <h1 id="teamModalTitle"></h1>
+                    <p id="teamModalTeamTitle" class="team-title"></p>
+                </div>
+
+                <div class="modal-main-info">
+                    <div class="team-description">
+                        <p id="teamModalDescription"></p>
+                    </div>
+
+                    <div class="team-image">
+                        <img id="teamModalImage" src="" alt="Team Member Image">
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 <script>
@@ -651,30 +627,6 @@
         }
     }
 
-    //script for our team section
-    document.addEventListener('DOMContentLoaded', () => {
-    const readMoreButtons = document.querySelectorAll('.read-more-btn');
-
-    readMoreButtons.forEach((button) => {
-        button.addEventListener('click', () => {
-            const infoContainer = button.closest('.employee-description'); 
-            const shortInfo = infoContainer.querySelector('.short-info'); // Get the short info
-            const fullInfo = infoContainer.querySelector('.full-info-hidden'); // Get the full info
-
-            // Toggle visibility
-            if (fullInfo.style.display === 'none' || fullInfo.style.display === '') {
-                fullInfo.style.display = 'inline'; // Show full info
-                shortInfo.style.display = 'none'; // Hide short info
-                button.textContent = 'Read Less'; // Change button text to "Read Less"
-            } else {
-                fullInfo.style.display = 'none'; // Hide full info
-                shortInfo.style.display = 'inline'; // Show short info
-                button.textContent = 'Read More'; // Change button text to "Read More"
-            }
-            });
-        });
-    });
-
     
 
     //SCRIPT STARTS FOR MAILING LIST
@@ -707,7 +659,7 @@
         //UNDRAM
         undram: {
             name: "Undram Uyasakh",
-            title: "Gobi Scholars, Class of 2025 - 84th Secondary Public School",
+            title: "Gobischolars, Class of 2025 - 84th Secondary Public School",
             description: `  Undram is a passionate debater and a thoughtful leader with a strong desire to promote unity among humanity. 
                             He founded the debate club at his school in 10th grade and went on to coach multiple teams, guiding them to 
                             participate in national competitions. <br><br>
@@ -739,7 +691,7 @@
         //BOLORMAA
         bolormaa: {
             name: "Bolormaa Munkhbat",
-            title: "Gobi Scholars, Class of 2025 - Mongol Aspiration International School",
+            title: "Gobischolars, Class of 2025 - Mongol Aspiration International School",
             description: `Bolormaa Munkhbat is a driven young leader and aspiring chemical engineer with a vision to advance STEM education in Mongolia. 
                             As the founder and CEO of Young Engineers Mongolia, she has organized events, workshops, and engineering programs that have engaged 
                             over 300 students in two major cities, fostering hands-on learning and inspiring interest in engineering. Leading a team of 
@@ -771,7 +723,7 @@
         //ORGILBAYAR
         orgilbayar: {
             name: "Orgilbayar Sukhchuluun",
-            title: "Gobi Scholars, Class of 2025 - 11th Secondary Public School",
+            title: "Gobischolars, Class of 2025 - 11th Secondary Public School",
             description: `Orgilbayar Sukhchuluun is a passionate student with a keen interest in engineering and environmental science. 
             He conducted an innovative research project on argal (dried cattle dung) as a potential eco-fuel to reduce air pollution in Ulaanbaatar, 
             working alongside the General Department of Education and with support from the U.S. Embassy. His findings offer practical insights into using 
@@ -805,7 +757,7 @@
         //ENKH-ORCHLON
         enkhorchlon: {
             name: "Enkh-Orchlon Ariunbold",
-            title: "Gobi Scholars, Class of 2025 - Mongolia - Mongol Aspiration International School",
+            title: "Gobischolars, Class of 2025 - Mongolia - Mongol Aspiration International School",
             description: `Enkh-Orchlon deeply cares about improving mental health and wellness in her community. 
             She founded "Minds Matter", her school’s first psychology club, organizing over ten workshops on mental health and self-discovery that impacted 300+ 
             students.<br><br>
@@ -836,7 +788,7 @@
         //GOOMARAL
         goomaral: {
             name: "Goomaral Amarbayar",
-            title: "Gobi Scholars, Class of 2025 - Sant Secondary School",
+            title: "Gobischolars, Class of 2025 - Sant Secondary School",
             description: `Goomaral is enthusiastic about pursuing a career in writing and thinking, Journalism and Philosophy. 
             She has expanded on them through her Debate club at Sant, fostering her critical thinking and writing skills as the member and
              the President. Besides training young debaters whilst nurturing her skills further, she acts as the editor of Sant Journal. <br><br>
@@ -876,7 +828,7 @@
         //JAVKHLANTUGS
         javkhlantugs: {
             name: "Javkhlantugs Sainsuren",
-            title: "Gobi Scholars, Class of 2025- Shine Mongol Harumafuji School",
+            title: "Gobischolars, Class of 2025- Shine Mongol Harumafuji School",
             description: `Javkhlantugs Sainsuren is an aspiring physicist with a passion for innovation and discovery. 
             He has researched plant xylem systems for sustainable energy solutions and is currently investigating the challenges and 
             prospects of constructing Mongolia’s first atomic power plant through an academic paper.<br><br>
@@ -911,7 +863,7 @@
         //KHALIUNGOO
         khaliungoo: {
             name: "Khaliungoo Khuyagtbaatar",
-            title: "Gobi Scholars, Class of 2025 - New Beginning International School",
+            title: "Gobischolars, Class of 2025 - New Beginning International School",
             description: `Khaliungoo Khuyagtbaatar is a passionate leader committed to improving her community’s future. 
             She has piloted over 250 youth-driven projects, organized entrepreneurship events with 1,300 participants, 
             and raised more than 10 million MNT from local investors. Her initiatives, including education workshops on the 
@@ -949,7 +901,7 @@
         //MUNGUNZUL
         mungunzul: {
             name: "Mungunzul Ulziidelger",
-            title: "Gobi Scholars, Class of 2025 - The 2nd School of Govisumber Province",
+            title: "Gobischolars, Class of 2025 - The 2nd School of Govisumber Province",
             description: `Mungunzul Ulziidelger is a passionate youth leader and environmental advocate from Mongolia’s smallest province. Since 2020, she has led 
             over 15 climate projects, benefiting more than 20,000 people, and advocating for environmental justice at local and global levels. 
             As a board member of "Temuulel Amjiltiin Guur" NGO, she has organized numerous events to empower youth and strengthen communities in her province.<br><br>
@@ -985,7 +937,7 @@
         //RYENCHINSONOM
         ryenchinsonom: {
             name: "Ryenchinsonom Khatanbaatar",
-            title: "Gobi Scholars, Class of 2025 – Khumuun Complex High School",
+            title: "Gobischolars, Class of 2025 – Khumuun Complex High School",
             description: `Ryenchinsonom is a driven and socially conscious student passionate about social entrepreneurship and economics. 
             He is originally from Tuv province of Mongolia, but transferred to Khumuun Compex High School in Ulaanbaatar in his junior year. 
             During his gap year, he successfully led eco-friendly social projects, including HTSO and ODOO, which ranked among the top 10 out of over 
@@ -1020,7 +972,7 @@
         //NARANCHULUU
         naranchuluu: {
             name: "Naranchuluu Ochir",
-            title: "Gobi Scholars Class of 2025 - New Beginning International School",
+            title: "Gobischolars Class of 2025 - New Beginning International School",
             description: `Naranchuluu Ochir is a passionate advocate for disability rights, sustainable development, and youth empowerment, with a vision for 
             driving meaningful change in Mongolia. Her political internships with the People’s Party and the Democratic Party have deepened her understanding of 
             governance and inspired her to pursue inclusive policies and innovative leadership.<br><br>
@@ -1058,7 +1010,7 @@
          //TANSAGMERGEN
          tansagmergen: {
             name: "Tansagmergen Terbish",
-            title: "Gobi Scholars, Class of 2025 - 52nd Secondary Public School",
+            title: "Gobischolars, Class of 2025 - 52nd Secondary Public School",
             description: `Tansagmergen Terbish is a passionate urban planning enthusiast and aspiring environmental engineer dedicated to creating sustainable, 
             inclusive communities. His vision focuses on addressing the challenges of rapid urbanization, particularly in Mongolia, by integrating innovative 
             planning strategies and environmental solutions. During his internship at the Ministry of Urban Development and Construction, he worked on urban 
@@ -1090,6 +1042,7 @@
                 },
             ],
         },
+
     };
     
     
@@ -1147,6 +1100,137 @@
     modal.style.display = "none"; // Ensure modal is hidden on load
     });
 
+
+
+//OUR TEAM PART
+
+    const teamMembers = {
+        injinaash: {
+            name: "Injinaash Ogoosambuu",
+            title:"Co-founder and CEO of Gobischolars",
+            description: `Injinaash Ogoosambuu is a seasoned marketing professional and 
+            the visionary CEO of GobiScholars. With years of experience leading innovative campaigns and strategies, 
+            he also runs his own successful marketing agency, helping businesses achieve their goals with creative 
+            and data-driven solutions. As co-founder of Gobischolars, Injinaash combines his passion for education 
+            and entrepreneurship, driving the organization’s mission to empower students and transform communities 
+            through impactful programs. His leadership reflects a commitment to fostering global connections and 
+            inspiring the next generation of changemakers.`,
+            image: "/appFrontend/src/app/assets/faculties/injinaash.png",
+        },
+
+        bayarjavkhlan: {
+            name: "Bayarjavkhlan Bayanmunkh",
+            title:"Co-founder and Director of Gobischolars Institution",
+            description: `Jack is a senior at Swarthmore College, pursuing dual degrees in Political Science and Economics. 
+                        He has three years of experience as a Career Peer Advisor at Swarthmore’s Career Services Office, 
+                        where he guided students in preparing job and graduate school applications. 
+                        Previously, he served as President of the Mongolian Students’ Association in America, 
+                        an NGO with a network of over 600 alumni in the U.S. Fun fact: Jack once taught beginner-level 
+                        English to Korean kindergarteners, despite not speaking Korean at the time.`,
+            image: "/appFrontend/src/app/assets/faculties/jacky.png",
+        },
+
+        norovsuren: {
+            name: "Norovsuren Khureltogoo",
+            title:"Project Manager at Gobischolars Academy",
+            description: `Norovsuren serves as a project manager at Gobischolars Academy, 
+                                        where she has successfully led initiatives such as the inaugural cohort of the Gobischolars 2024 
+                                        program and various intensive bootcamps. Driven by a deep curiosity about the intricacies of education 
+                                        systems, she plans to pursue studies in Public Policy and Educational Studies to develop 
+                                        innovative solutions for advancing education and policy reform. Beyond her professional 
+                                        and academic pursuits, Norovsuren is passionate about air rifle shooting, drumming, and 
+                                        empowering local communities through engaging workshops and knowledge-sharing sessions.`,
+            image: "/appFrontend/src/app/assets/faculties/noko.png",
+        },
+
+        lkhagvasuren: {
+            name: "Lkhagvasuren Olonbayar",
+            title:"Program Assistant Intern at Gobischolars NGO",
+            description: `Lkhagvasuren Olonbayar is a Program Assistant Intern at Gobischolars NGO, 
+                                        where she led the Gobischolars 2024 cohort and actively contributes to the development of 
+                                        future initiatives. She brings valuable teaching experience from her roles as an English teacher at 
+                                        Kids Wider World EduTech and as a part-time educator at Tomujin Alternative High School. 
+                                        Lkhagvasuren has a deep interest in the intersection of education policy and economics and is 
+                                        committed to pursuing studies in Educational Studies, Economics, and Public Policy. 
+                                        Beyond her professional endeavors, Lkhagvasuren is dedicated to community engagement through 
+                                        local volunteering. She also enjoys hands-on creative pursuits, including crocheting, painting, 
+                                        and illustrating.`,
+            image: "/appFrontend/src/app/assets/faculties/lhagvaa.png",
+        },
+
+        erdemtugs: {
+            name: "Erdemtugs Erdenetogtokh",
+            title:"Full-Stack Developer",
+            description: `Erdemtugs Erdenetogtokh is a senior at the University of Pécs, majoring in Computer Science. 
+                        She is deeply passionate about the intersection of technology and neuroscience, envisioning the use of her technical expertise 
+                        to drive innovative applications in this field. Beyond her studies, she has a profound love for teaching. With over six years of 
+                        experience teaching math, she also worked as an SAT Math Tutor at Gobischolars Academy in 2024, helping students excel academically.`,
+            image: "/appFrontend/src/app/assets/faculties/erdemtugs.png",
+        },
+
+        sunderya: {
+            name: "Sunderya Ulziibold",
+            title:"Counselor",
+            description: `Sunderya is a senior at Boston College pursuing a dual degree in Political Science and Communications. 
+                        She has a strong interest in comparative politics and IR theory, and has done independent research on the relationship between
+                        energy security, critical mineral reserves, and U.S. grand strategy. Sunderya has professional work experience as a communications 
+                        and media intern at Ulaanbaatar, Geneva, and Washington D.C. as well as a research assistant in the political science department. 
+                        At Boston College, Sunderya is a Bowman Advocate, a student leader who strives to support and empower the undergraduate student body 
+                        in building a more inclusive community through cross-cultural dialogue, and a contributor at the Heights, the independent student 
+                        newspaper at Boston College. `,
+            image: "/appFrontend/src/app/assets/faculties/sunderya.png",
+        },
+    };
+
+
+    // Function to open the modal dynamically
+    function openTeamModal(memberKey) {
+        const modal = document.getElementById("teamModal");
+        const modalTitle = document.getElementById("teamModalTitle");
+        const modalDescription = document.getElementById("teamModalDescription");
+        const modalImage = document.getElementById("teamModalImage");
+        const modalTeamTitle = document.getElementById("teamModalTeamTitle");
+
+        document.body.classList.add("modal-open");
+
+        // Find the team member by their key
+        const teamMember = teamMembers[memberKey];
+
+        if (!teamMember) {
+        console.warn(`Employee with key "${memberKey}" not found.`);
+        closeTeamModal(); 
+        return; // Don't open the modal if the employee data is missing
+        }
+
+        if (teamMember) {
+            // Populate modal content
+            modalTitle.textContent = teamMember.name;
+            modalTeamTitle.textContent = teamMember.title;
+            modalDescription.textContent = teamMember.description;
+            modalImage.src = teamMember.image;
+            modalImage.alt = teamMember.name;
+
+            // Show the modal
+            modal.style.display = "block";
+        }
+    }
+
+        // Function to close the modal
+        function closeTeamModal() {
+            const modal = document.getElementById("teamModal");
+            modal.style.display = "none";
+            document.body.classList.remove("modal-open");
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function (event) {
+            const modal = document.getElementById("teamModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+   
 
 
     </script>
