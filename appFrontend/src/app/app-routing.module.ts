@@ -4,7 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { ProgramsComponent } from './programs/programs.component';
 import { GetInvolvedComponent } from './get-involved/get-involved.component';
 import { ResearchComponent } from './research/research.component';
-import { summerinternshipComponent } from './programs/summerfellow/summerinternship';
+import { summerinternshipComponent } from './programs/summerinternship/summerinternship';
 import { scholarsprogramComponent } from './programs/scholarsprogram/scholarsprogram';
 import { app } from '../../server';
 import { AppComponent } from './app.component';
