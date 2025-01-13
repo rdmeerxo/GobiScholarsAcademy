@@ -1,8 +1,11 @@
-* {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  } 
+}
+
 /*Keep background photo for all the page :)*/
 body {
     background-image: url('/appFrontend/src/app/assets/programs_assets/summer_internship01.jpg'); 
@@ -12,9 +15,8 @@ body {
     background-size: 100% auto;
     margin: 0; 
     padding: 0;
-    height: 100%;
+    height: 100vh;
 }
-
 
 
 /*HEADER PART with MENU AND LOGO*/
@@ -32,6 +34,7 @@ body {
 
 .header-section {
     height: 100vh; 
+    width: 100%;
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
@@ -45,7 +48,6 @@ body {
 }
 
 .header-container {
-
     top: 0;
     left: 0;
     right: 0;
@@ -103,6 +105,71 @@ body {
 .menu-item a:hover {
     color: #6e6e6e; /* Lighten text on hover */
 }
+
+/* Mobile adjustments: ensure full width and proper centering */
+@media (max-width: 768px) {
+    body {
+        background-image: url('/appFrontend/src/app/assets/programs_assets/summer_internship01.jpg'); 
+        background-repeat: no-repeat;
+        background-position: top center; 
+        background-attachment: fixed;
+        background-size: 300vh;
+        margin: 0; 
+        padding: 0;
+        height: 100vh;
+    }
+
+    .header-section {
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%; 
+        position: relative; 
+        height: 100vh;
+    }
+
+    .gradient-shadow {
+        width: 100%; 
+    }
+
+    .header-container {
+        padding: 10px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        height: 8em;
+    }
+
+    .logo {
+        margin-left: 0; 
+        height: 1em;
+    }
+
+    .menu {
+        flex-direction: column; 
+        gap: 0.2em;
+    }
+
+    .menu-item {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .menu-item a, .menu-item button {
+        font-size: 0.6em; 
+    }
+
+    .get-involved-btn {
+        width: 100%;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+
+
+
 
 /*
 .dropdown {
@@ -162,32 +229,84 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 30px;
+    padding-top: 5em;
     z-index: 2;
-    width: 100%;
-    
+    width: 90%;
+   
 }
 
 .center-content p1 {
     font-family: 'Lora', serif;
     color: white;
     font-size: 55px;
-    line-height: 15px;
-    margin: 0 20px;
+    line-height: 1.2em;
+    margin: 4em 1.2em 0em 1.2em;
 }
+
 
 
 .center-content p2 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: 16px;
+    font-size: 1em;
     text-align: center;
-    margin: 0 30px;
+    margin-top: 1.5em;
     color: rgba(255, 255, 255, 0.9);
     max-width: 50%;
     line-height: 1.5rem;
 }
 
+@media (max-width: 768px) {
+    .center-content {
+        height: auto;
+        margin-top: 10em; /* Adjusted to avoid overlapping with the menu */
+        text-align: center;
+        margin-bottom: 8em;
+        
+    }
+    .center-content p1 {
+        margin-top: 0em;
+        font-size: 3em;  /* Smaller font size on tablets */
+        line-height: 1.2em;
+        text-align: center;
+    }
+    .center-content p2 {
+        font-size: 1.5em;
+        margin-top: 2em;
+        line-height:1.2em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .center-content {
+        height: 100%;
+        margin-top: 10em; /* Adjusted for mobile */
+        text-align: center;
+        margin-bottom: 8em;
+        position: absolute;
+        top: 70%;
+      
+
+    }
+
+
+    .center-content p1 {
+        font-size: 1.5em;  /* Even smaller font size on mobile */
+        line-height: 1.2em;
+        text-align: center;
+        margin: 0; 
+    }
+
+    .center-content p2 {
+        margin-top: 2em;
+        line-height: 0.5em;
+        font-size: 0.7em;
+        text-align: center;
+        color: #dedada;
+
+    }
+}
 
 .center-content button {
     font-family: 'Montserrat', sans-serif;
@@ -211,30 +330,30 @@ body {
     transform: translateY(-2px); /* Subtle lift on hover */
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .center-content p1 {
-        font-size: 30px; /* Smaller font size for smaller screens */
-    }
-
-    .center-content p2 {
-        font-size: 16px;
-    }
-
     .center-content button {
-        font-size: 16px;
-        padding: 10px 20px;
+        font-size: 14px; /* Smaller font size for tablets */
+        padding: 10px 18px; /* Adjust padding for tablets */
+        margin-top: 20px; /* Adjust margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .center-content button {
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 8px 14px; /* Smaller padding */
+        margin-top: 20px; /* Adjust margin */
     }
 }
 
 /*SECTION 2: MISSION STATEMENT */
 .second-part {
-    height: 100vh;
-    margin-top: 20px;
+
+    height:100%;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.0001));
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.001));
     opacity: 1;
     z-index: 1000;
     display:flex;
@@ -252,16 +371,7 @@ body {
     text-align: center;      /* Ensure text inside is centered */
 }
 
-.vertical-line {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    bottom: 0;
-    width: 1px; 
-    height: 60px;
-    background-color: white; 
-    transform: translateX(-50%); 
-}
+
 
 .second-part-content h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -278,7 +388,7 @@ body {
     font-size: 16px;
     text-align: center;
     line-height: 1.3;
-    max-width: 75%;
+    max-width: 100%;
     margin-left: auto;  /* Center the paragraph horizontally */
     margin-right: auto; /* Center the paragraph horizontally */
 }
@@ -291,8 +401,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items:flex-start;
     padding: 20px;
+    
 }
 
 .section-header {
@@ -312,25 +423,111 @@ body {
     color: black;
     text-align: justify;
     margin-top: 30px; 
-    max-width: 80%;
     line-height: 1.3;
 }
 
 .second-section button {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: normal;
-    color: #454545;
-    background-color: rgb(255, 255, 255); 
+    color: #fff;
+    background-color: rgb(211, 34, 34); /* Primary red color */
     border: none;
-    padding-left: 50px;
-    border-radius: 0px;
+    padding: 15px 20px;
+    border-radius: 8px;
     cursor: pointer;
-    box-shadow: none;
-    text-decoration: underline;
-    text-align: left;
-    margin-top: 35px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    margin-top: 30px;
+    display: inline-block;
+    width: auto;
+    margin-left: 3em;
+}
 
+/* Button Hover Effect */
+.center-content button:hover {
+    background-color: #a31414; /* Darker red for hover effect */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    /* Reduce height and add margin to separate sections */
+    .second-part {
+        height: 60vh; /* Smaller height on mobile */
+        align-items: center;
+      
+
+      
+    }
+
+    .second-part-content h1 {
+        font-size: 28px; /* Reduce font size for smaller devices */
+    }
+
+    .second-part-content p {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .second-section {
+        padding: 10px;
+        margin-top: 0px; /* Add margin to prevent overlap */
+    }
+
+    .section-header {
+        font-size: 36px; /* Adjust font size */
+        margin-left: 30px; /* Adjust left margin */
+    }
+
+    .section-paragraph {
+        font-size: 16px; /* Adjust font size */
+        margin-left: 30px; /* Adjust left margin */
+    }
+
+    .second-section button {
+        font-size: 14px; /* Reduce button size */
+        padding: 12px 15px; /* Adjust padding */
+        margin-left: 2em; /* Adjust margin */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    .second-part {
+        height: 60vh; /* Even smaller height for very small screens */
+       
+    }
+    .second-part-content h1 {
+        font-size: 22px; /* Even smaller font size */
+    }
+
+    .second-part-content p {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .second-section {
+        padding: 0em 2em;
+        height: auto;
+       
+    }
+
+    .section-header {
+        margin-top: 2em;
+        font-size: 30px; /* Adjust for mobile screens */
+    }
+
+    .section-paragraph {
+        font-size: 14px; /* Adjust font size */
+        margin-bottom: 0em;
+    }
+
+    .second-section button {
+        font-size: 12px; /* Smaller font size */
+        padding: 10px 12px; /* Smaller button */
+        margin-bottom: 3em;
+    }
 }
 
 /*SECTION 04: OUR STUDENTS*/
@@ -660,6 +857,169 @@ body.modal-open .our-students-section {
     margin-bottom: 50px;
 }
 
+@media (max-width: 480px) {
+    /* Our Students Section */
+    .our-students-section {
+        margin: 0; /* Add padding for better spacing */
+        background-color: black;
+        height: auto;
+        padding-bottom: 0;
+
+    }
+
+    .our-students-header {
+        font-size: 28px; /* Reduce font size */
+        padding-top: 40px; /* Adjust spacing */
+        padding-left: 60px; /* Reduce padding for smaller screens */
+        text-align:left; /* Center-align the header for mobile */
+    }
+
+    .our-students-section p {
+        font-size: 14px; /* Smaller font size */
+        padding-top: 20px; /* Adjust spacing */
+        padding-left: 60px; /* Reduce padding */
+        padding-right: 0px; /* Add consistent padding on the right */
+        text-align: justify; /* Keep text justified */
+        line-height: 1.4; /* Adjust line spacing for readability */
+    }
+
+    .our-students-section p span {
+        font-size: 14px; /* Smaller font size */
+
+    }
+
+    .slideshow-container {
+        margin-top: 30px; /* Reduce margin-top */
+        height: auto; /* Allow height to adjust naturally */
+        overflow: hidden;
+    }
+
+
+    .student-description {
+        padding: 5px; /* Compact padding */
+        text-align: center;
+    }
+
+    .student-name {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .student-cohort {
+        font-size: 9px; /* Smaller font size */
+    }
+
+    .student-info {
+        font-size: 8px; /* Reduce font size */
+    }
+
+    .student-description .learn-more-btn {
+        font-size: 8px; /* Adjust button font size */
+        margin-top: 10px; /* Reduce margin */
+    }
+
+    .learn-more-btn:hover {
+        color:white;
+    }
+
+    /* Modal Adjustments */
+    .student-modal {
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    .modal-content {
+        width: 90%; /* Reduce modal width */
+        max-height: 70%; /* Adjust modal height */
+        padding: 20px; /* Compact padding */
+    }
+
+    .modal-header h1 {
+        font-size: 24px; /* Reduce header size */
+        margin-left: 10px;
+        max-width: 70%;
+    }
+
+    .modal-content .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        color: black;
+    }
+    
+    body.modal-open {
+        overflow: hidden; /* Disable scrolling when modal is open */
+    }
+    
+    body.modal-open .our-students-section {
+        filter: blur(3px); /* Add blur effect to the main page */
+    }
+    
+    
+    .modal-header .student-title {
+        font-size: 10px; /* Adjust title font size */
+        margin-left: 10px;
+        max-width: 100%;
+    }
+
+    .student-description-home {
+        font-size: 12px; /* Reduce font size */
+        padding: 10px; /* Compact padding */
+    }
+
+    .student-image img {
+        max-width: 100%; /* Reduce image size */
+        height: 120px; /* Maintain aspect ratio */
+        border-radius: 30px;
+        margin-top: 15px;
+    }
+
+    .modal-works h2 {
+        font-size: 18px; /* Smaller font size */
+        margin-left: 10px; /* Adjust spacing */
+    }
+
+    .works-container {
+        gap: 10px; /* Reduce spacing between work items */
+        margin-left: 10px; /* Adjust left margin */
+    }
+
+    .work-item {
+        flex: 0 1 calc(50% - 10px); /* Allow two items per row */
+        padding: 10px; /* Compact padding */
+    }
+
+    .work-item img {
+        height: 50%; /* Adjust image height */
+    }
+
+    .work-details h3 {
+        font-size: 10px; /* Adjust font size */
+    }
+
+    .work-details p {
+        font-size: 8px; /* Reduce font size */
+    }
+
+    .read-full {
+        width: 100px; /* Smaller button */
+        height: 40px; /* Adjust height */
+        font-size: 6px; /* Smaller font size */
+        margin-bottom: 20px; /* Adjust bottom margin */
+    }
+
+    .read-full:hover {
+        color: #9b1a1a;
+    }
+    
+    .learn-more-button {
+        width: 100px; /* Smaller button */
+        height: 40px; /* Adjust height */
+        font-size: 12px; /* Smaller font size */
+        margin-top: 80px;
+        margin-left: 60px;
+    }
+}
 
 
 /*PART 05: Injii's Section*/
@@ -726,6 +1086,88 @@ body.modal-open .our-students-section {
     margin-top: 15px;
     line-height: 1.2;
     margin-bottom: 15px;
+}
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+    .mr-nash-section {
+        flex-direction: row; /* Maintain side-by-side layout */
+        height: auto; /* Allow content to dictate height */
+    }
+
+    .mr-nash-left {
+        flex: 1; /* Image still takes 1/3 of the width */
+    }
+
+    .injiinash-image {
+        max-height: 50vh; /* Limit image height */
+    }
+
+    .mr-nash-right {
+        flex: 2; /* Text takes 2/3 of the width */
+        padding-left: 20px; /* Adjust padding */
+    }
+
+    .mr-nash-paragraph1 {
+        font-size: 24px; /* Reduce font size for heading */
+        left: -5%; /* Slightly reduce overlap */
+    }
+
+    .mr-nash-paragraph2,
+    .mr-nash-paragraph3 {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    .mr-nash-section {
+        display: flex;
+        flex-direction: row; /* Keep the side-by-side layout */
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 20px 20px 20px 60px;
+    }
+
+    .mr-nash-left {
+        flex: 1; /* Maintain 1/3 width for the image */
+        position: relative;
+    }
+
+    .injiinash-image {
+        height: 150px; /* Limit the image's height further */
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .mr-nash-right {
+        width: 55%; /* Text takes 2/3 width */
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px; /* Adjust spacing */
+        justify-content: center;
+    }
+
+    .mr-nash-paragraph1 {
+        font-size: 10px; /* Adjust font size for small screens */
+        color: rgb(173, 27, 27);
+        left: -10%; /* Slight overlap */
+        margin-top: 20px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .mr-nash-paragraph2,
+    .mr-nash-paragraph3 {
+        font-size: 8px; /* Reduce text size for readability */
+        line-height: 1.3;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        margin: 5px 0;
+    }
 }
 
 /*PART 06: NEWS SECTION*/
@@ -910,5 +1352,76 @@ body.modal-open .our-students-section {
     color: #c10000;
     opacity: 1;
 }
+/*SECTION 7: MAILING LIST - Mobile View (max-width: 480px)*/
+@media (max-width: 480px) {
+    .email-signup-section {
+        padding: 20px 10px; /* Reduce padding for smaller screens */
+        height: auto; /* Allow the height to adapt to content */
+        text-align: center;
+        
+    }
 
+    .email-header {
+        font-size: 34px; /* Reduce the size of the header */
+        margin-top: 20px; /* Adjust spacing */
+    }
+
+    .email-paragraph {
+        font-size: 10px; /* Smaller font size for readability */
+        margin-top: 10px; /* Reduce spacing */
+    }
+
+    .email-input {
+        display: block; /* Show the input field */
+        padding: 10px; /* Maintain consistent padding */
+        font-size: 14px; /* Adjust font size */
+        width: 90%; /* Full width with slight padding */
+        max-width: 300px; /* Ensure it doesn't get too wide */
+        margin: 15px auto; /* Center the input field */
+        border: 2px solid white;
+        border-radius: 5px;
+        color: black;
+    }
+
+    .email-button {
+        padding: 12px 30px; /* Reduce button padding */
+        font-size: 12px; /* Adjust font size for smaller screens */
+        border-radius: 30px; /* Keep rounded edges */
+        margin-top: 20px; /* Adjust spacing */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    
+    }
+
+    .email-button:hover {
+        transform: scale(1.05); /* Slight hover animation for interactivity */
+    }
+}
+
+/*SECTION 8: PAGE END | SOCIAL ACCOUNTS - Mobile View (max-width: 480px)*/
+@media (max-width: 480px) {
+    .footer-end {
+        padding: 20px; /* Adjust padding for smaller screens */
+        height: auto; /* Allow height to adapt */
+        text-align: center; /* Center align text */
+    }
+
+    .social-media-icons {
+        display: flex;
+        flex-wrap: wrap; /* Allow icons to wrap if needed */
+        gap: 15px; /* Adjust spacing between icons */
+        justify-content: center; /* Center icons horizontally */
+        margin-top: 10px; /* Add spacing */
+    }
+
+    .social-media-icons a {
+        font-size: 18px; /* Reduce icon size */
+        color: white; /* Ensure visibility on dark background */
+    }
+
+    .social-media-icons a:hover {
+        transform: scale(1.2); /* Slight hover effect */
+        color: #c10000;
+        opacity: 1;
+    }
+}
 

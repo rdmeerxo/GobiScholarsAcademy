@@ -10,7 +10,6 @@ import { app } from '../../server';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/index.html', pathMatch: 'full' },  // Default route
   { path: ' ', component:AppComponent},
   { path: 'about-us', component: AboutComponent },
   { path: 'programs', component: ProgramsComponent},
@@ -18,6 +17,7 @@ const routes: Routes = [
   { path: 'get-involved', component: GetInvolvedComponent},
   { path: 'summer-internship-2025', component: summerinternshipComponent },
   { path: 'scholars-program', component: scholarsprogramComponent},
+  { path: '**', redirectTo: '' } 
 
 ];
 

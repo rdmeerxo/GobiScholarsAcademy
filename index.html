@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/appFrontend/src/styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -28,7 +29,9 @@
 
 <body>
 
-    <!--PART 1: Contains main menu  and Logo-->
+    <app-root></app-root>
+
+    <!--PART 1: Contains main menu  and text-->
         <div class="header-section">
             <!-- Gradient Shadow -->
             <div class="gradient-shadow"></div>
@@ -81,17 +84,23 @@
                 </div>   
                 -->
             </div>
-
-            <!--BIG LOGO ON MAIN BACKGROUND-->
-            <div class="center-content">
-                <p1>Experience Mongolia:<br><br>
-                    Summer Internship Program 2025<br><br></p1>
-                <p2>Join Gobischolars’ Summer Internship Program in Mongolia and make a 
-                    lasting impact while <br>gaining teaching and professional experience.<br><br></p2>
-
-                <button onclick="location.href='/appFrontend/src/app/programs/summerinternship/summerinternship.html'">Apply Now</button>
-            </div>
         </div>
+
+
+ 
+            <!--TEXT ON MAIN BACKGROUND-->
+        <div class="center-content">
+            <p1>Experience Mongolia:<br>
+                Summer Internship Program 2025<br>
+            </p1>
+
+            <p2>Join Gobischolars’ Summer Internship Program in Mongolia and make a 
+                    lasting impact while <br>gaining teaching and professional experience.<br><br>
+            </p2>
+
+            <button onclick="location.href='/appFrontend/src/app/programs/summerinternship/summerinternship.html'">Learn More</button>
+        </div>
+     
 
     <!--PART 02 MISSION STATAMENT-->
         <div class="second-part">
@@ -111,7 +120,7 @@
                 this program combines professional development, cultural immersion, and hands-on experiences to inspire future global 
                 leaders. Join us to make an impact while discovering Mongolia's vibrant heritage.
             </p>
-            <button onclick="location.href='/appFrontend/src/app/programs/summerfellow/summerfellow.html'">Learn More</button>
+            <button onclick="location.href='/appFrontend/src/app/programs/summerinternship/summerinternship.html'">Learn More</button>
         </div>
 
     <!--PART 04: OUR STUDENTS-->
@@ -134,8 +143,8 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Wassup, I am a gap year student who recently graduated from the 84th public school...</span>
-                        <button class="learn-more-btn" onclick="openModal('undram')">Learn More</button>
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('undram')">Learn More</button>
                 </div>
               </div>
   
@@ -147,8 +156,8 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for the ...</span>
-                        <button class="learn-more-btn" onclick="openModal('bolormaa')">Learn More</button>
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('bolormaa')">Learn More</button>
               </div>
               </div>
   
@@ -160,8 +169,9 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar...</span>
-                        <button class="learn-more-btn" onclick="openModal('orgilbayar')">Learn More</button>
+                        
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('orgilbayar')">Learn More</button>
                 </div>
                </div>
               
@@ -173,8 +183,9 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration...</span>
-                        <button class="learn-more-btn" onclick="openModal('enkhorchlon')">Learn More</button>
+                        
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('enkhorchlon')">Learn More</button>
                 </div>
               </div>
   
@@ -187,8 +198,9 @@
                       <div class="student-info">
                         <span class="short-info">Greetings! I am a high school senior at Sant school, 
                             aspiring to further delve into...</span>
-                        <button class="learn-more-btn" onclick="openModal('goomaral')">Learn More</button>
+                        
                       </div>
+                      <button class="learn-more-btn" onclick="openModal('goomaral')">Learn More</button>
                   </div>
                 </div>
   
@@ -201,8 +213,9 @@
                       <div class="student-info">
                         <span class="short-info">I'm a gap year student from Shine Mongol Harumafuji High School, 
                             gearing up to major in...</span>
-                        <button class="learn-more-btn" onclick="openModal('javkhlantugs')">Learn More</button>
+                        
                   </div>
+                  <button class="learn-more-btn" onclick="openModal('javkhlantugs')">Learn More</button>
 
                   </div>
                 </div>
@@ -215,8 +228,9 @@
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
                         <span class="short-info">Mungunzul Ulziidelger is from the smallest province of Mongolia, currently on a gap year...</span>
-                        <button class="learn-more-btn" onclick="openModal('mungunzul')">Learn More</button>
+                        
                       </div>
+                      <button class="learn-more-btn" onclick="openModal('mungunzul')">Learn More</button>
                   </div>
                 </div>
   
@@ -228,9 +242,10 @@
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
                         <span class="short-info">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen...</span>
-                        <button class="learn-more-btn" onclick="openModal('ryenchinsonom')">Learn More</button>
+                        
                         
                       </div>
+                      <button class="learn-more-btn" onclick="openModal('ryenchinsonom')">Learn More</button>
                   </div>
                 </div>
 
@@ -242,8 +257,9 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                       <span class="short-info">Hey there! I’m currently taking a gap year pursuing my passion for environmental science...</span>
-                      <button class="learn-more-btn" onclick="openModal('khaliungoo')">Learn More</button>
+                      
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('khaliungoo')">Learn More</button>
                 </div>
               </div>
 
@@ -256,8 +272,9 @@
                     <div class="student-info">
                       <span class="short-info">Hi everyone! I'm a rising senior at NBIS with a passion for politics and 
                         social justice...</span>
-                      <button class="learn-more-btn" onclick="openModal('naranchuluu')">Learn More</button>
+                      
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('naranchuluu')">Learn More</button>
                 </div>
               </div>
              
@@ -271,8 +288,9 @@
                     <div class="student-info">
                       <span class="short-info">Hi, I’m Tansagaa, a kid from Bayankhongor, Baatsagaan, 
                         and a graduate of 52nd...</span>
-                      <button class="learn-more-btn" onclick="openModal('tansagmergen')">Learn More</button>
+                      
                       </div>
+                      <button class="learn-more-btn" onclick="openModal('tansagmergen')">Learn More</button>
                 </div>
               </div>
 
@@ -284,8 +302,8 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Wassup, I am a gap year student who recently graduated from the 84th public school...</span>
-                        <button class="learn-more-btn" onclick="openModal('undram')">Learn More</button>
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('undram')">Learn More</button>
                 </div>
               </div>
   
@@ -297,8 +315,8 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for the ...</span>
-                        <button class="learn-more-btn" onclick="openModal('bolormaa')">Learn More</button>
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('bolormaa')">Learn More</button>
               </div>
               </div>
   
@@ -310,8 +328,9 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar...</span>
-                        <button class="learn-more-btn" onclick="openModal('orgilbayar')">Learn More</button>
+                        
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('orgilbayar')">Learn More</button>
                 </div>
                </div>
               
@@ -323,8 +342,9 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                         <span class="short-info">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration...</span>
-                        <button class="learn-more-btn" onclick="openModal('enkhorchlon')">Learn More</button>
+                        
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('enkhorchlon')">Learn More</button>
                 </div>
               </div>
   
@@ -337,8 +357,9 @@
                       <div class="student-info">
                         <span class="short-info">Greetings! I am a high school senior at Sant school, 
                             aspiring to further delve into...</span>
-                        <button class="learn-more-btn" onclick="openModal('goomaral')">Learn More</button>
+                        
                       </div>
+                      <button class="learn-more-btn" onclick="openModal('goomaral')">Learn More</button>
                   </div>
                 </div>
   
@@ -351,8 +372,9 @@
                       <div class="student-info">
                         <span class="short-info">I'm a gap year student from Shine Mongol Harumafuji High School, 
                             gearing up to major in...</span>
-                        <button class="learn-more-btn" onclick="openModal('javkhlantugs')">Learn More</button>
+                        
                   </div>
+                  <button class="learn-more-btn" onclick="openModal('javkhlantugs')">Learn More</button>
 
                   </div>
                 </div>
@@ -365,8 +387,9 @@
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
                         <span class="short-info">Mungunzul Ulziidelger is from the smallest province of Mongolia, currently on a gap year...</span>
-                        <button class="learn-more-btn" onclick="openModal('mungunzul')">Learn More</button>
+                        
                       </div>
+                      <button class="learn-more-btn" onclick="openModal('mungunzul')">Learn More</button>
                   </div>
                 </div>
   
@@ -378,9 +401,10 @@
                       <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                       <div class="student-info">
                         <span class="short-info">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen...</span>
-                        <button class="learn-more-btn" onclick="openModal('ryenchinsonom')">Learn More</button>
+                        
                         
                       </div>
+                      <button class="learn-more-btn" onclick="openModal('ryenchinsonom')">Learn More</button>
                   </div>
                 </div>
 
@@ -392,8 +416,9 @@
                     <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
                     <div class="student-info">
                       <span class="short-info">Hey there! I’m currently taking a gap year pursuing my passion for environmental science...</span>
-                      <button class="learn-more-btn" onclick="openModal('khaliungoo')">Learn More</button>
+                      
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('khaliungoo')">Learn More</button>
                 </div>
               </div>
 
@@ -406,8 +431,9 @@
                     <div class="student-info">
                       <span class="short-info">Hi everyone! I'm a rising senior at NBIS with a passion for politics and 
                         social justice...</span>
-                      <button class="learn-more-btn" onclick="openModal('naranchuluu')">Learn More</button>
+                      
                     </div>
+                    <button class="learn-more-btn" onclick="openModal('naranchuluu')">Learn More</button>
                 </div>
               </div>
              
@@ -421,8 +447,168 @@
                     <div class="student-info">
                       <span class="short-info">Hi, I’m Tansagaa, a kid from Bayankhongor, Baatsagaan, 
                         and a graduate of 52nd...</span>
-                      <button class="learn-more-btn" onclick="openModal('tansagmergen')">Learn More</button>
+                      
                       </div>
+                      <button class="learn-more-btn" onclick="openModal('tansagmergen')">Learn More</button>
+                </div>
+              </div>
+
+              <!-- Student No1 Info: Undram -->
+              <div class="slide">
+                <img class="studentpictures" src="/appFrontend/src/app/assets/students/undram.jpg" alt="Undram">
+                <div class="student-description">
+                    <div class="student-name"><strong>Undram U.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Wassup, I am a gap year student who recently graduated from the 84th public school...</span>
+                    </div>
+                    <button class="learn-more-btn" onclick="openModal('undram')">Learn More</button>
+                </div>
+              </div>
+  
+              <!-- Student No2 Info: Bolormaa -->
+              <div class="slide">
+                <img class="studentpictures" src="/appFrontend/src/app/assets/students/bolormaa.jpg" alt="Bolormaa">
+                <div class="student-description">
+                    <div class="student-name"><strong>Bolormaa M.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Hey dude and dudettes! I am a senior at Mongol Aspiration who has a strange love for the ...</span>
+                    </div>
+                    <button class="learn-more-btn" onclick="openModal('bolormaa')">Learn More</button>
+              </div>
+              </div>
+  
+              <!-- Student No3 Info: Orgilbayar -->
+              <div class="slide">
+                <img class="studentpictures" src="/appFrontend/src/app/assets/students/orgilbayar.jpg" alt="Orgilbayar">
+                <div class="student-description">
+                    <div class="student-name"><strong>Orgilbayar S.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Hello. Greetings from Orgilbayar. I am a senior at Secondary School No.11 of Ulaanbaatar...</span>
+                        
+                    </div>
+                    <button class="learn-more-btn" onclick="openModal('orgilbayar')">Learn More</button>
+                </div>
+               </div>
+              
+              <!-- Student No4 Info: Enkh-Orchlon -->
+              <div class="slide">
+                <img class="studentpictures" src="/appFrontend/src/app/assets/students/enkh-orchlon.jpg" alt="Enkh-Orchlon">
+                <div class="student-description">
+                    <div class="student-name"><strong>Enkh-Orchlon A.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                        <span class="short-info">Hii~ I’m Enkh-Orchlon, a gap year student & a high school graduate of Mongol Aspiration...</span>
+                        
+                    </div>
+                    <button class="learn-more-btn" onclick="openModal('enkhorchlon')">Learn More</button>
+                </div>
+              </div>
+  
+              <!-- Student No5 Info: Goomaral -->
+              <div class="slide">
+                  <img class="studentpictures" src="/appFrontend/src/app/assets/students/goomaral.png" alt="Goomaral">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Goomaral A.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">Greetings! I am a high school senior at Sant school, 
+                            aspiring to further delve into...</span>
+                        
+                      </div>
+                      <button class="learn-more-btn" onclick="openModal('goomaral')">Learn More</button>
+                  </div>
+                </div>
+  
+                <!-- Student No6 Info: Javkhlantugs -->
+              <div class="slide">
+                  <img class="studentpictures" src="/appFrontend/src/app/assets/students/javkhlantugs.png" alt="Javkhlantugs">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Javkhlantugs S.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">I'm a gap year student from Shine Mongol Harumafuji High School, 
+                            gearing up to major in...</span>
+                        
+                  </div>
+                  <button class="learn-more-btn" onclick="openModal('javkhlantugs')">Learn More</button>
+
+                  </div>
+                </div>
+  
+                <!-- Student No7Info: Mungunzul -->
+              <div class="slide">
+                  <img class="studentpictures" src="/appFrontend/src/app/assets/students/mungunzul.png" alt="mungunzul">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Mungunzul U.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">Mungunzul Ulziidelger is from the smallest province of Mongolia, currently on a gap year...</span>
+                        
+                      </div>
+                      <button class="learn-more-btn" onclick="openModal('mungunzul')">Learn More</button>
+                  </div>
+                </div>
+  
+                <!-- Student No8 Info: Ryenchinsonom -->
+              <div class="slide">
+                  <img class="studentpictures" src="/appFrontend/src/app/assets/students/ryenchinsonom.png" alt="Ryenchinsonom">
+                  <div class="student-description">
+                      <div class="student-name"><strong>Ryenchinsonom Kh.</strong></div>
+                      <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                      <div class="student-info">
+                        <span class="short-info">Hello! I’m Ryenchinsonom, a gap year student from Mongolia with a keen...</span>
+                        
+                        
+                      </div>
+                      <button class="learn-more-btn" onclick="openModal('ryenchinsonom')">Learn More</button>
+                  </div>
+                </div>
+
+                <!-- Student No9 Info: Khaliungoo -->
+              <div class="slide">
+                <img class="studentpictures" src="/appFrontend/src/app/assets/students/khaliungoo.png" alt="Khaliungoo">
+                <div class="student-description">
+                    <div class="student-name"><strong>Khaliungoo Kh.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                      <span class="short-info">Hey there! I’m currently taking a gap year pursuing my passion for environmental science...</span>
+                      
+                    </div>
+                    <button class="learn-more-btn" onclick="openModal('khaliungoo')">Learn More</button>
+                </div>
+              </div>
+
+               <!-- Student No10 Info: Naranchuluu -->
+               <div class="slide">
+                <img class="studentpictures" src="/appFrontend/src/app/assets/students/naranchuluu.png" alt="Naranchuluu">
+                <div class="student-description">
+                    <div class="student-name"><strong>Naranchuluu O.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                      <span class="short-info">Hi everyone! I'm a rising senior at NBIS with a passion for politics and 
+                        social justice...</span>
+                      
+                    </div>
+                    <button class="learn-more-btn" onclick="openModal('naranchuluu')">Learn More</button>
+                </div>
+              </div>
+             
+
+               <!-- Student No11 Info: Tansagmergen -->
+               <div class="slide">
+                <img class="studentpictures" src="/appFrontend/src/app/assets/students/tansagmergen.png" alt="Tansagmergen">
+                <div class="student-description">
+                    <div class="student-name"><strong>Tansagmergen T.</strong></div>
+                    <div class="student-cohort">2024 GOBISCHOLAR COHORT</div>
+                    <div class="student-info">
+                      <span class="short-info">Hi, I’m Tansagaa, a kid from Bayankhongor, Baatsagaan, 
+                        and a graduate of 52nd...</span>
+                      
+                      </div>
+                      <button class="learn-more-btn" onclick="openModal('tansagmergen')">Learn More</button>
                 </div>
               </div>
 

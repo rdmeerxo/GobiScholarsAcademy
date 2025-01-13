@@ -129,6 +129,8 @@ body {
 }
 
 
+
+
 /* Centered content */
 .center-content {
     text-align: center;
@@ -333,11 +335,13 @@ html {
     display: flex;
     justify-content:flex-start;
     border-radius: 8px;
+    
 }
 .development-content-inner {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 /* Left Side - Image */
@@ -349,7 +353,7 @@ html {
 }
 
 .pd-image {
-    width: 250px;
+    width: 100%;
     height: 350px;
     object-fit: cover;
     border-radius: 30px;
@@ -359,30 +363,39 @@ html {
 /* Right Side - Slideshow */
 .development-content-inner .right-side {
     display:block;
-    margin-right: 80px;
-    width: 60%;
+    width: 70%;
     padding: 20px;
     position: relative;
+    overflow: hidden;
 }
 
 /* Slideshow Container */
 .slideshow-container {
     position: relative;
-    height: 100%;
+    height: 12em;
+    width: 90%;
+    overflow: hidden;
+    display: block;
+
 }
 
 /* Slideshow Slides */
 .slideshow-slide {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    transition: all 1s ease-in-out;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 /* Active slide */
 .slideshow-slide.active {
     display: block;
+    
 }
 
 /* Slide Titles */
@@ -454,7 +467,8 @@ html {
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 50px;
-    gap: 3em;
+    gap: 2em;
+    width: 100%;
 }
 
 /* Left Side - Image */
@@ -466,7 +480,7 @@ html {
 }
 
 .ci-image {
-    width: 350px;
+    width: 100%;
     height: 350px;
     object-fit: cover;
     border-radius: 30px;
@@ -590,11 +604,13 @@ html {
 
 .criteria-part h4 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 5px; 
+   
 }
+
 
 .criteria-part p {
     font-family: 'Montserrat', sans-serif;
@@ -604,11 +620,18 @@ html {
     margin: 0;
 }
 
+.criteria-part ul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
 /* Arrow */
 .arrow {
     font-size: 20px;
     color: rgb(181, 39, 39);
-    margin-top: 28px;
+    margin-top: 1.5em;
 }
 
 /* Apply Message */
@@ -636,7 +659,7 @@ html {
 }
 
 .materials-content-inner {
-    display: flex;
+    display:flex;
     flex-direction: column;
     gap: 20px;
     padding: 30px 50px 80px 50px;
@@ -646,13 +669,14 @@ html {
 /* Materials Part */
 .materials-part {
     display: flex;
+    flex-direction: column; 
     align-items: flex-start;
-    gap: 15px;
+    gap: 0.5em;
 }
 
 .materials-part h4 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     color: #333;
     margin-bottom: 5px;
