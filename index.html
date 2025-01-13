@@ -789,10 +789,11 @@
     });
 
 
-
+    //SLIDESHOW
     document.addEventListener('DOMContentLoaded', () => {
         const slideshowContainer = document.querySelector('.slideshow-inner');
         const slides = document.querySelectorAll('.slide');
+        const slideWidth = slides[0].offsetWidth; // Get the width of one slide
         let scrollPosition = 0;
 
         // Clone the slides for seamless looping
@@ -804,13 +805,15 @@
         function autoScroll() {
             scrollPosition += 2;
             slideshowContainer.style.transform = `translateX(-${scrollPosition}px)`;
+            
+
             if (scrollPosition >= slideshowContainer.scrollWidth / 2) {
                 scrollPosition = 0;
                 slideshowContainer.style.transform = `translateX(0)`;
             }
         }
 
-        setInterval(autoScroll, 50);
+        setInterval(autoScroll, 30);
     });
 
     //individual model window for students
