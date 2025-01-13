@@ -545,6 +545,7 @@ body {
     padding-left: 60px;
 }
 
+
 .our-students-section p {
     padding-top: 30px;
     font-family: 'Montserrat', sans-serif;
@@ -570,7 +571,10 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+    transition: transform 0.5s ease-in-out;
 }
+
+
 
 .slideshow-inner {
     display: flex; 
@@ -892,6 +896,7 @@ body.modal-open .our-students-section {
         margin-top: 30px; /* Reduce margin-top */
         height: auto; /* Allow height to adjust naturally */
         overflow: hidden;
+        transition: transform 0.5s ease-in-out;
     }
 
 
