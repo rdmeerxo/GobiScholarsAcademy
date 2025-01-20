@@ -127,6 +127,165 @@ body {
     color: #f0f0f0; /* Lighten the color on hover */
 }
 
+/* Mobile adjustments: ensure full width and proper centering */
+@media (max-width: 768px) {
+    body {
+        position: relative;
+        background-image: url('/appFrontend/src/app/assets/aboutassets/aboutmain.jpg'); 
+        background-repeat: no-repeat;
+        background-position:  center center; 
+        background-attachment:scroll; /* Avoid fixed background for smoother scrolling */
+        background-size:cover; /* Cover ensures the image adjusts to the screen */
+        margin: 0; 
+        padding: 0;
+        width: 100%;
+        height: 50vh; /* Allow height to adjust to content */
+    }
+
+    .header-section {
+        padding-left: 1em;
+        padding-right: 0;
+        width: 100%; 
+        position: relative; 
+        height: 100vh;
+    }
+
+    .gradient-shadow {
+        width: 100%; 
+    }
+
+    .header-container {
+        padding: 10px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        height: 8em;
+    }
+
+    .logo {
+        margin-left: 0; 
+        height: 1em;
+    }
+
+    .menu {
+        flex-direction: column; 
+        gap: 0.2em;
+    }
+
+    .menu-item {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .menu-item a, .menu-item button {
+        font-size: 0.6em; 
+    }
+
+    .get-involved-btn {
+        width: 100%;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/* Mobile adjustments: optimize for phones */
+@media (max-width: 576px) {
+    body {
+        position: relative;
+        background-image: url('/appFrontend/src/app/assets/aboutassets/aboutmain.jpg'); 
+        background-repeat: no-repeat;
+        background-position:  top center; 
+        background-attachment:scroll; /* Avoid fixed background for smoother scrolling */
+        background-size:cover; /* Cover ensures the image adjusts to the screen */
+        margin: 0; 
+        padding: 0;
+        height: 100vh; /* Allow height to adjust to content */
+        width: 100%;
+        overflow-x: hidden;
+        
+    }
+    
+
+    .header-section {
+        height: auto;
+        height: 96vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 50px;
+        position: relative; 
+        z-index: 1;
+        background: none;
+        width: 100%;
+        
+
+    }
+
+    .gradient-shadow {
+        height: 40px; /* Reduce shadow height for compact screens */
+        width: 100%; 
+    }
+
+    .header-container {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        margin-bottom: 20em;
+        width: 100%;
+    }
+
+    .logo {
+        margin: 0 auto; /* Center the logo */
+        height: 1.5em; /* Adjust size for smaller screens */
+    }
+
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 0.5em; /* Reduce spacing between items */
+        align-items: center; /* Center menu items */
+        width: 100%; 
+    }
+
+    .menu-item {
+        width: 100%; /* Full width for better tap targets */
+        text-align: center; 
+    }
+
+    .menu-item a, 
+    .menu-item button {
+        font-size: 0.8em; /* Slightly larger text for readability */
+        padding: 10px 0; /* Add padding for better tapability */
+    }
+
+    .search-button {
+        margin: 10px auto; /* Center the search button */
+    }
+
+    .search-button i {
+        font-size: 1.2em; /* Slightly larger icon for visibility */
+    }
+
+    /* Adjust the "Get Involved" button */
+    .get-involved-btn {
+        width: 90%; /* Reduce width for phones */
+        margin: 10px auto; /* Center the button */
+        padding: 10px 20px; /* Compact padding */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    /* Reduce red overlay size for smaller viewports */
+    .red-overlay {
+        background-color: rgb(166, 51, 51);
+        opacity: 0.5; /* Increase opacity for better contrast on small screens */
+
+    }
+}
+
+
 
 /* Centered content */
 .center-content {
@@ -149,6 +308,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px 50px;
+    width: 100%;
+
 }
 
 .jump-menu a {
@@ -198,6 +359,84 @@ html {
     text-align: justify;
     margin-right: 20px;
 }
+/* Tablet (portrait) and Mobile */
+@media (max-width: 768px) {
+
+    /* PART 02: JUMP SMALL MENU */
+    .jump-menu {
+        padding: 15px 0px;
+        width: 100%;
+    }
+
+    .jump-menu a {
+        font-size: 14px;  /* Slightly larger text for easier reading on smaller screens */
+        margin: 0 ;   /* Less space between links */
+    }
+
+    /* Active Link */
+    .jump-menu a.active {
+        font-size: 14px; /* Ensure active link font size is consistent */
+    }
+
+    /* PART 03: ABOUT US */
+    #about-us {
+        width:100%;
+        padding: 30px 20px; /* Less padding for smaller screens */
+    }
+
+    #about-us h2 {
+        font-size: 36px; /* Adjust title font size for better readability on smaller screens */
+        margin-left: 10px; /* Reduce left margin */
+    }
+
+    #about-us p {
+        font-size: 16px;  /* Adjust paragraph font size */
+        margin-left: 10px; /* Reduce left margin */
+        margin-right: 10px; /* Reduce right margin */
+    }
+}
+
+/* Mobile (portrait) */
+@media (max-width: 480px) {
+
+    /* PART 02: JUMP SMALL MENU */
+    .jump-menu {
+        padding: 10px 15px;  /* Further reduce padding for mobile */
+        width: 100%;
+        margin: 0;
+        display: block;
+        width: 120%;
+    }
+
+    .jump-menu a {
+        font-size: 12px;  /* Slightly smaller text for mobile screens */
+        margin: 0 8px;   /* Even less space between links */
+    }
+
+    /* Active Link */
+    .jump-menu a.active {
+        font-size: 13px; /* Consistent font size for active links */
+    }
+
+    /* PART 03: ABOUT US */
+    #about-us {
+        padding: 20px 50px;  /* Minimal padding for small mobile screens */
+    }
+
+    #about-us h2 {
+        font-size: 28px; /* Reduce heading size for small screens */
+        margin-left: 5px;  /* Reduce left margin */
+        width: 100%;
+        padding: auto;
+    }
+
+    #about-us p {
+        font-size: 14px;  /* Smaller paragraph font size */
+        margin-left: 5px;  /* Even smaller margin */
+        margin-right: 5px; /* Reduce right margin */
+    }
+}
+
 
 /*PART 04: TEAM MESSAGE*/
 .about-image-section {
@@ -255,6 +494,65 @@ html {
     margin-top: 30px;
 }
 
+@media (max-width: 480px) {
+    .about-image-section {
+        height: 35vh;
+        background-image: url('/appFrontend/src/app/assets/aboutassets/teammessage.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding: 80px 35px;
+        color: white; 
+        text-align: center;
+        width: 110%;
+        margin: 0;
+    }
+    
+    /* Red Overlay with 30% Opacity */
+    .about-image-section::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(166, 51, 51, 0.6); /* Red background with 30% opacity */
+        z-index: 0; /* Ensure the overlay is behind the content */
+    }
+    
+    
+    .content {
+        position: relative;
+        z-index: 1; /* Make sure content is above the red overlay */
+        padding: 30px 20px; /* Add some padding to prevent text from touching edges */
+    }
+    
+    
+    .content p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+        line-height: 1.6;
+    }
+    
+    
+    .line-break {
+        width: 90%; 
+        height: 0.3px;
+        background-color: white;
+        margin: 50px auto; 
+    }
+    
+    
+    .team-signature p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+}
 /*PART 05: MISSION STATEMENT*/
 .mission-section {
     display: flex;
@@ -364,6 +662,94 @@ html {
     height: 0.5px;
 }
 
+@media (max-width: 480px) {
+    /*PART 05: MISSION STATEMENT*/
+.mission-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+    padding-left: 50px; 
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 0px;
+    width: 110%;
+}
+
+.mission-text h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-top: 0px;
+}
+
+.mission-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+
+.mission-image img {
+    border-radius: 20px; /* Rounded corners */
+    width: 100%; /* Ensure the image is responsive */
+    max-width: 100%; /* Limit the image width */
+    object-fit: cover; /* Ensure the image covers the given space */
+    transform: translateX(10%); /* Make it look like it's coming from the right */
+    height: 200px;
+}
+
+.line-break-mission {
+    width: 100%;
+    color: rgb(173, 172, 172);
+    height: 0.1px;
+}
+
+/*PART 06: VISION STATEMENT*/
+.vision-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+    padding: 40px 50px 80px 0px; 
+    width: 110%;
+}
+
+
+.vision-text h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.vision-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    line-height: 1.4; 
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+
+.vision-image img {
+    border-radius: 20px; /* Rounded corners */
+    width: 100%; /* Ensure the image is responsive */
+    max-width: 100%;
+    object-fit: cover; /* Ensure the image covers the given space */
+    transform: translateX(-10%); /* Make it look like it's coming from the right */
+    height: 200px;
+}
+
+.line-break-vision {
+    width: 100%;
+    color: rgb(173, 172, 172);
+    height: 1px;
+}
+}
+
 /*PART 07: VALUES*/
 .values-section {
     background-color: white; 
@@ -421,6 +807,58 @@ html {
     height: 0.5px;
     color: #7a7a7a;
     width: 100%;
+}
+
+@media (max-width: 480px) {
+    .values-section {
+        width: 100%;
+    }
+    
+    .values-header {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 35px;
+    }
+    
+    .values-container {
+        display: flex;
+        flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+        justify-content: space-between; /* Evenly distribute space between boxes */
+        gap: 20px; /* Space between boxes */
+    }
+    
+    
+    .value-box {
+        flex: 1; 
+        min-width: calc(25% - 20px);
+        background-color: #ffffff; /* Light grey background for the boxes */
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+    }
+    
+    .value-box:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+    }
+    
+    
+    .value-box h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    
+    .value-box p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+    }
+    
+    .line-break-values {
+        height: 1px;
+        color: #7a7a7a;
+        width: 100%;
+    }
+
 }
 
 /*TOGGLE STYLING FOR OUR [ ... ] PARTS*/
@@ -657,6 +1095,115 @@ body.modal-open #our-team {
     filter: blur(6px); /* Add blur effect to the main page */
 }
 
+@media (max-width: 480px) {
+    /*TOGGLE STYLING FOR OUR [ ... ] PARTS*/
+.toggle-section {
+    width: 110%;
+}
+
+
+/* Header Text */
+.toggle-header h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: black;
+    margin-left: 0px;
+
+}
+.our-story-container {
+    align-items:center;
+}
+
+.our-story-text {
+    flex: 5; /* Allow text to take up available space */
+}
+
+.our-story-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.our-story-image-container {
+    flex: 2.5; 
+    display: flex;
+    margin-top: 15px;
+    
+}
+
+.our-story-image-container img {
+    max-width: 100%; /* Ensure the image scales responsively */
+    height: 250px; /* Maintain aspect ratio */
+}
+
+/* PART 09: OUR TEAM */
+
+
+.team-paragraph {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+
+
+.employee-description {
+    margin-top: 10px;
+    max-width: 180px;
+}
+
+.employee-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.employee-role {
+    font-family: "Times New Roman", serif;
+    font-size: 11px;
+    color: rgb(202, 5, 5);
+    margin-bottom: 10px;
+
+}
+
+.employee-info {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    color: gray;
+    line-height: 1.4;
+    text-align: center;
+}
+
+
+.short-info {
+    display: inline-block;
+    white-space: wrap;
+}
+
+.full-info-hidden {
+    display: none;
+}
+
+
+.read-more-btn {
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    color: rgb(1, 1, 13);
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    color:rgb(135, 17, 17); 
+}
+
+
+
+}
+
 /* Header Section */
 .modal-header h1 {
     font-family: 'Times New Roman', serif;
@@ -722,20 +1269,53 @@ body.modal-open #our-team {
 }
 
 /* Responsive Modal */
-@media (max-width: 768px) {
-    .team-modal-content {
-        width: 95%;
+@media (max-width: 480px) {
+        /* General Modal Styles */
+    .team-modal {
+        padding: 10px;
+        height: 150vh;
+        width: auto;
     }
 
-    .team-modal-description {
-        font-size: 13px;
+    .modal-content {
+        width: 70%;
     }
 
-    .team-modal-image {
-        width: 120px;
-        height: 120px;
+    .team-modal .modal-header h1 {
+        font-family: 'Times New Roman', serif;
+        font-size: 37px;
     }
+
+    .modal-header .team-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+
+    }
+
+    .team-description {
+        flex: 6;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+    }
+
+    .team-image {
+        flex: 3;
+        margin-top: 20px;
+
+    }
+
+    .team-image img {
+        max-width: 100%;
+        height: 200px;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+    }
+
+
 }
+
+
 
 
 /*PART 10: OUR STUDENTS */
@@ -856,6 +1436,89 @@ body.modal-open #our-team {
     color: rgb(165, 25, 25);
 }
 
+@media (max-width: 480px) {
+    /*PART 10: OUR STUDENTS */
+    .our-students-section {
+        height: 60vh;
+    }
+    .our-students-section p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+
+    .our-students-section p span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: black;
+        font-style: italic;
+    }
+
+    .slideshow-container {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+
+    .slide {
+        flex: 0 0 auto;
+        width: 160px;
+        height: 100%; 
+        margin-right: 30px;
+    }
+
+
+    .studentpictures {
+        width: 100%;
+        height: 160px;
+    }
+
+
+    .student-name {
+        color: black;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    .student-cohort {
+        color: rgb(212, 42, 42);
+        font-size: 9px;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .student-info {
+        color: gray;
+        font-size: 12px;
+        margin-top: 5px;
+        font-family: 'Montserrat', sans-serif; /* Normal font */
+        text-align: center;
+    }
+
+    .short-info-about {
+        display: inline; /* Ensure inline placement */
+        white-space: wrap; /* Prevent line breaking */
+    }
+
+
+
+    .learn-more-btn-about {
+        background: none;
+        border: none;
+        color: #474141;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        cursor: pointer;
+        text-decoration: underline;
+        margin-top: 20px;
+    }
+
+    .learn-more-btn-about:hover {
+        color: rgb(165, 25, 25);
+    }
+
+    }
 
 
 
@@ -1029,6 +1692,100 @@ body.modal-open #our-students {
     color: #9b1a1a;
 }
 
+@media (max-width: 480px) {
+    /* Modal Adjustments */
+    .student-modal {
+        padding: 10px; /* Add padding for smaller screens */
+        height: 100%;
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 90%; /* Reduce modal width */
+        max-height: 70%; /* Adjust modal height */
+        padding: 20px; /* Compact padding */
+    }
+
+    .modal-header h1 {
+        font-size: 30px; /* Reduce header size */
+        margin-left: 30px;
+        max-width: 70%;
+    }
+
+    .modal-content .close {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        font-size: 24px;
+        cursor: pointer;
+        color: black;
+    }
+
+    
+    .modal-header .student-title {
+        font-size: 12px; /* Adjust title font size */
+        margin-left: 30px;
+    }
+
+    .modal-header .student-description-home {
+        font-size: 10px; /* Reduce font size */
+        padding: 10px; /* Compact padding */
+    }
+
+    .student-image img {
+        max-width: 100%; /* Reduce image size */
+        height: 120px; /* Maintain aspect ratio */
+        border-radius: 30px;
+        margin-top: 15px;
+    }
+
+    .modal-works h2 {
+        font-size: 18px; /* Smaller font size */
+        margin-left: 10px; /* Adjust spacing */
+    }
+
+    .works-container {
+        gap: 10px; /* Reduce spacing between work items */
+        margin-left: 10px; /* Adjust left margin */
+    }
+
+    .work-item {
+        flex: 0 1 calc(50% - 10px); /* Allow two items per row */
+        padding: 10px; /* Compact padding */
+    }
+
+    .work-item img {
+        height: 50%; /* Adjust image height */
+    }
+
+    .work-details h3 {
+        font-size: 10px; /* Adjust font size */
+    }
+
+    .work-details p {
+        font-size: 8px; /* Reduce font size */
+    }
+
+    .read-full {
+        width: 100px; /* Smaller button */
+        height: 40px; /* Adjust height */
+        font-size: 6px; /* Smaller font size */
+        margin-bottom: 20px; /* Adjust bottom margin */
+    }
+
+    .read-full:hover {
+        color: #9b1a1a;
+    }
+    
+    .learn-more-button {
+        width: 100px; /* Smaller button */
+        height: 40px; /* Adjust height */
+        font-size: 12px; /* Smaller font size */
+        margin-top: 80px;
+        margin-left: 60px;
+    }
+}
+
 /*SECTION 7: MAILING LIST */
 
 .email-signup-section {
@@ -1127,4 +1884,79 @@ body.modal-open #our-students {
 .social-media-icons a:hover {
     transform: scale(1.3);
     color: #c10000;
+}
+
+/*SECTION 7: MAILING LIST - Mobile View (max-width: 480px)*/
+@media (max-width: 480px) {
+    .email-signup-section {
+        padding: 20px 20px; /* Reduce padding for smaller screens */
+        height: auto; /* Allow the height to adapt to content */
+        text-align: center;
+        width: 115%;
+        
+    }
+
+    .email-header {
+        font-size: 34px; /* Reduce the size of the header */
+        margin-top: 20px; /* Adjust spacing */
+    }
+
+    .email-paragraph {
+        font-size: 10px; /* Smaller font size for readability */
+        margin-top: 10px; /* Reduce spacing */
+    }
+
+    .email-input {
+        display: block; /* Show the input field */
+        padding: 10px; /* Maintain consistent padding */
+        font-size: 14px; /* Adjust font size */
+        width: 90%; /* Full width with slight padding */
+        max-width: 300px; /* Ensure it doesn't get too wide */
+        margin: 15px auto; /* Center the input field */
+        border: 2px solid white;
+        border-radius: 5px;
+        color: black;
+    }
+
+    .email-button {
+        padding: 12px 30px; /* Reduce button padding */
+        font-size: 12px; /* Adjust font size for smaller screens */
+        border-radius: 30px; /* Keep rounded edges */
+        margin-top: 20px; /* Adjust spacing */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    
+    }
+
+    .email-button:hover {
+        transform: scale(1.05); /* Slight hover animation for interactivity */
+    }
+}
+
+/*SECTION 8: PAGE END | SOCIAL ACCOUNTS - Mobile View (max-width: 480px)*/
+@media (max-width: 480px) {
+    .footer-end {
+        padding: 20px; /* Adjust padding for smaller screens */
+        height: auto; /* Allow height to adapt */
+        text-align: center; /* Center align text */
+        width: 115%;
+    }
+
+    .social-media-icons {
+        display: flex;
+        flex-wrap: wrap; /* Allow icons to wrap if needed */
+        gap: 15px; /* Adjust spacing between icons */
+        justify-content: center; /* Center icons horizontally */
+        margin-top: 10px; /* Add spacing */
+    }
+
+    .social-media-icons a {
+        font-size: 18px; /* Reduce icon size */
+        color: white; /* Ensure visibility on dark background */
+    }
+
+    .social-media-icons a:hover {
+        transform: scale(1.2); /* Slight hover effect */
+        color: #c10000;
+        opacity: 1;
+    }
 }

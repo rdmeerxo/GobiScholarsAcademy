@@ -261,17 +261,18 @@ body {
         height: auto;
         margin-top: 10em; /* Adjusted to avoid overlapping with the menu */
         text-align: center;
+        align-items: center;
         margin-bottom: 8em;
         
     }
     .center-content p1 {
         margin-top: 0em;
-        font-size: 3em;  /* Smaller font size on tablets */
+        font-size: 2.5em;  /* Smaller font size on tablets */
         line-height: 1.2em;
         text-align: center;
     }
     .center-content p2 {
-        font-size: 1.5em;
+        font-size: 1em;
         margin-top: 2em;
         line-height:1.2em;
         text-align: center;
@@ -393,7 +394,7 @@ body {
     margin-right: auto; /* Center the paragraph horizontally */
 }
 
-  
+
 /*SECTION 03: GOBI SCHOLARS, WHAT WE DO IN TWO SENTENCES*/
 .second-section {
     height: 70vh; 
@@ -571,7 +572,15 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slideshow-outer {
+    position: relative;
+    width: 100%; 
+    overflow-x: scroll; /* Allow manual horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling for better user experience */
+    white-space: nowrap; /* Ensure all slides stay in one line */
 }
 
 
@@ -898,6 +907,21 @@ body.modal-open .our-students-section {
         overflow: hidden;
         transition: transform 0.5s ease-in-out;
     }
+    
+    .slide {
+        flex: 0 0 auto;
+        width: 100px;
+        height: 60%;
+        margin-right: 20px;
+
+    }
+
+    .studentpictures {
+        width: 100%;
+        height: 100px; 
+        border-radius: 5px;
+        object-fit: cover; 
+    }
 
 
     .student-description {
@@ -906,19 +930,19 @@ body.modal-open .our-students-section {
     }
 
     .student-name {
-        font-size: 12px; /* Smaller font size */
+        font-size: 8px; /* Smaller font size */
     }
 
     .student-cohort {
-        font-size: 9px; /* Smaller font size */
+        font-size: 5px; /* Smaller font size */
     }
 
     .student-info {
-        font-size: 8px; /* Reduce font size */
+        font-size: 6px; /* Reduce font size */
     }
 
     .student-description .learn-more-btn {
-        font-size: 8px; /* Adjust button font size */
+        font-size: 6px; /* Adjust button font size */
         margin-top: 10px; /* Reduce margin */
     }
 
@@ -1032,7 +1056,7 @@ body.modal-open .our-students-section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     background-color: white;
     height: 80vh;
     padding: 0 5%;

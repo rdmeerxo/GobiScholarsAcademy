@@ -1,6 +1,6 @@
 // countdown.js
 document.addEventListener('DOMContentLoaded', () => {
-    const countdownDate = new Date("Jan 20, 2025 23:59:59").getTime();
+    const countdownDate = new Date("Feb 1, 2025 23:59:59").getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();

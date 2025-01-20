@@ -497,3 +497,274 @@ html {
     transform: scale(1.3);
     color: #c10000;
 }
+
+@media (max-width: 480px) {
+    body {
+        position: relative;
+        background-image: url('/appFrontend/src/app/assets/programs_assets/programs01.jpg'); 
+        background-repeat: no-repeat;
+        background-position:  top center; 
+        background-attachment:scroll; /* Avoid fixed background for smoother scrolling */
+        background-size:cover; /* Cover ensures the image adjusts to the screen */
+        margin: 0; 
+        padding: 0;
+        height: 100vh; /* Allow height to adjust to content */
+        width: 100%;
+        overflow-x: hidden;
+        
+    }
+
+    .header-section {
+        height: auto;
+        height: 96vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 50px;
+        position: relative; 
+        z-index: 1;
+        background: none;
+        width: 110%;
+    
+    }
+
+    .gradient-shadow {
+        height: 40px; /* Reduce shadow height for compact screens */
+        width: 120%; 
+    }
+
+    .header-container {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        margin-bottom: 20em;
+    }
+
+    .logo {
+        margin: 0 auto; /* Center the logo */
+        height: 1.5em; /* Adjust size for smaller screens */
+    }
+
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 0.5em; /* Reduce spacing between items */
+        align-items: center; /* Center menu items */
+        width: 100%; 
+    }
+
+    .menu-item {
+        width: 100%; /* Full width for better tap targets */
+        text-align: center; 
+    }
+
+    .menu-item a, 
+    .menu-item button {
+        font-size: 0.8em; /* Slightly larger text for readability */
+        padding: 10px 0; /* Add padding for better tapability */
+    }
+
+    .search-button {
+        margin: 10px auto; /* Center the search button */
+    }
+
+    .search-button i {
+        font-size: 1.2em; /* Slightly larger icon for visibility */
+    }
+
+    /* Adjust the "Get Involved" button */
+    .get-involved-btn {
+        width: 90%; /* Reduce width for phones */
+        margin: 10px auto; /* Center the button */
+        padding: 10px 20px; /* Compact padding */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    /* Reduce red overlay size for smaller viewports */
+    .red-overlay {
+        background-color: rgb(166, 51, 51);
+        opacity: 0.5; /* Increase opacity for better contrast on small screens */
+
+    }
+
+    .jump-menu {
+        padding: 10px 20px 10px 50px; /* Adjust padding for mobile screens */
+        width: 100%; /* Ensure the menu takes the full width */
+    }
+
+    .jump-menu a {
+        font-size: 14px; /* Increase font size for readability on smaller screens */
+        margin: 10px 0; /* Space links vertically */
+        display: block; /* Make links stack vertically */
+    }
+
+    /* Active Link */
+    .jump-menu a.active {
+        color: black;
+        font-weight: bold;
+    }
+
+    /* Hover effect for links */
+    .jump-menu a:hover {
+        color: #333;
+    }
+    
+    /*PART 3: PROGRAM DESCRIPTION*/
+    .programs-section {
+        width: 90%;
+    }
+
+    .programs-section h2 {
+        font-size: 38px;
+    }
+
+    .programs-section p {
+        font-size: 15px;
+        width: 110%;
+    }
+
+    .line-break-programs01 {
+        width: 120%;
+    }
+
+    /* TOGGLES Section STYLES */
+    .toggle-section {
+        width: 130%;
+    }
+
+    .toggle-header {
+        margin: 0 20px 0px 35px;
+    }
+
+    .toggle-header h2 {
+        font-size: 38px;
+    
+    }    
+    .toggle-header p {
+        font-size: 15px;
+    }
+
+    .right-side {
+        width: 20%;
+    }
+
+    /*PART 04: GOBI SCHOLARS: SUmmer Fellowship & Scholars Academy*/
+    .gobi-scholars-inner {
+        padding: 40px 10px;
+        flex-direction: column;
+    }
+    
+
+    .content-column {
+        width: 100%;
+    
+    }
+
+    .content-column img {
+        width: 100%;
+        max-width: 180px; 
+        height: 140px;
+    }
+    
+    .content-column h3 {
+        font-size: 14px;
+    }
+
+    .content-column p {
+        font-size: 10px;
+    }
+
+    .content-column .apply-internship {
+        margin-bottom: 80px;
+    }
+    
+    .coming-soon-inner h3 {
+        font-size: 35px;
+    }
+
+    .coming-soon-inner p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+
+
+    /*SECTION 7: MAILING LIST - Mobile View (max-width: 480px)*/
+    .email-signup-section {
+        padding: 20px 20px; /* Reduce padding for smaller screens */
+        height: auto; /* Allow the height to adapt to content */
+        text-align: center;
+        width: 120%;
+        
+    }
+
+    .email-header {
+        font-size: 34px; /* Reduce the size of the header */
+        margin-top: 20px; /* Adjust spacing */
+    }
+
+    .email-paragraph {
+        font-size: 10px; /* Smaller font size for readability */
+        margin-top: 10px; /* Reduce spacing */
+    }
+
+    .email-input {
+        display: block; /* Show the input field */
+        padding: 10px; /* Maintain consistent padding */
+        font-size: 14px; /* Adjust font size */
+        width: 90%; /* Full width with slight padding */
+        max-width: 300px; /* Ensure it doesn't get too wide */
+        margin: 15px auto; /* Center the input field */
+        border: 2px solid white;
+        border-radius: 5px;
+        color: black;
+    }
+
+    .email-button {
+        padding: 12px 30px; /* Reduce button padding */
+        font-size: 12px; /* Adjust font size for smaller screens */
+        border-radius: 30px; /* Keep rounded edges */
+        margin-top: 20px; /* Adjust spacing */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    
+    }
+
+    .email-button:hover {
+        transform: scale(1.05); /* Slight hover animation for interactivity */
+    }
+
+    /*SECTION 8: PAGE END | SOCIAL ACCOUNTS - Mobile View (max-width: 480px)*/
+    .footer-end {
+        padding: 20px; /* Adjust padding for smaller screens */
+        height: auto; /* Allow height to adapt */
+        text-align: center; /* Center align text */
+        width: 120%;
+    }
+
+    .social-media-icons {
+        display: flex;
+        flex-wrap: wrap; /* Allow icons to wrap if needed */
+        gap: 15px; /* Adjust spacing between icons */
+        justify-content: center; /* Center icons horizontally */
+        margin-top: 10px; /* Add spacing */
+    }
+
+    .social-media-icons a {
+        font-size: 18px; /* Reduce icon size */
+        color: white; /* Ensure visibility on dark background */
+    }
+
+    .social-media-icons a:hover {
+        transform: scale(1.2); /* Slight hover effect */
+        color: #c10000;
+        opacity: 1;
+    }
+
+
+   
+
+
+
+
+}
