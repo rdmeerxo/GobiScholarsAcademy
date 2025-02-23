@@ -791,30 +791,51 @@
 
     //SLIDESHOW
     document.addEventListener('DOMContentLoaded', () => {
-        const slideshowContainer = document.querySelector('.slideshow-inner');
-        const slides = document.querySelectorAll('.slide');
-        const slideWidth = slides[0].offsetWidth; // Get the width of one slide
-        let scrollPosition = 0;
+    const slideshowContainer = document.querySelector('.slideshow-container');
+    const slideshowInner = document.querySelector('.slideshow-inner');
+    const slides = document.querySelectorAll('.slide');
+    let scrollPosition = 0;
+    let isUserScrolling = false;  // Flag to track if the user is manually scrolling
+    let scrollTimeout;
 
-        // Clone the slides for seamless looping
-        slides.forEach(slide => {
-            const clone = slide.cloneNode(true);
-            slideshowContainer.appendChild(clone);
-        });
+    // Clone the slides for seamless looping
+    slides.forEach(slide => {
+        const clone = slide.cloneNode(true);
+        slideshowInner.appendChild(clone);
+    });
 
-        function autoScroll() {
-            scrollPosition += 2;
-            slideshowContainer.style.transform = `translateX(-${scrollPosition}px)`;
-            
+    // Function for auto-scrolling
+    function autoScroll() {
+        if (!isUserScrolling) {  // Only auto-scroll if user isn't scrolling
+            scrollPosition += 0.9;  // Adjust speed here
+            slideshowInner.style.transform = `translateX(-${scrollPosition}px)`;
 
-            if (scrollPosition >= slideshowContainer.scrollWidth / 2) {
+            // Reset scroll position if it reaches half the total width (loop the slides)
+            if (scrollPosition >= slideshowInner.scrollWidth / 2) {
                 scrollPosition = 0;
-                slideshowContainer.style.transform = `translateX(0)`;
+                slideshowInner.style.transform = `translateX(0)`;
             }
         }
+    }
 
-        setInterval(autoScroll, 30);
+    // Event listener for user scroll
+    slideshowContainer.addEventListener('scroll', () => {
+        isUserScrolling = true;  // User is manually scrolling
+        clearTimeout(scrollTimeout);  // Reset the timeout if user scrolls
     });
+
+    // Event listener for mouse wheel scroll
+    slideshowContainer.addEventListener('wheel', () => {
+        isUserScrolling = true;  // User is manually scrolling
+        clearTimeout(scrollTimeout);  // Reset the timeout
+        scrollTimeout = setTimeout(() => {
+            isUserScrolling = false;  // Auto-scroll resumes after 300ms of no manual scrolling
+        }, 300);  // Time delay before resuming auto-scrolling
+    });
+
+    // Start auto-scrolling at an interval
+    setInterval(autoScroll, 30);
+});
 
     //individual model window for students
     // Student Data (Store all student details here)
